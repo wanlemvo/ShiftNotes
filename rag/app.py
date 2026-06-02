@@ -356,15 +356,17 @@ with tab4:
         "What guest complaints came up more than once?",
         "Which kiosk had the most operational concerns?",
     ]
+    if "question_input" not in st.session_state:
+        st.session_state["question_input"] = ""
+
     cols = st.columns(len(sample_questions))
-    selected_sample = None
     for i, (col, q) in enumerate(zip(cols, sample_questions)):
         if col.button(q, key=f"sample_{i}", width='stretch'):
-            selected_sample = q
+            st.session_state["question_input"] = q
 
     question = st.text_input(
         "Your question",
-        value=selected_sample or "",
+        key="question_input",
         placeholder="e.g. What food shortages occurred this month?",
     )
 
