@@ -16,7 +16,7 @@ This document serves as the ground truth for evaluating whether the intelligence
 
 ## Time Period
 
-5 Weeks
+4 Weeks
 
 ---
 
@@ -42,7 +42,9 @@ Approximate Total:
 ```text
 6 kiosks
 ×
-4 reports per week
+6 reports per day
+x
+4 days a week
 ×
 4 weeks
 
@@ -328,7 +330,6 @@ The dataset will be considered successful if ShiftNotes can identify:
 * Most frequently recognized employee
 * Most common food concern
 * Most significant trend changes over time
-* Most inventory-inconsistent location
 
 ---
 

@@ -137,8 +137,13 @@ The following documents provide deeper insight into the design, implementation, 
 | ------------------------ | ------------------------------------------------------------------------------------- |
 | PRODUCT_VISION.md        | Defines the purpose, philosophy, goals, and future direction of ShiftNotes.           |
 | CURRENT_FORM_ANALYSIS.md | Examines the current reporting workflow and identifies opportunities for improvement. |
-| MOCK_DATA_DESIGN.md      | Defines the synthetic dataset structure, kiosk profiles, and ground truth targets.   |
 | USER_EXPERIENCE.md       | Defines how users interact with the system and consume insights.                      |
+| ARCHITECTURE.md          | Documents system components, data flow, and technical design decisions.               |
+| TECHNICAL_DECISIONS.md   | Explains major implementation choices and tradeoffs.                                  |
+| CURRENT_STATE.md         | Tracks functionality, assumptions, limitations, and known issues.                     |
+| DEMO_SCRIPT.md           | Structured walkthrough for presentations and demonstrations.                          |
+| DEVELOPMENT_LOG.md       | Engineering journal documenting project evolution and implementation progress.        |
+| FUTURE_EXPANSION.md      | Long-term ideas, future capabilities, and potential system growth.                    |
 
 ---
 
