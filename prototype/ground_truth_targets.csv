@@ -1,0 +1,8 @@
+﻿"metric","expected_value","note"
+"total_reports","100","Total mock records"
+"poke_request_mentions","18","Guest request trend"
+"chicken_shortage_mentions","12","Food shortage trend"
+"highest_waste_kiosk","Kiosk B","Based on unclaimed lunches"
+"high_recognition_kiosk","Kiosk E","Frequent recognition language"
+"ops_friction_kiosk","Kiosk D","Recurring operational issues"
+"inventory_inconsistency_kiosk","Kiosk F","Lowest avg food quantity rating"
