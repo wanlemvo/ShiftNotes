@@ -25,17 +25,29 @@ Instead of predefined signals, Ted could ask:
 # Proposed Flow
 
 ```text
-Shift Reports
+Shift Reports (JotForm → Gmail)
       ↓
-Embed each report → Vector Store
+Node 1 — ingest_email (MCP Gmail reads → CSV)
       ↓
-User submits a natural language question
+Node 2 — classify_intent (route: shift report or query)
       ↓
-Retrieve top-N most relevant reports
+Node 3 — detect_signals (Hybrid regex + HuggingFace)
       ↓
-Send retrieved reports + question to Claude API
+Node 4 — retrieve_and_generate (ChromaDB + Groq RAG)
       ↓
-Claude generates a grounded answer
+Node 5 — send_briefing (MCP Gmail → Ted's inbox)
+      ↓
+Node 6 — human_review (Ted reads email ← HITL 1)
+      ↓
+Ted satisfied? → Take action → END
+Ted not satisfied? → Reply to ShiftNotes → RAG answers
+Ted still not ok? → Order ShiftNotes to email shift lead
+      ↓
+Node 7 — draft_escalation (ShiftNotes drafts email)
+      ↓
+Ted approves draft ← HITL 2
+      ↓
+MCP Gmail sends to shift lead → cross-check → pipeline restarts
 ```
 
 ---
@@ -47,7 +59,9 @@ Claude generates a grounded answer
 | Embeddings | sentence-transformers | Free, runs locally, no API key required |
 | Vector store | ChromaDB | Lightweight, local, no server required |
 | Metadata filtering | ChromaDB built-in | Filter by kiosk, week, or date before search |
-| Generation | Claude API | Answer questions using retrieved report context |
+| Generation | Groq API (llama-3.3-70b-versatile) | Answer questions using retrieved report context |
+| Orchestration | LangGraph | Manages node execution, routing, and HITL interrupts |
+| Email delivery | MCP Gmail | Reads JotForm emails and sends briefings to Ted |
 
 ---
 
@@ -121,6 +135,8 @@ RAG will be considered working if:
 - Retrieval is relevant — top-3 retrieved reports are related to the question asked
 - Sample questions pass — at least 4 out of 5 sample questions return accurate answers
 - No hallucination — Claude does not invent kiosk names, employee names, or dates not in the data
+- HITL 2 works — Ted can review and approve draft email before it is sent to shift lead
+- Email delivery works — Ted receives weekly briefing in Gmail inbox
 
 ---
 
@@ -131,6 +147,25 @@ The existing signal classifier stays in place.
 RAG adds ad-hoc natural language querying on top of the pipeline — not instead of it.
 
 The `full_text` column built in Step 3 of the notebook is already the correct input for embedding.
+
+---
+
+## Email Workflow
+
+Ted interacts with ShiftNotes primarily through email:
+
+- Ted receives weekly briefing email from shiftnotes@gmail.com
+- Email contains summary of all kiosks with mailto links
+- Ted clicks link → Gmail opens with pre-filled subject
+- ShiftNotes reads reply via MCP Gmail → Node 2 routes to RAG
+- RAG answers and sends reply back to Ted
+
+### mailto Link Example
+
+Each briefing email contains:
+- "Tell me more about Kiosk D" → mailto:shiftnotes@gmail.com?subject=Tell me more about Kiosk D
+- "Flag this briefing" → mailto:shiftnotes@gmail.com?subject=Flag Week 4 briefing
+- "Open Streamlit" → link to Streamlit app for drill-down
 
 ---
 
