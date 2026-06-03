@@ -1,0 +1,14 @@
+ShiftNotes Weekly Briefing
+Generated: 2026-06-03T04:07:48.056072
+Run ID: test-001
+==================================================
+
+This week, we received a total of 18 poke requests and 16 team recognition reports. The high number of poke requests indicates a need for immediate attention to guest interactions, while the team recognition suggests positive employee engagement that we should continue to encourage.
+
+However, we are facing a chicken shortage, with 15 reports highlighting this issue. This could impact menu offerings and guest satisfaction, so we need to address our supply chain and inventory management urgently.
+
+Additionally, there are 5 operational issues reported, which require investigation to prevent further complications. 
+
+Kiosk A has the highest number of flagged reports at 15, indicating it may need immediate troubleshooting. Kiosk D follows with 9 reports, and Kiosk C has 8. We should prioritize addressing these kiosks to improve overall service efficiency.
+
+Please let me know if you need further details or specific action plans for these issues.
