@@ -24,8 +24,6 @@ def human_review(state: ShiftNotesState) -> ShiftNotesState:
         # LangGraph pauses here and waits for human input.
         # The graph state is saved. Execution resumes when
         # Ted responds with his decision.
-        # BCPolicyPal connection: same interrupt pattern you
-        # used in Week 6 when the agent needed human approval
         # before proceeding.
         ted_response = interrupt({
             "message": "Briefing has been delivered to Ted. Awaiting his decision.",
