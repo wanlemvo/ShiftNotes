@@ -3,7 +3,7 @@ app.py
 ShiftNotes — Operational Intelligence Dashboard
 
 Run with:
-    streamlit run app.py
+    streamlit run prototype/app.py
 """
 
 import io
@@ -15,10 +15,10 @@ import plotly.express as px
 import streamlit as st
 
 # ── Path setup ────────────────────────────────────────────────────────────────
-RAG_DIR       = pathlib.Path(__file__).parent
-PROTO_DIR     = RAG_DIR.parent / "prototype"
-CHROMA_PATH   = RAG_DIR / "chroma_db"
-MOCK_CSV      = PROTO_DIR / "mock_shift_notes.csv"
+PROTO_DIR   = pathlib.Path(__file__).parent
+RAG_DIR     = PROTO_DIR / "rag"
+CHROMA_PATH = RAG_DIR / "chroma_db"
+MOCK_CSV    = PROTO_DIR / "mock_shift_notes.csv"
 
 sys.path.insert(0, str(PROTO_DIR))
 sys.path.insert(0, str(RAG_DIR))
