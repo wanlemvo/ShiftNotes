@@ -139,7 +139,16 @@ RAG will be considered working if:
 - Email delivery works — Ted receives weekly briefing in Gmail inbox
 
 ---
+## Week 9 Priorities
 
+- Wire Gmail MCP in Node 1 and Node 5 to replace CSV ingestion and file-output fallbacks.
+- Validate the end-to-end Gmail flow with live JotForm report ingestion and briefing delivery.
+- Populate ChromaDB with indexed reports and verify semantic retrieval context for RAG.
+- Tune the hybrid signal classifier against sample real JotForm data.
+- Prototype a Streamlit drill-down or review interface for operational detail exploration.
+- Maintain clear backlog tracking for MCP, RAG, UI, and briefing delivery tasks.
+
+---
 # Notes
 
 The existing signal classifier stays in place.

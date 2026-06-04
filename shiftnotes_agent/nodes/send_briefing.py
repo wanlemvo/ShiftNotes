@@ -1,12 +1,12 @@
 from datetime import datetime
 from pathlib import Path
+import os
 
 from shiftnotes_agent.state import ShiftNotesState
 from shiftnotes_agent.logger import get_logger, log_node_entry, log_node_exit, log_error
 
 logger = get_logger("send_briefing")
 
-# Where briefings get saved locally
 OUTPUT_DIR = Path("briefings")
 
 
@@ -24,9 +24,7 @@ def send_briefing(state: ShiftNotesState) -> ShiftNotesState:
             log_node_exit(logger, "send_briefing", run_id, "no briefing to send")
             return {**state, "briefing_sent": False}
 
-        # --- Deliver briefing ---
-        # NOTE: swap _save_to_file() for Gmail MCP call when ready
-        _save_to_file(briefing, run_id)
+        _send_via_gmail_mcp(briefing, run_id)
 
         log_node_exit(logger, "send_briefing", run_id, "briefing delivered")
 
@@ -44,10 +42,43 @@ def send_briefing(state: ShiftNotesState) -> ShiftNotesState:
         }
 
 
+def _send_via_gmail_mcp(briefing: str, run_id: str):
+    """
+    Sends briefing to Ted's inbox via OpenAI Gmail MCP connector.
+    Falls back to saving file if Gmail MCP fails.
+    """
+    from openai import OpenAI
+
+    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+    try:
+        client.responses.create(
+            model="gpt-4o-mini",
+            tools=[
+                {
+                    "type": "mcp",
+                    "server_label": "gmail",
+                    "connector_id": "connector_gmail",
+                    "authorization": os.getenv("GMAIL_OAUTH_TOKEN"),
+                    "require_approval": "never",
+                }
+            ],
+            input=(
+                f"Send an email to Ted with subject "
+                f"'ShiftNotes Weekly Briefing — Run {run_id}' "
+                f"and the following body:\n\n{briefing}"
+            ),
+        )
+        logger.info(f"Briefing sent to Ted via Gmail MCP — run_id: {run_id}")
+    except Exception as e:
+        logger.warning(f"Gmail MCP send failed — falling back to file: {e}")
+        _save_to_file(briefing, run_id)
+
+
 def _save_to_file(briefing: str, run_id: str):
     """
-    Saves briefing to a local file.
-    Replace this with Gmail MCP send when ready for production.
+    Saves briefing to local file.
+    Fallback when Gmail MCP send fails.
     """
     OUTPUT_DIR.mkdir(exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

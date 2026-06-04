@@ -1,226 +1,225 @@
 # ARCHITECTURE
 
-# Purpose
+## Purpose
 
-This document describes the system components, data flow, and technical design of the ShiftNotes prototype.
+This document describes the current ShiftNotes architecture after the Week 8 transition from a notebook prototype to a LangGraph agent pipeline.
+
+ShiftNotes is now explicitly designed as a six-node LangGraph workflow with a human-in-the-loop checkpoint and Gmail MCP integration points.
 
 ---
 
 # System Overview
 
-ShiftNotes is a pipeline that transforms freeform operational shift reports into structured signals and actionable intelligence.
+ShiftNotes is implemented as a LangGraph agent pipeline that ingests shift report email content, detects operational signals, optionally performs retrieval-augmented generation, delivers briefings, and then pauses for Ted's review.
 
-The prototype demonstrates this transformation end-to-end using a synthetic dataset, a hybrid signal classifier, and an automated briefing generator.
+The architecture is intentionally modular, with clear separation between:
+
+- data ingestion
+- intent routing
+- signal detection
+- retrieval and generation
+- delivery
+- human review
 
 ---
 
 # High-Level Data Flow
 
 ```text
-Shift Reports (CSV)
-        ↓
-Data Loading & Cleaning
-        ↓
-Signal Detection
-  ├── Regex Fast-Path
-  └── HuggingFace Zero-Shot Fallback
-        ↓
-Aggregation
-  ├── By Kiosk
-  └── By Week
-        ↓
-Ground Truth Validation
-        ↓
-Operational Briefings
+Shift lead writes report
+    ↓
+JotForm → Gmail inbox
+    ↓
+Node 1 — ingest_email
+    ↓
+Node 2 — classify_intent
+    ↓
+Node 3 — detect_signals
+    ↓
+Node 4 — retrieve_and_generate (RAG)
+    ↓
+Node 5 — send_briefing
+    ↓
+Node 6 — human_review (HITL)
+    ↓
+Ted either accepts, drills down, or escalates
 ```
 
 ---
 
-# Components
+# The 6-Node Pipeline
 
-## Data Layer
+## Node 1 — ingest_email
 
-### mock_shift_notes.csv
+**Role:** Ingests incoming JotForm report emails.
 
-Synthetic dataset representing 100 shift reports across 6 kiosks over 5 weeks.
+- **Current implementation:** Reads from `mock_shift_notes.csv`
+- **Goal:** Swap the CSV fallback with Gmail MCP reads
+- **Output:** Structured report records added to pipeline state
 
-Fields:
+### MCP integration point
 
-* report_id
-* date
-* week
-* kiosk
-* lead_name
-* food_quality_rating
-* food_quantity_rating
-* food_concerns_or_outages
-* team_members_who_did_well
-* guest_issues_for_the_day
-* operational_notes
-* number_of_unclaimed_lunches
+- Replace `_read_from_csv()` with a Gmail MCP email read call
+- This node is the primary live-input gateway for the agent
 
 ---
 
-### ground_truth_targets.csv
+## Node 2 — classify_intent
 
-Seven known patterns planted in the dataset used to validate pipeline output.
+**Role:** Determines whether the pipeline is handling a report signal batch or a conversational RAG query.
 
-| Metric | Expected Value |
-| --- | --- |
-| total_reports | 100 |
-| poke_request_mentions | 18 |
-| chicken_shortage_mentions | 12 |
-| highest_waste_kiosk | Kiosk B |
-| high_recognition_kiosk | Kiosk E |
-| ops_friction_kiosk | Kiosk D |
-| inventory_inconsistency_kiosk | Kiosk F |
+- **Input:** ingested report data or incoming user query
+- **Output:** intent label `signals` or `rag_query`
+- **Routing:** `signals` → Node 3, `rag_query` → Node 4
 
 ---
 
-## Signal Classifier
+## Node 3 — detect_signals
 
-### signal_classifier.py
+**Role:** Detects operational signals from shift report text.
 
-Hybrid detection module responsible for identifying four operational signals from shift note text.
+- **Detection approach:** hybrid regex fast-path plus HuggingFace zero-shot fallback
+- **Signals:**
+  - `chicken_shortage`
+  - `poke_request`
+  - `ops_issue`
+  - `team_recognition`
 
-### Signals
+### Implementation details
 
-| Signal | Description |
-| --- | --- |
-| chicken_shortage | Chicken or key protein running low or out during service |
-| poke_request | Guests requesting poke or a missing menu item |
-| ops_issue | Equipment failures, late deliveries, or operational bottlenecks |
-| team_recognition | Explicit employee shoutouts or standout team contributions |
+- Regex stage captures deterministic cases and short-circuits the model call
+- HuggingFace stage uses `cross-encoder/nli-MiniLM2-L6-H768`
+- Per-signal thresholds ensure conservative classification
 
-### Detection Strategy
-
-Stage 1 — Regex Fast-Path
-
-Each text input is scanned against a set of exact patterns per signal.
-
-If a match is found, the signal is confirmed immediately.
-
-Regex is fast, free, and deterministic.
-
----
-
-Stage 2 — HuggingFace Zero-Shot Fallback
-
-If regex finds no match, the text is sent to a zero-shot classification model.
-
-Model: `cross-encoder/nli-MiniLM2-L6-H768`
-
-Each signal has a dedicated confidence threshold. If the model score meets or exceeds the threshold, the signal is confirmed.
-
-Per-Signal Thresholds:
+### Thresholds
 
 | Signal | Threshold |
-| --- | --- |
-| chicken_shortage | 0.70 |
-| poke_request | 0.50 |
-| ops_issue | 0.70 |
-| team_recognition | 0.95 |
-
-Higher thresholds are used for signals where general language tends to produce false positives.
+|--------|-----------|
+| `chicken_shortage` | 0.70 |
+| `poke_request` | 0.50 |
+| `ops_issue` | 0.70 |
+| `team_recognition` | 0.95 |
 
 ---
 
-### Output
+## Node 4 — retrieve_and_generate (RAG)
 
-Each row is classified into a `SignalResult` dataclass containing:
+**Role:** Retrieves relevant historical context and generates plain-English briefing content.
 
-* Four boolean signal flags
-* `regex_hits` — list of signals confirmed by regex
-* `hf_hits` — list of signals confirmed by HuggingFace
+- **Retrieval:** ChromaDB vector search over indexed reports
+- **Generation:** OpenAI prompt-based briefing construction
 
-The audit trail allows inspection of how each signal was detected.
+### Important note
 
----
-
-## Analysis Pipeline
-
-### ShiftNotes_Prototype.ipynb
-
-Eight-step Jupyter notebook that runs the full prototype pipeline.
-
-| Step | Description |
-| --- | --- |
-| 1 | Imports |
-| 2 | Load data |
-| 3 | Data cleaning and full_text construction |
-| 4 | Signal detection via signal_classifier.py |
-| 5 | Kiosk-level aggregation |
-| 6 | Weekly trend aggregation |
-| 7 | Ground truth validation |
-| 8 | Weekly operational briefing generation |
+ChromaDB is empty until reports are indexed. When empty, RAG context is unavailable and the system falls back to current briefing generation behavior.
 
 ---
 
-# Kiosk Profiles
+## Node 5 — send_briefing
 
-Each kiosk in the dataset has a designed operational signature.
+**Role:** Delivers generated briefings to Ted.
 
-| Kiosk | Planted Pattern |
-| --- | --- |
-| Kiosk A | Recurring chicken shortages during lunch rush |
-| Kiosk B | High food waste and overpreparation |
-| Kiosk C | Recurring guest poke requests |
-| Kiosk D | Operational friction — equipment, supply, and bottleneck issues |
-| Kiosk E | High team performance and employee recognition |
-| Kiosk F | Inconsistent inventory management and mid-shift corrections |
+- **Current implementation:** Saves briefings to `briefings/`
+- **Goal:** replace file output with Gmail MCP send
+- **MCP integration point:** `_save_to_file()` → Gmail MCP send call
+- **Gmail MCP URL:** `https://gmailmcp.googleapis.com/mcp/v1`
+
+---
+
+## Node 6 — human_review (HITL)
+
+**Role:** Provides the human-in-the-loop checkpoint after briefing delivery.
+
+- **Input:** delivered briefing
+- **Output:** Ted's decision logged for downstream action
+
+### Decision paths
+
+| Decision | Result |
+|----------|--------|
+| `accept` | Ted understands and takes action |
+| `drill_down` | Ted opens Streamlit review interface (pending) |
+| `escalate` | Ted requests source verification, pipeline restarts |
+
+This design preserves the product principle that intelligence should be delivered passively and then reviewed, rather than requiring Ted to request it first.
+
+---
+
+# Project Structure
+
+```
+ShiftNotes/
+├── prototype/                  ← original notebook prototype
+├── shiftnotes_agent/           ← LangGraph agent pipeline
+│   ├── nodes/
+│   │   ├── ingest_email.py
+│   │   ├── classify_intent.py
+│   │   ├── detect_signals.py
+│   │   ├── retrieve_and_generate.py
+│   │   ├── send_briefing.py
+│   │   └── human_review.py
+│   ├── tools/
+│   │   └── signal_classifier.py
+│   ├── graph.py
+│   ├── state.py
+│   └── logger.py
+├── briefings/                  ← generated briefing files
+├── run_pipeline.py            ← pipeline entrypoint
+├── streamlit_app.py           ← future drill-down UI
+├── RISKS.md                   ← known risks list
+├── SPEC.MD                    ← current specification
+├── README.md
+├── PRODUCT_VISION.md
+└── pyproject.toml
+```
 
 ---
 
 # Technology Stack
 
-| Component | Technology |
-| --- | --- |
-| Data processing | Python, pandas |
-| Signal detection | Regex, HuggingFace Transformers |
-| Classification model | cross-encoder/nli-MiniLM2-L6-H768 |
-| Notebook | Jupyter |
-| Version control | Git, GitHub |
+| Aspect | Technology |
+|--------|------------|
+| Orchestration | LangGraph |
+| HITL | LangGraph interrupt |
+| Signal detection | Regex + HuggingFace Transformers |
+| Zero-shot model | cross-encoder/nli-MiniLM2-L6-H768 |
+| Retrieval | ChromaDB |
+| Briefing generation | OpenAI |
+| Email integration | Gmail MCP (pending) |
+| Drill-down UI | Streamlit (pending) |
+
+---
+
+# MCP Integration Points
+
+| Node | Current behavior | MCP target |
+|------|------------------|------------|
+| Node 1 — ingest_email | CSV read fallback | Gmail MCP email ingestion |
+| Node 5 — send_briefing | Save file in `briefings/` | Gmail MCP send to Ted |
+
+Both integration points are designed as isolated swaps so that the LangGraph pipeline remains unchanged.
 
 ---
 
 # Current Limitations
 
-The prototype is intentionally scoped to validate the core concept.
-
-* Signal detection relies on a small set of predefined patterns
-* The HuggingFace model is downloaded on first run (~330 MB)
-* The dataset is synthetic and does not reflect real operational variability
-* Briefings are plain text and not yet formatted for email delivery
-* No persistent storage or database layer exists in the prototype
+- Gmail MCP is not fully wired yet; the pipeline uses CSV stubs for ingestion and file output for briefing delivery.
+- ChromaDB is empty until the first reports are indexed, so RAG retrieval is not available immediately.
+- The HuggingFace model download is large (~330MB) on first run and requires stable internet.
+- Signal detection thresholds are tuned for synthetic data and may need adjustment for real JotForm reports.
+- The Streamlit drill-down experience is not implemented yet; Option A is still pending.
 
 ---
 
-# Future Architecture
+# Week 9 Priorities
 
-Future versions of ShiftNotes may introduce the following components.
-
-## Intake Layer
-
-Automated ingestion from JotForm submissions via email or API.
-
----
-
-## Storage Layer
-
-Structured database for historical report storage and querying.
+- Populate ChromaDB and validate RAG retrieval.
+- Tune signal thresholds against real JotForm sample data.
+- Prototype the Streamlit drill-down review interface.
+- Validate end-to-end LangGraph execution with HITL.
 
 ---
 
-## Intelligence Layer
+# Notes
 
-* LLM-based signal extraction replacing rule-based detection
-* Retrieval-augmented generation for natural language querying
-* Trend detection across extended historical windows
-
----
-
-## Delivery Layer
-
-* Formatted daily and weekly email briefings
-* Operational dashboards
-* Multi-location comparison views
+The original notebook prototype remains available under `prototype/` for reference, but the active architecture now centers on the LangGraph agent pipeline.
