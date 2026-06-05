@@ -19,7 +19,7 @@ We finalized a full product specification and architecture document before begin
 
 **Full Pipeline Diagram:**
 
-![Architecture Diagram](screenshots/architecture_diagram.png)
+![Architecture Diagram](screenshot/architecture_diagram.png)
 
 ```
 Shift lead writes report
@@ -136,7 +136,7 @@ Briefing sent: True
 Ted's decision: accept
 ```
 
-![Pipeline Run Output](screenshots/pipeline_run.png)
+![Pipeline Run Output](screenshot/pipeline_run.png)
 
 **Signal detection results (Node 3 — hybrid regex + HuggingFace):**
 
@@ -155,14 +155,14 @@ Ted's decision: accept
 | `escalate` | Prompted for escalation note → pipeline complete |
 | invalid input | Silently accepted — known bug, Week 9 fix |
 
-![HITL Accept](screenshots/hitl_accept.png)
-![HITL Escalate](screenshots/hitl_escalate.png)
+![HITL Accept](screenshot/hitl_accept.png)
+![HITL Escalate](screenshot/hitl_escalate.png)
 
 **Streamlit dashboard** (prototype/app.py) running at localhost:8501 with 4 tabs: Kiosk Summary, Weekly Trends, Briefings, Ask ShiftNotes.
 
-![Kiosk Summary](screenshots/kiosk_summary.png)
-![Weekly Trends](screenshots/weekly_trends.png)
-![Briefings Week 5](screenshots/briefings_week5.png)
+![Kiosk Summary](screenshot/kiosk_summary.png)
+![Weekly Trends](screenshot/weekly_trends.png)
+![Briefings Week 5](screenshot/briefings_week5.png)
 
 **Ask ShiftNotes — RAG working:**
 
@@ -173,8 +173,8 @@ The RAG tab successfully retrieved reports and generated answers using ChromaDB 
 | "How has waste at Kiosk B changed over time?" | Retrieved 5 source reports, generated answer with specific dates |
 | "What food issues occurred at Kiosk D?" | Retrieved 5 reports, responded based on filter context |
 
-![Ask ShiftNotes](screenshots/ask_shiftnotes.png)
-![RAG Answer — Kiosk B waste over time](screenshots/rag_answer_kiosk_b.png)
+![Ask ShiftNotes](screenshot/ask_shiftnotes.png)
+![RAG Answer — Kiosk B waste over time](screenshot/rag_answer_kiosk_b.png)
 
 **CI — 10/10 tests passing:**
 ```
@@ -183,7 +183,7 @@ tests/test_state.py             — 1 test  (LangGraph state schema)
 10 passed in 7.45s
 ```
 
-![pytest 10/10 PASSED](screenshots/pytest_output.png)
+![pytest 10/10 PASSED](screenshot/pytest_output.png)
 
 → See [run_pipeline.py](./run_pipeline.py), [shiftnotes_agent/](./shiftnotes_agent/), [prototype/app.py](./prototype/app.py), [tests/](./tests/), [briefings/](./briefings/)
 
