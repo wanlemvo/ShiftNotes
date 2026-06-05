@@ -19,8 +19,6 @@ We finalized a full product specification and architecture document before begin
 
 **Full Pipeline Diagram:**
 
-![Architecture Diagram](screenshot/architecture_diagram.png)
-
 ```
 Shift lead writes report
     ↓ JotForm → Gmail inbox
