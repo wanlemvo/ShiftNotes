@@ -1,0 +1,30 @@
+Subject: ShiftNotes Weekly Briefing: 4 kiosks need attention | Week 5: March 30 - April 2, 2026
+
+Week 5: March 30 - April 2, 2026
+
+Reporting health, kiosk performance, and source-backed trends.
+
+At a glance
+- Reporting: 23/24 valid reports
+- Food quality: 4.57/5
+- Food quantity: 3.61/5
+- Unclaimed lunches: 111
+
+Priority findings
+- Overproduction or elevated waste appeared in 4 reports at Market Grill.
+  Sources: FM-0098, FM-0104, FM-0110, FM-0116
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-05-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+- Dietary and allergy questions appeared in 2 reports at Verde Kitchen.
+  Sources: FM-0105, FM-0117
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-05-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
+- Portion-size concerns appeared in 2 reports at Coastal Cafe.
+  Sources: FM-0106, FM-0118
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-05-coastal-cafe-semantic-portion-complaint-portion-complaint
+- Employee recognition: Maya Chen appeared in 2 reports at Hearth & Grain.
+  Sources: FM-0101, FM-0113
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-05-hearth-grain-semantic-employee-recognition-maya-chen
+
+Open full briefing:
+http://localhost:8501
+
+Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

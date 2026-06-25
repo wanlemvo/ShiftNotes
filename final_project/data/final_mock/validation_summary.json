@@ -1,0 +1,39 @@
+{
+  "seed": 20260621,
+  "expected_schedule_rows": 288,
+  "scheduled_status_counts": {
+    "malformed": 3,
+    "missing": 18,
+    "valid": 267
+  },
+  "payload_submission_count": 273,
+  "unique_scheduled_submission_count": 270,
+  "duplicate_submission_count": 3,
+  "normalized_status_counts": {
+    "needs_review": 3,
+    "valid": 270
+  },
+  "kiosk_expected_counts": {
+    "Bowls & Buns": 48,
+    "Coastal Cafe": 48,
+    "Hearth & Grain": 48,
+    "Market Grill": 48,
+    "Street Eats": 48,
+    "Verde Kitchen": 48
+  },
+  "date_count": 48,
+  "week_count": 12,
+  "ground_truth_event_counts": {
+    "cross_kiosk:portion_complaints_weeks_9_10": 11,
+    "cross_kiosk:register_disruption_week_7": 6,
+    "cross_kiosk:waste_spike_weeks_7_8": 8,
+    "food_shortage:kung_pao_chicken": 17,
+    "guest_request:beverage_variety": 5,
+    "guest_theme:dietary_or_allergy_question": 23,
+    "inventory:inconsistent_prep": 17,
+    "operational_issue:equipment_failure": 11,
+    "recognition:maya_chen": 23,
+    "sensitive_personnel:ambiguous_comment": 1,
+    "waste:high_unclaimed_lunches": 45
+  }
+}

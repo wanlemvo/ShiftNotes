@@ -1,0 +1,164 @@
+{
+  "expected_report_count": 288,
+  "received_expected_slot_count": 270,
+  "valid_unique_report_count": 267,
+  "missing_report_count": 18,
+  "malformed_report_count": 3,
+  "duplicate_submission_count": 3,
+  "submission_completeness_percent": 93.75,
+  "valid_report_percent": 92.71,
+  "missing_reports": [
+    {
+      "expected_report_id": "FM-0010",
+      "kiosk": "Coastal Cafe",
+      "date": "2026-03-03",
+      "week": 1
+    },
+    {
+      "expected_report_id": "FM-0032",
+      "kiosk": "Market Grill",
+      "date": "2026-03-10",
+      "week": 2
+    },
+    {
+      "expected_report_id": "FM-0048",
+      "kiosk": "Street Eats",
+      "date": "2026-03-12",
+      "week": 2
+    },
+    {
+      "expected_report_id": "FM-0061",
+      "kiosk": "Bowls & Buns",
+      "date": "2026-03-18",
+      "week": 3
+    },
+    {
+      "expected_report_id": "FM-0093",
+      "kiosk": "Verde Kitchen",
+      "date": "2026-03-26",
+      "week": 4
+    },
+    {
+      "expected_report_id": "FM-0107",
+      "kiosk": "Hearth & Grain",
+      "date": "2026-03-31",
+      "week": 5
+    },
+    {
+      "expected_report_id": "FM-0126",
+      "kiosk": "Street Eats",
+      "date": "2026-04-06",
+      "week": 6
+    },
+    {
+      "expected_report_id": "FM-0134",
+      "kiosk": "Market Grill",
+      "date": "2026-04-08",
+      "week": 6
+    },
+    {
+      "expected_report_id": "FM-0147",
+      "kiosk": "Verde Kitchen",
+      "date": "2026-04-13",
+      "week": 7
+    },
+    {
+      "expected_report_id": "FM-0169",
+      "kiosk": "Bowls & Buns",
+      "date": "2026-04-20",
+      "week": 8
+    },
+    {
+      "expected_report_id": "FM-0190",
+      "kiosk": "Coastal Cafe",
+      "date": "2026-04-23",
+      "week": 8
+    },
+    {
+      "expected_report_id": "FM-0197",
+      "kiosk": "Hearth & Grain",
+      "date": "2026-04-27",
+      "week": 9
+    },
+    {
+      "expected_report_id": "FM-0224",
+      "kiosk": "Market Grill",
+      "date": "2026-05-05",
+      "week": 10
+    },
+    {
+      "expected_report_id": "FM-0244",
+      "kiosk": "Coastal Cafe",
+      "date": "2026-05-11",
+      "week": 11
+    },
+    {
+      "expected_report_id": "FM-0259",
+      "kiosk": "Bowls & Buns",
+      "date": "2026-05-14",
+      "week": 11
+    },
+    {
+      "expected_report_id": "FM-0273",
+      "kiosk": "Verde Kitchen",
+      "date": "2026-05-19",
+      "week": 12
+    },
+    {
+      "expected_report_id": "FM-0282",
+      "kiosk": "Street Eats",
+      "date": "2026-05-20",
+      "week": 12
+    },
+    {
+      "expected_report_id": "FM-0287",
+      "kiosk": "Hearth & Grain",
+      "date": "2026-05-21",
+      "week": 12
+    }
+  ],
+  "malformed_reports": [
+    {
+      "source_submission_id": "FM-0079",
+      "kiosk": "Bowls & Buns",
+      "date": "2026-03-24",
+      "validation_errors": [
+        "missing lead_name"
+      ]
+    },
+    {
+      "source_submission_id": "FM-0154",
+      "kiosk": "Coastal Cafe",
+      "date": "2026-04-14",
+      "validation_errors": [
+        "missing food_quantity_rating"
+      ]
+    },
+    {
+      "source_submission_id": "FM-0240",
+      "kiosk": "Street Eats",
+      "date": "2026-05-07",
+      "validation_errors": [
+        "missing number_of_unclaimed_lunches"
+      ]
+    }
+  ],
+  "duplicates": [
+    {
+      "duplicate_submission_id": "DUP-001",
+      "original_submission_id": "FM-0031",
+      "fingerprint": "1f52db227c423e2e95041b9a36c852837c9d961bbfb45a02b51c521c2a063a52"
+    },
+    {
+      "duplicate_submission_id": "DUP-002",
+      "original_submission_id": "FM-0117",
+      "fingerprint": "2cc2aa199692454c030ac117614590bb1e6f62abed8e2d72bac205fe4d95743f"
+    },
+    {
+      "duplicate_submission_id": "DUP-003",
+      "original_submission_id": "FM-0229",
+      "fingerprint": "903a4a81106c51fdb35108b8d8c0386588bf8d289e14ce38541f65e4b15844d6"
+    }
+  ],
+  "unexpected_received_slots": []
+}

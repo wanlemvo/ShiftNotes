@@ -1,0 +1,30 @@
+Subject: ShiftNotes Weekly Briefing: 4 kiosks need attention | Week 9: April 27 - April 30, 2026
+
+Week 9: April 27 - April 30, 2026
+
+Reporting health, kiosk performance, and source-backed trends.
+
+At a glance
+- Reporting: 23/24 valid reports
+- Food quality: 4.39/5
+- Food quantity: 3.78/5
+- Unclaimed lunches: 118
+
+Priority findings
+- Overproduction or elevated waste appeared in 4 reports at Market Grill.
+  Sources: FM-0194, FM-0200, FM-0206, FM-0212
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-09-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+- Inventory and prep inconsistencies: Inconsistent prep appeared in 2 reports at Street Eats.
+  Sources: FM-0204, FM-0216
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-09-street-eats-semantic-inventory-inconsistency-inconsistent-prep
+- Dietary and allergy questions appeared in 2 reports at Verde Kitchen.
+  Sources: FM-0201, FM-0213
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-09-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
+- Food shortages: Kung Pao chicken appeared in 1 report at Bowls & Buns.
+  Sources: FM-0193
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-09-bowls-buns-semantic-food-shortage-kung-pao-chicken
+
+Open full briefing:
+http://localhost:8501
+
+Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

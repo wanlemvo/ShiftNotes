@@ -1,0 +1,68 @@
+{
+  "content": [
+    {
+      "id": "demo-001",
+      "created_at": "2026-06-15 18:00:00",
+      "answers": {
+        "1": {"text": "Date", "answer": "2026-06-15"},
+        "2": {"text": "Kiosk / Station", "answer": "Bowls & Buns"},
+        "3": {"text": "Lead Name", "answer": "Maria"},
+        "4": {"text": "Food Quality Rating", "answer": "4"},
+        "5": {"text": "Food Quantity Rating", "answer": "3"},
+        "6": {"text": "Food Concerns or Outages", "answer": "Kung Pao chicken ran low during lunch and mac salad needed an extra refill."},
+        "7": {"text": "Team Members Who Did Well", "answer": "Dom helped restock quickly and kept the line moving."},
+        "8": {"text": "Guest Issues for the Day", "answer": "Two guests asked when poke would return."},
+        "9": {"text": "Operational Notes", "answer": "Recommend reviewing chicken prep levels."},
+        "10": {"text": "Number of Unclaimed Lunches", "answer": "4"}
+      }
+    },
+    {
+      "id": "demo-002",
+      "created_at": "2026-06-16 18:00:00",
+      "answers": {
+        "1": {"text": "Date", "answer": "2026-06-16"},
+        "2": {"text": "Kiosk / Station", "answer": "Bowls & Buns"},
+        "3": {"text": "Lead Name", "answer": "Isaac"},
+        "4": {"text": "Food Quality Rating", "answer": "5"},
+        "5": {"text": "Food Quantity Rating", "answer": "4"},
+        "6": {"text": "Food Concerns or Outages", "answer": "Kung Pao chicken and tofu stir-fry held well. Rice stayed stocked."},
+        "7": {"text": "Team Members Who Did Well", "answer": "Maya kept the station clean and helped guests quickly."},
+        "8": {"text": "Guest Issues for the Day", "answer": "One guest requested a spicier sauce option."},
+        "9": {"text": "Operational Notes", "answer": "No major issues."},
+        "10": {"text": "Number of Unclaimed Lunches", "answer": "2"}
+      }
+    },
+    {
+      "id": "demo-003",
+      "created_at": "2026-06-17 18:00:00",
+      "answers": {
+        "1": {"text": "Date", "answer": "2026-06-17"},
+        "2": {"text": "Kiosk / Station", "answer": "Bowls & Buns"},
+        "3": {"text": "Lead Name", "answer": "Chris"},
+        "4": {"text": "Food Quality Rating", "answer": "3"},
+        "5": {"text": "Food Quantity Rating", "answer": "2"},
+        "6": {"text": "Food Concerns or Outages", "answer": "Kung Pao chicken ran out near closing and the mac salad ran low."},
+        "7": {"text": "Team Members Who Did Well", "answer": "Iris communicated substitutions clearly."},
+        "8": {"text": "Guest Issues for the Day", "answer": "Several guests were disappointed that chicken was unavailable."},
+        "9": {"text": "Operational Notes", "answer": "Need to review backup quantities for high-demand days."},
+        "10": {"text": "Number of Unclaimed Lunches", "answer": "1"}
+      }
+    },
+    {
+      "id": "demo-004",
+      "created_at": "2026-06-19 18:00:00",
+      "answers": {
+        "1": {"text": "Date", "answer": "2026-06-19"},
+        "2": {"text": "Kiosk / Station", "answer": "Bowls & Buns"},
+        "3": {"text": "Lead Name", "answer": "Ben"},
+        "4": {"text": "Food Quality Rating", "answer": "4"},
+        "5": {"text": "Food Quantity Rating", "answer": "4"},
+        "6": {"text": "Food Concerns or Outages", "answer": "Tofu stir-fry was popular and rice quantities were accurate."},
+        "7": {"text": "Team Members Who Did Well", "answer": "Maya helped explain the tofu option to guests."},
+        "8": {"text": "Guest Issues for the Day", "answer": "Guests asked whether the tofu option was vegan."},
+        "9": {"text": "Operational Notes", "answer": "Consider clearer vegan-friendly signage."},
+        "10": {"text": "Number of Unclaimed Lunches", "answer": "3"}
+      }
+    }
+  ]
+}

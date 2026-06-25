@@ -1,0 +1,18 @@
+ShiftNotes Week 6 test evidence
+Captured: 2026-06-20
+
+COMMAND
+python -m pytest
+
+RESULT
+10 tests collected
+10 passed
+
+Coverage includes:
+- JotForm normalization and date handling
+- Weekly analysis and source traceability
+- Retry followed by successful recovery
+- Retry-limit fallback
+- HITL correction and second interrupt
+- SQLite resume after graph reconstruction
+- Existing mock-data generator behavior

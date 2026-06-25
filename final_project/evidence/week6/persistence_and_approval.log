@@ -1,0 +1,23 @@
+ShiftNotes Week 6 evidence
+Captured: 2026-06-20
+
+The following status command ran in a new Python process after the initial
+workflow command completed.
+
+COMMAND
+python final_project/src/shiftnotes/cli.py workflow-status week6-retry-approve
+
+OUTPUT
+Thread ID: week6-retry-approve
+Status: awaiting_review
+Next nodes: human_review
+
+COMMAND
+python final_project/src/shiftnotes/cli.py workflow-resume week6-retry-approve approve
+
+OUTPUT
+Thread ID: week6-retry-approve
+Status: approved
+LOG human_review: approved
+LOG finalize: briefing approved and finalized; email delivery intentionally disabled
+Saved finalized briefing: final_project/data/briefings/weekly_briefing_week6-retry-approve.md

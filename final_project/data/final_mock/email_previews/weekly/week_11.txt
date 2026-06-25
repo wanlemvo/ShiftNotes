@@ -1,0 +1,30 @@
+Subject: ShiftNotes Weekly Briefing: 4 kiosks need attention | Week 11: May 11 - May 14, 2026
+
+Week 11: May 11 - May 14, 2026
+
+Reporting health, kiosk performance, and source-backed trends.
+
+At a glance
+- Reporting: 22/24 valid reports
+- Food quality: 4.23/5
+- Food quantity: 3.68/5
+- Unclaimed lunches: 97
+
+Priority findings
+- Overproduction or elevated waste appeared in 4 reports at Market Grill.
+  Sources: FM-0242, FM-0248, FM-0254, FM-0260
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-11-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+- Inventory and prep inconsistencies: Inconsistent prep appeared in 2 reports at Street Eats.
+  Sources: FM-0252, FM-0264
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-11-street-eats-semantic-inventory-inconsistency-inconsistent-prep
+- Dietary and allergy questions appeared in 2 reports at Verde Kitchen.
+  Sources: FM-0249, FM-0261
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-11-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
+- Employee recognition: Maya Chen appeared in 2 reports at Hearth & Grain.
+  Sources: FM-0245, FM-0257
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-11-hearth-grain-semantic-employee-recognition-maya-chen
+
+Open full briefing:
+http://localhost:8501
+
+Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

@@ -1,7 +1,25 @@
-.env
-__pycache__/
-*.pyc
-.DS_Store
-chroma_db/
-*.egg-info/
 .venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.pyc
+*.egg-info/
+uv.lock
+
+# Local secrets and runtime configuration
+.env
+*.env
+final_project/.env
+
+# Local/generated runtime data that should not be committed
+final_project/data/raw/*.json
+final_project/data/processed/*.json
+final_project/data/briefings/*.md
+final_project/data/checkpoints/
+final_project/data/corrections/
+final_project/data/ai_cache/
+final_project/streamlit*.log
+
+# Temporary comparison and submission archives
+_github_compare/
+dist/

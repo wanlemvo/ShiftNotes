@@ -1,0 +1,36 @@
+Subject: ShiftNotes Monthly Briefing: waste trend available, food quality updated | March 2026
+
+March 2026
+
+Month-over-month direction, cost signals, and inventory planning priorities.
+
+At a glance
+- Reporting: 101/108 valid reports
+- Food quality: 4.3/5
+- Food quantity: 3.7/5
+- Unclaimed / report: 4.57
+
+Cost and inventory signal
+- repeated unclaimed lunches may indicate an overproduction opportunity. Actual dollar savings cannot be calculated without meal-cost and volume data.
+
+Priority findings
+- Overproduction or elevated waste appeared in 17 reports at Market Grill.
+  Sources: FM-0002, FM-0008, FM-0014, FM-0020, FM-0026, FM-0038, FM-0044, FM-0050, +9 more
+  Inspect/challenge: http://localhost:8501?claim=monthly-2026-03-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+- Dietary and allergy questions appeared in 9 reports at Verde Kitchen.
+  Sources: FM-0009, FM-0021, FM-0033, FM-0045, FM-0051, FM-0057, FM-0069, FM-0081, +1 more
+  Inspect/challenge: http://localhost:8501?claim=monthly-2026-03-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
+- Employee recognition: Maya Chen appeared in 9 reports at Hearth & Grain.
+  Sources: FM-0005, FM-0017, FM-0029, FM-0041, FM-0053, FM-0065, FM-0077, FM-0089, +1 more
+  Inspect/challenge: http://localhost:8501?claim=monthly-2026-03-hearth-grain-semantic-employee-recognition-maya-chen
+- Food shortages: Kung Pao chicken appeared in 6 reports at Bowls & Buns.
+  Sources: FM-0001, FM-0025, FM-0037, FM-0049, FM-0085, FM-0097
+  Inspect/challenge: http://localhost:8501?claim=monthly-2026-03-bowls-buns-semantic-food-shortage-kung-pao-chicken
+- Employee recognition: Anika appeared in 5 reports at Coastal Cafe.
+  Sources: FM-0004, FM-0046, FM-0064, FM-0082, FM-0100
+  Inspect/challenge: http://localhost:8501?claim=monthly-2026-03-coastal-cafe-semantic-employee-recognition-anika
+
+Open full briefing:
+http://localhost:8501
+
+Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

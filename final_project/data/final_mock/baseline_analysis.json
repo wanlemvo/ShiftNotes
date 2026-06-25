@@ -1,0 +1,2405 @@
+{
+  "dataset": {
+    "start_date": "2026-03-02",
+    "end_date": "2026-05-21",
+    "expected_reports": 288,
+    "input_submissions": 273,
+    "unique_submissions": 270,
+    "valid_unique_reports": 267
+  },
+  "cleaning": {
+    "duplicates_removed": 3,
+    "malformed_reports_excluded_from_metrics": 3
+  },
+  "reporting_completeness": {
+    "expected_report_count": 288,
+    "received_expected_slot_count": 270,
+    "valid_unique_report_count": 267,
+    "missing_report_count": 18,
+    "malformed_report_count": 3,
+    "duplicate_submission_count": 3,
+    "submission_completeness_percent": 93.75,
+    "valid_report_percent": 92.71,
+    "missing_reports": [
+      {
+        "expected_report_id": "FM-0010",
+        "kiosk": "Coastal Cafe",
+        "date": "2026-03-03",
+        "week": 1
+      },
+      {
+        "expected_report_id": "FM-0032",
+        "kiosk": "Market Grill",
+        "date": "2026-03-10",
+        "week": 2
+      },
+      {
+        "expected_report_id": "FM-0048",
+        "kiosk": "Street Eats",
+        "date": "2026-03-12",
+        "week": 2
+      },
+      {
+        "expected_report_id": "FM-0061",
+        "kiosk": "Bowls & Buns",
+        "date": "2026-03-18",
+        "week": 3
+      },
+      {
+        "expected_report_id": "FM-0093",
+        "kiosk": "Verde Kitchen",
+        "date": "2026-03-26",
+        "week": 4
+      },
+      {
+        "expected_report_id": "FM-0107",
+        "kiosk": "Hearth & Grain",
+        "date": "2026-03-31",
+        "week": 5
+      },
+      {
+        "expected_report_id": "FM-0126",
+        "kiosk": "Street Eats",
+        "date": "2026-04-06",
+        "week": 6
+      },
+      {
+        "expected_report_id": "FM-0134",
+        "kiosk": "Market Grill",
+        "date": "2026-04-08",
+        "week": 6
+      },
+      {
+        "expected_report_id": "FM-0147",
+        "kiosk": "Verde Kitchen",
+        "date": "2026-04-13",
+        "week": 7
+      },
+      {
+        "expected_report_id": "FM-0169",
+        "kiosk": "Bowls & Buns",
+        "date": "2026-04-20",
+        "week": 8
+      },
+      {
+        "expected_report_id": "FM-0190",
+        "kiosk": "Coastal Cafe",
+        "date": "2026-04-23",
+        "week": 8
+      },
+      {
+        "expected_report_id": "FM-0197",
+        "kiosk": "Hearth & Grain",
+        "date": "2026-04-27",
+        "week": 9
+      },
+      {
+        "expected_report_id": "FM-0224",
+        "kiosk": "Market Grill",
+        "date": "2026-05-05",
+        "week": 10
+      },
+      {
+        "expected_report_id": "FM-0244",
+        "kiosk": "Coastal Cafe",
+        "date": "2026-05-11",
+        "week": 11
+      },
+      {
+        "expected_report_id": "FM-0259",
+        "kiosk": "Bowls & Buns",
+        "date": "2026-05-14",
+        "week": 11
+      },
+      {
+        "expected_report_id": "FM-0273",
+        "kiosk": "Verde Kitchen",
+        "date": "2026-05-19",
+        "week": 12
+      },
+      {
+        "expected_report_id": "FM-0282",
+        "kiosk": "Street Eats",
+        "date": "2026-05-20",
+        "week": 12
+      },
+      {
+        "expected_report_id": "FM-0287",
+        "kiosk": "Hearth & Grain",
+        "date": "2026-05-21",
+        "week": 12
+      }
+    ],
+    "malformed_reports": [
+      {
+        "source_submission_id": "FM-0079",
+        "kiosk": "Bowls & Buns",
+        "date": "2026-03-24",
+        "validation_errors": [
+          "missing lead_name"
+        ]
+      },
+      {
+        "source_submission_id": "FM-0154",
+        "kiosk": "Coastal Cafe",
+        "date": "2026-04-14",
+        "validation_errors": [
+          "missing food_quantity_rating"
+        ]
+      },
+      {
+        "source_submission_id": "FM-0240",
+        "kiosk": "Street Eats",
+        "date": "2026-05-07",
+        "validation_errors": [
+          "missing number_of_unclaimed_lunches"
+        ]
+      }
+    ],
+    "duplicates": [
+      {
+        "duplicate_submission_id": "DUP-001",
+        "original_submission_id": "FM-0031",
+        "fingerprint": "1f52db227c423e2e95041b9a36c852837c9d961bbfb45a02b51c521c2a063a52"
+      },
+      {
+        "duplicate_submission_id": "DUP-002",
+        "original_submission_id": "FM-0117",
+        "fingerprint": "2cc2aa199692454c030ac117614590bb1e6f62abed8e2d72bac205fe4d95743f"
+      },
+      {
+        "duplicate_submission_id": "DUP-003",
+        "original_submission_id": "FM-0229",
+        "fingerprint": "903a4a81106c51fdb35108b8d8c0386588bf8d289e14ce38541f65e4b15844d6"
+      }
+    ],
+    "unexpected_received_slots": []
+  },
+  "overall": {
+    "report_count": 267,
+    "average_food_quality_rating": 4.3,
+    "average_food_quantity_rating": 3.73,
+    "total_unclaimed_lunches": 1265
+  },
+  "kiosks": {
+    "Bowls & Buns": {
+      "report_count": 44,
+      "average_food_quality_rating": 4.14,
+      "average_food_quantity_rating": 2.68,
+      "total_unclaimed_lunches": 153
+    },
+    "Coastal Cafe": {
+      "report_count": 44,
+      "average_food_quality_rating": 4.11,
+      "average_food_quantity_rating": 3.91,
+      "total_unclaimed_lunches": 220
+    },
+    "Hearth & Grain": {
+      "report_count": 45,
+      "average_food_quality_rating": 4.47,
+      "average_food_quantity_rating": 4.6,
+      "total_unclaimed_lunches": 79
+    },
+    "Market Grill": {
+      "report_count": 45,
+      "average_food_quality_rating": 4.49,
+      "average_food_quantity_rating": 4.02,
+      "total_unclaimed_lunches": 459
+    },
+    "Street Eats": {
+      "report_count": 44,
+      "average_food_quality_rating": 4.05,
+      "average_food_quantity_rating": 3.07,
+      "total_unclaimed_lunches": 217
+    },
+    "Verde Kitchen": {
+      "report_count": 45,
+      "average_food_quality_rating": 4.56,
+      "average_food_quantity_rating": 4.07,
+      "total_unclaimed_lunches": 137
+    }
+  },
+  "weekly_summaries": [
+    {
+      "period": "week-01",
+      "expected_reports": 24,
+      "valid_reports": 23,
+      "missing_or_invalid_reports": 1,
+      "overall": {
+        "report_count": 23,
+        "average_food_quality_rating": 4.43,
+        "average_food_quantity_rating": 3.43,
+        "total_unclaimed_lunches": 122
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.25,
+          "average_food_quantity_rating": 2.75,
+          "total_unclaimed_lunches": 17
+        },
+        "Coastal Cafe": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.33,
+          "average_food_quantity_rating": 4.33,
+          "total_unclaimed_lunches": 16
+        },
+        "Hearth & Grain": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 4.25,
+          "total_unclaimed_lunches": 9
+        },
+        "Market Grill": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.25,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 40
+        },
+        "Street Eats": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 2,
+          "total_unclaimed_lunches": 23
+        },
+        "Verde Kitchen": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.75,
+          "average_food_quantity_rating": 3.5,
+          "total_unclaimed_lunches": 17
+        }
+      }
+    },
+    {
+      "period": "week-02",
+      "expected_reports": 24,
+      "valid_reports": 22,
+      "missing_or_invalid_reports": 2,
+      "overall": {
+        "report_count": 22,
+        "average_food_quality_rating": 4.14,
+        "average_food_quantity_rating": 3.73,
+        "total_unclaimed_lunches": 96
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 4,
+          "average_food_quality_rating": 4,
+          "average_food_quantity_rating": 2.25,
+          "total_unclaimed_lunches": 15
+        },
+        "Coastal Cafe": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.25,
+          "average_food_quantity_rating": 3.75,
+          "total_unclaimed_lunches": 24
+        },
+        "Hearth & Grain": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.25,
+          "average_food_quantity_rating": 4.75,
+          "total_unclaimed_lunches": 7
+        },
+        "Market Grill": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.33,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 26
+        },
+        "Street Eats": {
+          "report_count": 3,
+          "average_food_quality_rating": 3.67,
+          "average_food_quantity_rating": 3.33,
+          "total_unclaimed_lunches": 14
+        },
+        "Verde Kitchen": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.25,
+          "average_food_quantity_rating": 4.25,
+          "total_unclaimed_lunches": 10
+        }
+      }
+    },
+    {
+      "period": "week-03",
+      "expected_reports": 24,
+      "valid_reports": 23,
+      "missing_or_invalid_reports": 1,
+      "overall": {
+        "report_count": 23,
+        "average_food_quality_rating": 4.17,
+        "average_food_quantity_rating": 3.78,
+        "total_unclaimed_lunches": 104
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.33,
+          "average_food_quantity_rating": 2.67,
+          "total_unclaimed_lunches": 9
+        },
+        "Coastal Cafe": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.25,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 21
+        },
+        "Hearth & Grain": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 5,
+          "total_unclaimed_lunches": 2
+        },
+        "Market Grill": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.25,
+          "average_food_quantity_rating": 3.75,
+          "total_unclaimed_lunches": 43
+        },
+        "Street Eats": {
+          "report_count": 4,
+          "average_food_quality_rating": 3.5,
+          "average_food_quantity_rating": 3,
+          "total_unclaimed_lunches": 15
+        },
+        "Verde Kitchen": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.25,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 14
+        }
+      }
+    },
+    {
+      "period": "week-04",
+      "expected_reports": 24,
+      "valid_reports": 22,
+      "missing_or_invalid_reports": 2,
+      "overall": {
+        "report_count": 22,
+        "average_food_quality_rating": 4.32,
+        "average_food_quantity_rating": 3.91,
+        "total_unclaimed_lunches": 92
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.67,
+          "average_food_quantity_rating": 3,
+          "total_unclaimed_lunches": 8
+        },
+        "Coastal Cafe": {
+          "report_count": 4,
+          "average_food_quality_rating": 3.5,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 18
+        },
+        "Hearth & Grain": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 4.75,
+          "total_unclaimed_lunches": 8
+        },
+        "Market Grill": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.75,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 32
+        },
+        "Street Eats": {
+          "report_count": 4,
+          "average_food_quality_rating": 4,
+          "average_food_quantity_rating": 3.25,
+          "total_unclaimed_lunches": 16
+        },
+        "Verde Kitchen": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.67,
+          "average_food_quantity_rating": 4.33,
+          "total_unclaimed_lunches": 10
+        }
+      }
+    },
+    {
+      "period": "week-05",
+      "expected_reports": 24,
+      "valid_reports": 23,
+      "missing_or_invalid_reports": 1,
+      "overall": {
+        "report_count": 23,
+        "average_food_quality_rating": 4.57,
+        "average_food_quantity_rating": 3.61,
+        "total_unclaimed_lunches": 111
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 3,
+          "total_unclaimed_lunches": 12
+        },
+        "Coastal Cafe": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.75,
+          "average_food_quantity_rating": 4.25,
+          "total_unclaimed_lunches": 19
+        },
+        "Hearth & Grain": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.33,
+          "average_food_quantity_rating": 4.67,
+          "total_unclaimed_lunches": 5
+        },
+        "Market Grill": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.75,
+          "average_food_quantity_rating": 3.75,
+          "total_unclaimed_lunches": 43
+        },
+        "Street Eats": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 2.25,
+          "total_unclaimed_lunches": 20
+        },
+        "Verde Kitchen": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 12
+        }
+      }
+    },
+    {
+      "period": "week-06",
+      "expected_reports": 24,
+      "valid_reports": 22,
+      "missing_or_invalid_reports": 2,
+      "overall": {
+        "report_count": 22,
+        "average_food_quality_rating": 4.23,
+        "average_food_quantity_rating": 3.68,
+        "total_unclaimed_lunches": 105
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 2.75,
+          "total_unclaimed_lunches": 21
+        },
+        "Coastal Cafe": {
+          "report_count": 4,
+          "average_food_quality_rating": 3.5,
+          "average_food_quantity_rating": 3.25,
+          "total_unclaimed_lunches": 21
+        },
+        "Hearth & Grain": {
+          "report_count": 4,
+          "average_food_quality_rating": 4,
+          "average_food_quantity_rating": 4.5,
+          "total_unclaimed_lunches": 7
+        },
+        "Market Grill": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.67,
+          "average_food_quantity_rating": 4.33,
+          "total_unclaimed_lunches": 27
+        },
+        "Street Eats": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.33,
+          "average_food_quantity_rating": 3.33,
+          "total_unclaimed_lunches": 17
+        },
+        "Verde Kitchen": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 12
+        }
+      }
+    },
+    {
+      "period": "week-07",
+      "expected_reports": 24,
+      "valid_reports": 22,
+      "missing_or_invalid_reports": 2,
+      "overall": {
+        "report_count": 22,
+        "average_food_quality_rating": 4.55,
+        "average_food_quantity_rating": 3.73,
+        "total_unclaimed_lunches": 110
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.25,
+          "average_food_quantity_rating": 2.5,
+          "total_unclaimed_lunches": 12
+        },
+        "Coastal Cafe": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.67,
+          "average_food_quantity_rating": 3.67,
+          "total_unclaimed_lunches": 10
+        },
+        "Hearth & Grain": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.25,
+          "average_food_quantity_rating": 4.75,
+          "total_unclaimed_lunches": 7
+        },
+        "Market Grill": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.75,
+          "average_food_quantity_rating": 4.25,
+          "total_unclaimed_lunches": 57
+        },
+        "Street Eats": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.75,
+          "average_food_quantity_rating": 3,
+          "total_unclaimed_lunches": 18
+        },
+        "Verde Kitchen": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.67,
+          "average_food_quantity_rating": 4.33,
+          "total_unclaimed_lunches": 6
+        }
+      }
+    },
+    {
+      "period": "week-08",
+      "expected_reports": 24,
+      "valid_reports": 22,
+      "missing_or_invalid_reports": 2,
+      "overall": {
+        "report_count": 22,
+        "average_food_quality_rating": 4.14,
+        "average_food_quantity_rating": 3.86,
+        "total_unclaimed_lunches": 120
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 3,
+          "average_food_quality_rating": 3.67,
+          "average_food_quantity_rating": 3,
+          "total_unclaimed_lunches": 12
+        },
+        "Coastal Cafe": {
+          "report_count": 3,
+          "average_food_quality_rating": 3.67,
+          "average_food_quantity_rating": 3.67,
+          "total_unclaimed_lunches": 18
+        },
+        "Hearth & Grain": {
+          "report_count": 4,
+          "average_food_quality_rating": 5,
+          "average_food_quantity_rating": 4.5,
+          "total_unclaimed_lunches": 5
+        },
+        "Market Grill": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.25,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 52
+        },
+        "Street Eats": {
+          "report_count": 4,
+          "average_food_quality_rating": 3.5,
+          "average_food_quantity_rating": 3.75,
+          "total_unclaimed_lunches": 21
+        },
+        "Verde Kitchen": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 12
+        }
+      }
+    },
+    {
+      "period": "week-09",
+      "expected_reports": 24,
+      "valid_reports": 23,
+      "missing_or_invalid_reports": 1,
+      "overall": {
+        "report_count": 23,
+        "average_food_quality_rating": 4.39,
+        "average_food_quantity_rating": 3.78,
+        "total_unclaimed_lunches": 118
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 3.25,
+          "total_unclaimed_lunches": 16
+        },
+        "Coastal Cafe": {
+          "report_count": 4,
+          "average_food_quality_rating": 4,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 19
+        },
+        "Hearth & Grain": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.33,
+          "average_food_quantity_rating": 4.33,
+          "total_unclaimed_lunches": 8
+        },
+        "Market Grill": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.75,
+          "average_food_quantity_rating": 3.5,
+          "total_unclaimed_lunches": 40
+        },
+        "Street Eats": {
+          "report_count": 4,
+          "average_food_quality_rating": 4,
+          "average_food_quantity_rating": 3.5,
+          "total_unclaimed_lunches": 24
+        },
+        "Verde Kitchen": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.75,
+          "average_food_quantity_rating": 4.25,
+          "total_unclaimed_lunches": 11
+        }
+      }
+    },
+    {
+      "period": "week-10",
+      "expected_reports": 24,
+      "valid_reports": 22,
+      "missing_or_invalid_reports": 2,
+      "overall": {
+        "report_count": 22,
+        "average_food_quality_rating": 4.23,
+        "average_food_quantity_rating": 3.86,
+        "total_unclaimed_lunches": 93
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.25,
+          "average_food_quantity_rating": 2.5,
+          "total_unclaimed_lunches": 13
+        },
+        "Coastal Cafe": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.25,
+          "average_food_quantity_rating": 4.25,
+          "total_unclaimed_lunches": 24
+        },
+        "Hearth & Grain": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 4.75,
+          "total_unclaimed_lunches": 7
+        },
+        "Market Grill": {
+          "report_count": 3,
+          "average_food_quality_rating": 4,
+          "average_food_quantity_rating": 5,
+          "total_unclaimed_lunches": 27
+        },
+        "Street Eats": {
+          "report_count": 3,
+          "average_food_quality_rating": 3.67,
+          "average_food_quantity_rating": 3.33,
+          "total_unclaimed_lunches": 10
+        },
+        "Verde Kitchen": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 3.5,
+          "total_unclaimed_lunches": 12
+        }
+      }
+    },
+    {
+      "period": "week-11",
+      "expected_reports": 24,
+      "valid_reports": 22,
+      "missing_or_invalid_reports": 2,
+      "overall": {
+        "report_count": 22,
+        "average_food_quality_rating": 4.23,
+        "average_food_quantity_rating": 3.68,
+        "total_unclaimed_lunches": 97
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 3,
+          "average_food_quality_rating": 3,
+          "average_food_quantity_rating": 2.67,
+          "total_unclaimed_lunches": 5
+        },
+        "Coastal Cafe": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.33,
+          "average_food_quantity_rating": 3.67,
+          "total_unclaimed_lunches": 16
+        },
+        "Hearth & Grain": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.75,
+          "average_food_quantity_rating": 4.25,
+          "total_unclaimed_lunches": 8
+        },
+        "Market Grill": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 35
+        },
+        "Street Eats": {
+          "report_count": 4,
+          "average_food_quality_rating": 3.75,
+          "average_food_quantity_rating": 2.5,
+          "total_unclaimed_lunches": 22
+        },
+        "Verde Kitchen": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.75,
+          "average_food_quantity_rating": 4.75,
+          "total_unclaimed_lunches": 11
+        }
+      }
+    },
+    {
+      "period": "week-12",
+      "expected_reports": 24,
+      "valid_reports": 21,
+      "missing_or_invalid_reports": 3,
+      "overall": {
+        "report_count": 21,
+        "average_food_quality_rating": 4.24,
+        "average_food_quantity_rating": 3.71,
+        "total_unclaimed_lunches": 97
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 4,
+          "average_food_quality_rating": 3.5,
+          "average_food_quantity_rating": 2,
+          "total_unclaimed_lunches": 13
+        },
+        "Coastal Cafe": {
+          "report_count": 4,
+          "average_food_quality_rating": 4,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 14
+        },
+        "Hearth & Grain": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.67,
+          "average_food_quantity_rating": 4.67,
+          "total_unclaimed_lunches": 6
+        },
+        "Market Grill": {
+          "report_count": 4,
+          "average_food_quality_rating": 4.5,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 37
+        },
+        "Street Eats": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.33,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 17
+        },
+        "Verde Kitchen": {
+          "report_count": 3,
+          "average_food_quality_rating": 4.67,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 10
+        }
+      }
+    }
+  ],
+  "monthly_summaries": [
+    {
+      "period": "2026-03",
+      "expected_reports": 108,
+      "valid_reports": 101,
+      "missing_or_invalid_reports": 7,
+      "overall": {
+        "report_count": 101,
+        "average_food_quality_rating": 4.3,
+        "average_food_quantity_rating": 3.7,
+        "total_unclaimed_lunches": 462
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 16,
+          "average_food_quality_rating": 4.31,
+          "average_food_quantity_rating": 2.69,
+          "total_unclaimed_lunches": 55
+        },
+        "Coastal Cafe": {
+          "report_count": 17,
+          "average_food_quality_rating": 4.12,
+          "average_food_quantity_rating": 4.06,
+          "total_unclaimed_lunches": 88
+        },
+        "Hearth & Grain": {
+          "report_count": 17,
+          "average_food_quality_rating": 4.47,
+          "average_food_quantity_rating": 4.71,
+          "total_unclaimed_lunches": 26
+        },
+        "Market Grill": {
+          "report_count": 17,
+          "average_food_quality_rating": 4.41,
+          "average_food_quantity_rating": 3.94,
+          "total_unclaimed_lunches": 161
+        },
+        "Street Eats": {
+          "report_count": 17,
+          "average_food_quality_rating": 4,
+          "average_food_quantity_rating": 2.82,
+          "total_unclaimed_lunches": 78
+        },
+        "Verde Kitchen": {
+          "report_count": 17,
+          "average_food_quality_rating": 4.47,
+          "average_food_quantity_rating": 3.94,
+          "total_unclaimed_lunches": 54
+        }
+      }
+    },
+    {
+      "period": "2026-04",
+      "expected_reports": 108,
+      "valid_reports": 101,
+      "missing_or_invalid_reports": 7,
+      "overall": {
+        "report_count": 101,
+        "average_food_quality_rating": 4.36,
+        "average_food_quantity_rating": 3.74,
+        "total_unclaimed_lunches": 516
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 17,
+          "average_food_quality_rating": 4.29,
+          "average_food_quantity_rating": 2.88,
+          "total_unclaimed_lunches": 67
+        },
+        "Coastal Cafe": {
+          "report_count": 16,
+          "average_food_quality_rating": 4.06,
+          "average_food_quantity_rating": 3.69,
+          "total_unclaimed_lunches": 78
+        },
+        "Hearth & Grain": {
+          "report_count": 17,
+          "average_food_quality_rating": 4.35,
+          "average_food_quantity_rating": 4.53,
+          "total_unclaimed_lunches": 32
+        },
+        "Market Grill": {
+          "report_count": 17,
+          "average_food_quality_rating": 4.65,
+          "average_food_quantity_rating": 3.94,
+          "total_unclaimed_lunches": 199
+        },
+        "Street Eats": {
+          "report_count": 17,
+          "average_food_quality_rating": 4.18,
+          "average_food_quantity_rating": 3.24,
+          "total_unclaimed_lunches": 90
+        },
+        "Verde Kitchen": {
+          "report_count": 17,
+          "average_food_quality_rating": 4.59,
+          "average_food_quantity_rating": 4.18,
+          "total_unclaimed_lunches": 50
+        }
+      }
+    },
+    {
+      "period": "2026-05",
+      "expected_reports": 72,
+      "valid_reports": 65,
+      "missing_or_invalid_reports": 7,
+      "overall": {
+        "report_count": 65,
+        "average_food_quality_rating": 4.23,
+        "average_food_quantity_rating": 3.75,
+        "total_unclaimed_lunches": 287
+      },
+      "kiosks": {
+        "Bowls & Buns": {
+          "report_count": 11,
+          "average_food_quality_rating": 3.64,
+          "average_food_quantity_rating": 2.36,
+          "total_unclaimed_lunches": 31
+        },
+        "Coastal Cafe": {
+          "report_count": 11,
+          "average_food_quality_rating": 4.18,
+          "average_food_quantity_rating": 4,
+          "total_unclaimed_lunches": 54
+        },
+        "Hearth & Grain": {
+          "report_count": 11,
+          "average_food_quality_rating": 4.64,
+          "average_food_quantity_rating": 4.55,
+          "total_unclaimed_lunches": 21
+        },
+        "Market Grill": {
+          "report_count": 11,
+          "average_food_quality_rating": 4.36,
+          "average_food_quantity_rating": 4.27,
+          "total_unclaimed_lunches": 99
+        },
+        "Street Eats": {
+          "report_count": 10,
+          "average_food_quality_rating": 3.9,
+          "average_food_quantity_rating": 3.2,
+          "total_unclaimed_lunches": 49
+        },
+        "Verde Kitchen": {
+          "report_count": 11,
+          "average_food_quality_rating": 4.64,
+          "average_food_quantity_rating": 4.09,
+          "total_unclaimed_lunches": 33
+        }
+      }
+    }
+  ],
+  "operational_findings": {
+    "highest_waste_kiosk": "Market Grill",
+    "waste_totals_by_kiosk": {
+      "Bowls & Buns": 153,
+      "Coastal Cafe": 220,
+      "Hearth & Grain": 79,
+      "Market Grill": 459,
+      "Street Eats": 217,
+      "Verde Kitchen": 137
+    },
+    "lowest_quantity_kiosk": "Bowls & Buns"
+  },
+  "benchmark": {
+    "missing_report_detection": {
+      "expected_count": 18,
+      "detected_count": 18,
+      "exact_match": true,
+      "detected_kiosk_dates": [
+        {
+          "kiosk": "Bowls & Buns",
+          "date": "2026-03-18"
+        },
+        {
+          "kiosk": "Bowls & Buns",
+          "date": "2026-04-20"
+        },
+        {
+          "kiosk": "Bowls & Buns",
+          "date": "2026-05-14"
+        },
+        {
+          "kiosk": "Coastal Cafe",
+          "date": "2026-03-03"
+        },
+        {
+          "kiosk": "Coastal Cafe",
+          "date": "2026-04-23"
+        },
+        {
+          "kiosk": "Coastal Cafe",
+          "date": "2026-05-11"
+        },
+        {
+          "kiosk": "Hearth & Grain",
+          "date": "2026-03-31"
+        },
+        {
+          "kiosk": "Hearth & Grain",
+          "date": "2026-04-27"
+        },
+        {
+          "kiosk": "Hearth & Grain",
+          "date": "2026-05-21"
+        },
+        {
+          "kiosk": "Market Grill",
+          "date": "2026-03-10"
+        },
+        {
+          "kiosk": "Market Grill",
+          "date": "2026-04-08"
+        },
+        {
+          "kiosk": "Market Grill",
+          "date": "2026-05-05"
+        },
+        {
+          "kiosk": "Street Eats",
+          "date": "2026-03-12"
+        },
+        {
+          "kiosk": "Street Eats",
+          "date": "2026-04-06"
+        },
+        {
+          "kiosk": "Street Eats",
+          "date": "2026-05-20"
+        },
+        {
+          "kiosk": "Verde Kitchen",
+          "date": "2026-03-26"
+        },
+        {
+          "kiosk": "Verde Kitchen",
+          "date": "2026-04-13"
+        },
+        {
+          "kiosk": "Verde Kitchen",
+          "date": "2026-05-19"
+        }
+      ]
+    },
+    "highest_waste_kiosk": {
+      "expected": "Market Grill",
+      "detected": "Market Grill",
+      "correct": true,
+      "totals": {
+        "Bowls & Buns": 153,
+        "Coastal Cafe": 220,
+        "Hearth & Grain": 79,
+        "Market Grill": 459,
+        "Street Eats": 217,
+        "Verde Kitchen": 137
+      }
+    },
+    "waste_spike_weeks_7_8": {
+      "baseline_average_excluding_weeks_7_8": 9.46,
+      "weeks_7_8_average": 13.62,
+      "increase": 4.16,
+      "detected": true,
+      "weekly_averages": {
+        "week-01": 10,
+        "week-02": 8.67,
+        "week-03": 10.75,
+        "week-04": 8,
+        "week-05": 10.75,
+        "week-06": 9,
+        "week-07": 14.25,
+        "week-08": 13,
+        "week-09": 10,
+        "week-10": 9,
+        "week-11": 8.75,
+        "week-12": 9.25
+      }
+    },
+    "event_detection": {
+      "cross_kiosk:portion_complaints_weeks_9_10": {
+        "total_ground_truth_count": 11,
+        "analyzable_expected_count": 11,
+        "unavailable_due_data_quality_count": 0,
+        "detected_count": 11,
+        "true_positive_count": 11,
+        "false_positive_count": 0,
+        "missed_count": 0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "overall_recall_including_unavailable": 100.0,
+        "detected_source_ids": [
+          "FM-0193",
+          "FM-0194",
+          "FM-0195",
+          "FM-0196",
+          "FM-0198",
+          "FM-0217",
+          "FM-0218",
+          "FM-0219",
+          "FM-0220",
+          "FM-0221",
+          "FM-0222"
+        ],
+        "missed_source_ids": [],
+        "unavailable_source_ids": [],
+        "false_positive_source_ids": []
+      },
+      "cross_kiosk:register_disruption_week_7": {
+        "total_ground_truth_count": 6,
+        "analyzable_expected_count": 6,
+        "unavailable_due_data_quality_count": 0,
+        "detected_count": 6,
+        "true_positive_count": 6,
+        "false_positive_count": 0,
+        "missed_count": 0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "overall_recall_including_unavailable": 100.0,
+        "detected_source_ids": [
+          "FM-0157",
+          "FM-0158",
+          "FM-0159",
+          "FM-0160",
+          "FM-0161",
+          "FM-0162"
+        ],
+        "missed_source_ids": [],
+        "unavailable_source_ids": [],
+        "false_positive_source_ids": []
+      },
+      "food_shortage:kung_pao_chicken": {
+        "total_ground_truth_count": 17,
+        "analyzable_expected_count": 17,
+        "unavailable_due_data_quality_count": 0,
+        "detected_count": 17,
+        "true_positive_count": 17,
+        "false_positive_count": 0,
+        "missed_count": 0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "overall_recall_including_unavailable": 100.0,
+        "detected_source_ids": [
+          "FM-0001",
+          "FM-0025",
+          "FM-0037",
+          "FM-0049",
+          "FM-0073",
+          "FM-0085",
+          "FM-0097",
+          "FM-0121",
+          "FM-0133",
+          "FM-0145",
+          "FM-0181",
+          "FM-0193",
+          "FM-0217",
+          "FM-0229",
+          "FM-0241",
+          "FM-0265",
+          "FM-0277"
+        ],
+        "missed_source_ids": [],
+        "unavailable_source_ids": [],
+        "false_positive_source_ids": []
+      },
+      "guest_request:beverage_variety": {
+        "total_ground_truth_count": 5,
+        "analyzable_expected_count": 5,
+        "unavailable_due_data_quality_count": 0,
+        "detected_count": 5,
+        "true_positive_count": 5,
+        "false_positive_count": 0,
+        "missed_count": 0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "overall_recall_including_unavailable": 100.0,
+        "detected_source_ids": [
+          "FM-0260",
+          "FM-0261",
+          "FM-0262",
+          "FM-0263",
+          "FM-0264"
+        ],
+        "missed_source_ids": [],
+        "unavailable_source_ids": [],
+        "false_positive_source_ids": []
+      },
+      "guest_theme:dietary_or_allergy_question": {
+        "total_ground_truth_count": 23,
+        "analyzable_expected_count": 23,
+        "unavailable_due_data_quality_count": 0,
+        "detected_count": 23,
+        "true_positive_count": 23,
+        "false_positive_count": 0,
+        "missed_count": 0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "overall_recall_including_unavailable": 100.0,
+        "detected_source_ids": [
+          "FM-0009",
+          "FM-0021",
+          "FM-0033",
+          "FM-0045",
+          "FM-0057",
+          "FM-0069",
+          "FM-0081",
+          "FM-0105",
+          "FM-0117",
+          "FM-0129",
+          "FM-0141",
+          "FM-0153",
+          "FM-0165",
+          "FM-0177",
+          "FM-0189",
+          "FM-0201",
+          "FM-0213",
+          "FM-0225",
+          "FM-0237",
+          "FM-0249",
+          "FM-0261",
+          "FM-0271",
+          "FM-0285"
+        ],
+        "missed_source_ids": [],
+        "unavailable_source_ids": [],
+        "false_positive_source_ids": []
+      },
+      "inventory:inconsistent_prep": {
+        "total_ground_truth_count": 17,
+        "analyzable_expected_count": 16,
+        "unavailable_due_data_quality_count": 1,
+        "detected_count": 16,
+        "true_positive_count": 16,
+        "false_positive_count": 0,
+        "missed_count": 0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "overall_recall_including_unavailable": 94.12,
+        "detected_source_ids": [
+          "FM-0012",
+          "FM-0024",
+          "FM-0060",
+          "FM-0072",
+          "FM-0096",
+          "FM-0108",
+          "FM-0120",
+          "FM-0144",
+          "FM-0156",
+          "FM-0168",
+          "FM-0192",
+          "FM-0204",
+          "FM-0216",
+          "FM-0252",
+          "FM-0264",
+          "FM-0288"
+        ],
+        "missed_source_ids": [],
+        "unavailable_source_ids": [
+          "FM-0240"
+        ],
+        "false_positive_source_ids": []
+      },
+      "operational_issue:equipment_failure": {
+        "total_ground_truth_count": 11,
+        "analyzable_expected_count": 10,
+        "unavailable_due_data_quality_count": 1,
+        "detected_count": 10,
+        "true_positive_count": 10,
+        "false_positive_count": 0,
+        "missed_count": 0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "overall_recall_including_unavailable": 90.91,
+        "detected_source_ids": [
+          "FM-0034",
+          "FM-0058",
+          "FM-0082",
+          "FM-0106",
+          "FM-0130",
+          "FM-0178",
+          "FM-0202",
+          "FM-0226",
+          "FM-0250",
+          "FM-0274"
+        ],
+        "missed_source_ids": [],
+        "unavailable_source_ids": [
+          "FM-0154"
+        ],
+        "false_positive_source_ids": []
+      },
+      "recognition:maya_chen": {
+        "total_ground_truth_count": 23,
+        "analyzable_expected_count": 23,
+        "unavailable_due_data_quality_count": 0,
+        "detected_count": 23,
+        "true_positive_count": 23,
+        "false_positive_count": 0,
+        "missed_count": 0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "overall_recall_including_unavailable": 100.0,
+        "detected_source_ids": [
+          "FM-0005",
+          "FM-0017",
+          "FM-0029",
+          "FM-0041",
+          "FM-0053",
+          "FM-0065",
+          "FM-0077",
+          "FM-0089",
+          "FM-0101",
+          "FM-0113",
+          "FM-0125",
+          "FM-0137",
+          "FM-0149",
+          "FM-0161",
+          "FM-0173",
+          "FM-0185",
+          "FM-0209",
+          "FM-0221",
+          "FM-0233",
+          "FM-0245",
+          "FM-0257",
+          "FM-0269",
+          "FM-0281"
+        ],
+        "missed_source_ids": [],
+        "unavailable_source_ids": [],
+        "false_positive_source_ids": []
+      },
+      "sensitive_personnel:ambiguous_comment": {
+        "total_ground_truth_count": 1,
+        "analyzable_expected_count": 1,
+        "unavailable_due_data_quality_count": 0,
+        "detected_count": 1,
+        "true_positive_count": 1,
+        "false_positive_count": 0,
+        "missed_count": 0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "overall_recall_including_unavailable": 100.0,
+        "detected_source_ids": [
+          "FM-0184"
+        ],
+        "missed_source_ids": [],
+        "unavailable_source_ids": [],
+        "false_positive_source_ids": []
+      },
+      "waste:high_unclaimed_lunches": {
+        "total_ground_truth_count": 45,
+        "analyzable_expected_count": 45,
+        "unavailable_due_data_quality_count": 0,
+        "detected_count": 45,
+        "true_positive_count": 45,
+        "false_positive_count": 0,
+        "missed_count": 0,
+        "precision": 100.0,
+        "recall": 100.0,
+        "overall_recall_including_unavailable": 100.0,
+        "detected_source_ids": [
+          "FM-0002",
+          "FM-0008",
+          "FM-0014",
+          "FM-0020",
+          "FM-0026",
+          "FM-0038",
+          "FM-0044",
+          "FM-0050",
+          "FM-0056",
+          "FM-0062",
+          "FM-0068",
+          "FM-0074",
+          "FM-0080",
+          "FM-0086",
+          "FM-0092",
+          "FM-0098",
+          "FM-0104",
+          "FM-0110",
+          "FM-0116",
+          "FM-0122",
+          "FM-0128",
+          "FM-0140",
+          "FM-0146",
+          "FM-0152",
+          "FM-0158",
+          "FM-0164",
+          "FM-0170",
+          "FM-0176",
+          "FM-0182",
+          "FM-0188",
+          "FM-0194",
+          "FM-0200",
+          "FM-0206",
+          "FM-0212",
+          "FM-0218",
+          "FM-0230",
+          "FM-0236",
+          "FM-0242",
+          "FM-0248",
+          "FM-0254",
+          "FM-0260",
+          "FM-0266",
+          "FM-0272",
+          "FM-0278",
+          "FM-0284"
+        ],
+        "missed_source_ids": [],
+        "unavailable_source_ids": [],
+        "false_positive_source_ids": []
+      }
+    },
+    "summary": {
+      "event_categories_scored": 10,
+      "exact_event_category_matches": 10,
+      "missing_reports_exact_match": true,
+      "highest_waste_kiosk_correct": true
+    },
+    "detected_events": {
+      "food_shortage:kung_pao_chicken": [
+        {
+          "source_submission_id": "FM-0001",
+          "date": "2026-03-02",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Kung Pao chicken ran low during the lunch rush and backup prep was started. Maria kept the station organized and supported teammates throughout service. One guest said the portion felt small for the price. Recommend increasing Kung Pao c..."
+        },
+        {
+          "source_submission_id": "FM-0025",
+          "date": "2026-03-09",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Kung Pao chicken sold out near 1 PM while tofu stir-fry remained available. Chris kept the station organized and supported teammates throughout service. Several guests complimented the food quality. Recommend increasing Kung Pao chicken..."
+        },
+        {
+          "source_submission_id": "FM-0037",
+          "date": "2026-03-11",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Kung Pao chicken ran low during the lunch rush and backup prep was started. Dom handled guest questions professionally and maintained a steady pace. One guest complimented the team and no concerns were reported. Recommend increasing Kung..."
+        },
+        {
+          "source_submission_id": "FM-0049",
+          "date": "2026-03-16",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Kung Pao chicken ran low during the lunch rush and backup prep was started. Iris communicated clearly and helped the line recover during the rush. One guest said the portion felt small for the price. Recommend increasing Kung Pao chicken..."
+        },
+        {
+          "source_submission_id": "FM-0073",
+          "date": "2026-03-23",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Chicken prep was below demand and the final pan ran close to shortage. Dom communicated clearly and helped the line recover during the rush. Two guests asked for a spicier sauce. Recommend increasing Kung Pao chicken prep before peak ser..."
+        },
+        {
+          "source_submission_id": "FM-0085",
+          "date": "2026-03-25",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Kung Pao chicken sold out near 1 PM while tofu stir-fry remained available. Chris handled guest questions professionally and maintained a steady pace. A guest requested a lower-sodium option. Recommend increasing Kung Pao chicken prep be..."
+        },
+        {
+          "source_submission_id": "FM-0097",
+          "date": "2026-03-30",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Kung Pao chicken ran low during the lunch rush and backup prep was started. Maria kept the station organized and supported teammates throughout service. A guest asked whether a beverage option could be added. Recommend increasing Kung Pa..."
+        },
+        {
+          "source_submission_id": "FM-0121",
+          "date": "2026-04-06",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Kung Pao chicken sold out near 1 PM while tofu stir-fry remained available. Chris handled guest questions professionally and maintained a steady pace. One guest said the portion felt small for the price. Recommend increasing Kung Pao chi..."
+        },
+        {
+          "source_submission_id": "FM-0133",
+          "date": "2026-04-08",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Kung Pao chicken sold out near 1 PM while tofu stir-fry remained available. Dom handled guest questions professionally and maintained a steady pace. Several guests complimented the food quality. Recommend increasing Kung Pao chicken prep..."
+        },
+        {
+          "source_submission_id": "FM-0145",
+          "date": "2026-04-13",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Chicken prep was below demand and the final pan ran close to shortage. Iris communicated clearly and helped the line recover during the rush. One guest said the portion felt small for the price. Recommend increasing Kung Pao chicken prep..."
+        },
+        {
+          "source_submission_id": "FM-0181",
+          "date": "2026-04-22",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Chicken prep was below demand and the final pan ran close to shortage. Chris communicated clearly and helped the line recover during the rush. A guest asked whether a beverage option could be added. Recommend increasing Kung Pao chicken..."
+        },
+        {
+          "source_submission_id": "FM-0193",
+          "date": "2026-04-27",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Kung Pao chicken ran low during the lunch rush and backup prep was started. Maria kept the station organized and supported teammates throughout service. Several guests said portions looked smaller than earlier in the month. Recommend inc..."
+        },
+        {
+          "source_submission_id": "FM-0217",
+          "date": "2026-05-04",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Kung Pao chicken ran low during the lunch rush and backup prep was started. Chris kept the station organized and supported teammates throughout service. Several guests said portions looked smaller than earlier in the month. Recommend inc..."
+        },
+        {
+          "source_submission_id": "FM-0229",
+          "date": "2026-05-06",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Chicken prep was below demand and the final pan ran close to shortage. Dom communicated clearly and helped the line recover during the rush. Several guests complimented the food quality. Recommend increasing Kung Pao chicken prep before..."
+        },
+        {
+          "source_submission_id": "FM-0241",
+          "date": "2026-05-11",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Kung Pao chicken sold out near 1 PM while tofu stir-fry remained available. Iris communicated clearly and helped the line recover during the rush. Several guests complimented the food quality. Recommend increasing Kung Pao chicken prep b..."
+        },
+        {
+          "source_submission_id": "FM-0265",
+          "date": "2026-05-18",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Kung Pao chicken sold out near 1 PM while tofu stir-fry remained available. Dom handled guest questions professionally and maintained a steady pace. A guest asked when a previous seasonal item might return. Recommend increasing Kung Pao..."
+        },
+        {
+          "source_submission_id": "FM-0277",
+          "date": "2026-05-20",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Chicken prep was below demand and the final pan ran close to shortage. Chris communicated clearly and helped the line recover during the rush. A guest asked whether a beverage option could be added. Recommend increasing Kung Pao chicken..."
+        }
+      ],
+      "waste:high_unclaimed_lunches": [
+        {
+          "source_submission_id": "FM-0002",
+          "date": "2026-03-02",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Sam communicated clearly and helped the line recover during the rush. Several guests complimented the food quality. Several prepared meals remained after service despite steady..."
+        },
+        {
+          "source_submission_id": "FM-0008",
+          "date": "2026-03-03",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Jordan kept the station organized and supported teammates throughout service. A guest asked when a previous seasonal item might return. Production exceeded afternoon demand; re..."
+        },
+        {
+          "source_submission_id": "FM-0014",
+          "date": "2026-03-04",
+          "kiosk": "Market Grill",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Elena handled guest questions professionally and maintained a steady pace. One guest said the portion felt small for the price. Several prepared meals remained after servi..."
+        },
+        {
+          "source_submission_id": "FM-0020",
+          "date": "2026-03-05",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Nina kept the station organized and supported teammates throughout service. Guests were positive and service moved smoothly. Production exceeded afternoon demand; reduce backup..."
+        },
+        {
+          "source_submission_id": "FM-0026",
+          "date": "2026-03-09",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Jordan handled guest questions professionally and maintained a steady pace. One guest said the portion felt small for the price. Several prepared meals remained after serv..."
+        },
+        {
+          "source_submission_id": "FM-0038",
+          "date": "2026-03-11",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Nina communicated clearly and helped the line recover during the rush. No major guest issues today. Unclaimed lunches were above target and closing waste should be reviewed."
+        },
+        {
+          "source_submission_id": "FM-0044",
+          "date": "2026-03-12",
+          "kiosk": "Market Grill",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Sam kept the station organized and supported teammates throughout service. Guests were positive and service moved smoothly. Production exceeded afternoon demand; reduce ba..."
+        },
+        {
+          "source_submission_id": "FM-0050",
+          "date": "2026-03-16",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Elena handled guest questions professionally and maintained a steady pace. One guest complimented the team and no concerns were reported. Several prepared meals remained a..."
+        },
+        {
+          "source_submission_id": "FM-0056",
+          "date": "2026-03-17",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Nina kept the station organized and supported teammates throughout service. A guest asked when a previous seasonal item might return. Unclaimed lunches were above target and cl..."
+        },
+        {
+          "source_submission_id": "FM-0062",
+          "date": "2026-03-18",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Sam handled guest questions professionally and maintained a steady pace. Guests were positive and service moved smoothly. Unclaimed lunches were above target and closing w..."
+        },
+        {
+          "source_submission_id": "FM-0068",
+          "date": "2026-03-19",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Jordan communicated clearly and helped the line recover during the rush. One guest complimented the team and no concerns were reported. Production exceeded afternoon deman..."
+        },
+        {
+          "source_submission_id": "FM-0074",
+          "date": "2026-03-23",
+          "kiosk": "Market Grill",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Nina communicated clearly and helped the line recover during the rush. No major guest issues today. Unclaimed lunches were above target and closing waste should be reviewed."
+        },
+        {
+          "source_submission_id": "FM-0080",
+          "date": "2026-03-24",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Sam communicated clearly and helped the line recover during the rush. Several guests complimented the food quality. Production exceeded afternoon demand; reduce backup pre..."
+        },
+        {
+          "source_submission_id": "FM-0086",
+          "date": "2026-03-25",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Jordan kept the station organized and supported teammates throughout service. Guests were positive and service moved smoothly. Unclaimed lunches were above target and clos..."
+        },
+        {
+          "source_submission_id": "FM-0092",
+          "date": "2026-03-26",
+          "kiosk": "Market Grill",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Elena communicated clearly and helped the line recover during the rush. A guest asked when a previous seasonal item might return. Several prepared meals remained after ser..."
+        },
+        {
+          "source_submission_id": "FM-0098",
+          "date": "2026-03-30",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Sam communicated clearly and helped the line recover during the rush. Several guests complimented the food quality. Several prepared meals remained after service despite steady..."
+        },
+        {
+          "source_submission_id": "FM-0104",
+          "date": "2026-03-31",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Jordan handled guest questions professionally and maintained a steady pace. Two guests asked for a spicier sauce. Several prepared meals remained after service despite steady q..."
+        },
+        {
+          "source_submission_id": "FM-0110",
+          "date": "2026-04-01",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Elena kept the station organized and supported teammates throughout service. Guests were positive and service moved smoothly. Production exceeded afternoon demand; reduce..."
+        },
+        {
+          "source_submission_id": "FM-0116",
+          "date": "2026-04-02",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Nina handled guest questions professionally and maintained a steady pace. Several guests complimented the food quality. Production exceeded afternoon demand; reduce backup..."
+        },
+        {
+          "source_submission_id": "FM-0122",
+          "date": "2026-04-06",
+          "kiosk": "Market Grill",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Jordan handled guest questions professionally and maintained a steady pace. A guest asked whether a beverage option could be added. Several prepared meals remained after s..."
+        },
+        {
+          "source_submission_id": "FM-0128",
+          "date": "2026-04-07",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Elena handled guest questions professionally and maintained a steady pace. One guest said the portion felt small for the price. Unclaimed lunches were above target and clo..."
+        },
+        {
+          "source_submission_id": "FM-0140",
+          "date": "2026-04-09",
+          "kiosk": "Market Grill",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Sam handled guest questions professionally and maintained a steady pace. A guest asked whether a beverage option could be added. Production exceeded afternoon demand; redu..."
+        },
+        {
+          "source_submission_id": "FM-0146",
+          "date": "2026-04-13",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Elena kept the station organized and supported teammates throughout service. Guests were positive and service moved smoothly. Production exceeded afternoon demand; reduce backu..."
+        },
+        {
+          "source_submission_id": "FM-0152",
+          "date": "2026-04-14",
+          "kiosk": "Market Grill",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Nina kept the station organized and supported teammates throughout service. A guest requested a lower-sodium option. Production exceeded afternoon demand; reduce backup pr..."
+        },
+        {
+          "source_submission_id": "FM-0158",
+          "date": "2026-04-15",
+          "kiosk": "Market Grill",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Sam handled guest questions professionally and maintained a steady pace. One guest complimented the team and no concerns were reported. Production exceeded afternoon deman..."
+        },
+        {
+          "source_submission_id": "FM-0164",
+          "date": "2026-04-16",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Jordan communicated clearly and helped the line recover during the rush. One guest complimented the team and no concerns were reported. Several prepared meals remained aft..."
+        },
+        {
+          "source_submission_id": "FM-0170",
+          "date": "2026-04-20",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Nina kept the station organized and supported teammates throughout service. One guest complimented the team and no concerns were reported. Production exceeded afternoon demand;..."
+        },
+        {
+          "source_submission_id": "FM-0176",
+          "date": "2026-04-21",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Sam communicated clearly and helped the line recover during the rush. A guest asked when a previous seasonal item might return. Several prepared meals remained after service de..."
+        },
+        {
+          "source_submission_id": "FM-0182",
+          "date": "2026-04-22",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Jordan communicated clearly and helped the line recover during the rush. Two guests asked for a spicier sauce. Unclaimed lunches were above target and closing waste should..."
+        },
+        {
+          "source_submission_id": "FM-0188",
+          "date": "2026-04-23",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Elena kept the station organized and supported teammates throughout service. One guest said the portion felt small for the price. Production exceeded afternoon demand; red..."
+        },
+        {
+          "source_submission_id": "FM-0194",
+          "date": "2026-04-27",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Sam handled guest questions professionally and maintained a steady pace. A guest complained that the portion did not match the listed value. Several prepared meals remaine..."
+        },
+        {
+          "source_submission_id": "FM-0200",
+          "date": "2026-04-28",
+          "kiosk": "Market Grill",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Jordan handled guest questions professionally and maintained a steady pace. Two guests asked for a spicier sauce. Several prepared meals remained after service despite ste..."
+        },
+        {
+          "source_submission_id": "FM-0206",
+          "date": "2026-04-29",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Elena communicated clearly and helped the line recover during the rush. One guest complimented the team and no concerns were reported. Production exceeded afternoon demand..."
+        },
+        {
+          "source_submission_id": "FM-0212",
+          "date": "2026-04-30",
+          "kiosk": "Market Grill",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Nina kept the station organized and supported teammates throughout service. Several guests complimented the food quality. Unclaimed lunches were above target and closing w..."
+        },
+        {
+          "source_submission_id": "FM-0218",
+          "date": "2026-05-04",
+          "kiosk": "Market Grill",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Jordan handled guest questions professionally and maintained a steady pace. A guest complained that the portion did not match the listed value. Production exceeded afterno..."
+        },
+        {
+          "source_submission_id": "FM-0230",
+          "date": "2026-05-06",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Nina handled guest questions professionally and maintained a steady pace. No major guest issues today. Unclaimed lunches were above target and closing waste should be revi..."
+        },
+        {
+          "source_submission_id": "FM-0236",
+          "date": "2026-05-07",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Sam kept the station organized and supported teammates throughout service. A guest asked when a previous seasonal item might return. Several prepared meals remained after..."
+        },
+        {
+          "source_submission_id": "FM-0242",
+          "date": "2026-05-11",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Elena communicated clearly and helped the line recover during the rush. One guest said the portion felt small for the price. Unclaimed lunches were above target and closing was..."
+        },
+        {
+          "source_submission_id": "FM-0248",
+          "date": "2026-05-12",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Nina communicated clearly and helped the line recover during the rush. A guest asked when a previous seasonal item might return. Production exceeded afternoon demand; reduce ba..."
+        },
+        {
+          "source_submission_id": "FM-0254",
+          "date": "2026-05-13",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Sam handled guest questions professionally and maintained a steady pace. A guest requested a lower-sodium option. Production exceeded afternoon demand; reduce backup prep on sl..."
+        },
+        {
+          "source_submission_id": "FM-0260",
+          "date": "2026-05-14",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Jordan kept the station organized and supported teammates throughout service. Several guests complimented the food quality. Guests asked for more beverage variety, including un..."
+        },
+        {
+          "source_submission_id": "FM-0266",
+          "date": "2026-05-18",
+          "kiosk": "Market Grill",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Nina handled guest questions professionally and maintained a steady pace. A guest asked when a previous seasonal item might return. Production exceeded afternoon demand; r..."
+        },
+        {
+          "source_submission_id": "FM-0272",
+          "date": "2026-05-19",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Sam kept the station organized and supported teammates throughout service. A guest asked whether a beverage option could be added. Production exceeded afternoon demand; re..."
+        },
+        {
+          "source_submission_id": "FM-0278",
+          "date": "2026-05-20",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Jordan communicated clearly and helped the line recover during the rush. No major guest issues today. Unclaimed lunches were above target and closing waste should be reviewed."
+        },
+        {
+          "source_submission_id": "FM-0284",
+          "date": "2026-05-21",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Elena communicated clearly and helped the line recover during the rush. A guest asked when a previous seasonal item might return. Several prepared meals remained after service..."
+        }
+      ],
+      "guest_theme:dietary_or_allergy_question": [
+        {
+          "source_submission_id": "FM-0009",
+          "date": "2026-03-03",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Jules handled guest questions professionally and maintained a steady pace. Guests asked about gluten-free ingredients and possible cross-contact. No major operational conc..."
+        },
+        {
+          "source_submission_id": "FM-0021",
+          "date": "2026-03-05",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Priya kept the station organized and supported teammates throughout service. A guest asked whether the black bean bowl contained dairy. The shift stayed organized with no..."
+        },
+        {
+          "source_submission_id": "FM-0033",
+          "date": "2026-03-10",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "All menu items stayed available and presentation was strong. Avery handled guest questions professionally and maintained a steady pace. Two guests requested clearer allergy information for the avocado salsa. The shift stayed organized wi..."
+        },
+        {
+          "source_submission_id": "FM-0045",
+          "date": "2026-03-12",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "All menu items stayed available and presentation was strong. Taylor kept the station organized and supported teammates throughout service. Guests asked about gluten-free ingredients and possible cross-contact. No major operational concerns."
+        },
+        {
+          "source_submission_id": "FM-0057",
+          "date": "2026-03-17",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "All menu items stayed available and presentation was strong. Priya handled guest questions professionally and maintained a steady pace. Two guests requested clearer allergy information for the avocado salsa. No major operational concerns."
+        },
+        {
+          "source_submission_id": "FM-0069",
+          "date": "2026-03-19",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Jules handled guest questions professionally and maintained a steady pace. Guests asked about gluten-free ingredients and possible cross-contact. Opening, service, and clo..."
+        },
+        {
+          "source_submission_id": "FM-0081",
+          "date": "2026-03-24",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "All menu items stayed available and presentation was strong. Taylor communicated clearly and helped the line recover during the rush. Guests asked about gluten-free ingredients and possible cross-contact. Opening, service, and closing pr..."
+        },
+        {
+          "source_submission_id": "FM-0105",
+          "date": "2026-03-31",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Jules communicated clearly and helped the line recover during the rush. Guests asked about gluten-free ingredients and possible cross-contact. The shift stayed organized w..."
+        },
+        {
+          "source_submission_id": "FM-0117",
+          "date": "2026-04-02",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Priya communicated clearly and helped the line recover during the rush. Two guests requested clearer allergy information for the avocado salsa. No major operational concerns."
+        },
+        {
+          "source_submission_id": "FM-0129",
+          "date": "2026-04-07",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "All menu items stayed available and presentation was strong. Avery communicated clearly and helped the line recover during the rush. Three guests asked whether the tofu bowl was vegan. The shift stayed organized with no unusual delays."
+        },
+        {
+          "source_submission_id": "FM-0141",
+          "date": "2026-04-09",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "All menu items stayed available and presentation was strong. Taylor kept the station organized and supported teammates throughout service. Three guests asked whether the tofu bowl was vegan. The shift stayed organized with no unusual del..."
+        },
+        {
+          "source_submission_id": "FM-0153",
+          "date": "2026-04-14",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Priya kept the station organized and supported teammates throughout service. Three guests asked whether the tofu bowl was vegan. The shift stayed organized with no unusual..."
+        },
+        {
+          "source_submission_id": "FM-0165",
+          "date": "2026-04-16",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Jules kept the station organized and supported teammates throughout service. Three guests asked whether the tofu bowl was vegan. Opening, service, and closing procedures r..."
+        },
+        {
+          "source_submission_id": "FM-0177",
+          "date": "2026-04-21",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Taylor kept the station organized and supported teammates throughout service. A guest asked whether the black bean bowl contained dairy. Opening, service, and closing proc..."
+        },
+        {
+          "source_submission_id": "FM-0189",
+          "date": "2026-04-23",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Avery kept the station organized and supported teammates throughout service. A guest asked whether the black bean bowl contained dairy. The shift stayed organized with no..."
+        },
+        {
+          "source_submission_id": "FM-0201",
+          "date": "2026-04-28",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Jules communicated clearly and helped the line recover during the rush. Three guests asked whether the tofu bowl was vegan. Opening, service, and closing procedures ran no..."
+        },
+        {
+          "source_submission_id": "FM-0213",
+          "date": "2026-04-30",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "All menu items stayed available and presentation was strong. Priya kept the station organized and supported teammates throughout service. Guests asked about gluten-free ingredients and possible cross-contact. The shift stayed organized w..."
+        },
+        {
+          "source_submission_id": "FM-0225",
+          "date": "2026-05-05",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Avery kept the station organized and supported teammates throughout service. Guests asked about gluten-free ingredients and possible cross-contact. Opening, service, and c..."
+        },
+        {
+          "source_submission_id": "FM-0237",
+          "date": "2026-05-07",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Taylor communicated clearly and helped the line recover during the rush. Two guests requested clearer allergy information for the avocado salsa. Opening, service, and clos..."
+        },
+        {
+          "source_submission_id": "FM-0249",
+          "date": "2026-05-12",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Priya kept the station organized and supported teammates throughout service. Guests asked about gluten-free ingredients and possible cross-contact. The shift stayed organi..."
+        },
+        {
+          "source_submission_id": "FM-0261",
+          "date": "2026-05-14",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "All menu items stayed available and presentation was strong. Jules handled guest questions professionally and maintained a steady pace. Three guests asked whether the tofu bowl was vegan. Guests asked for more beverage variety, including..."
+        },
+        {
+          "source_submission_id": "FM-0271",
+          "date": "2026-05-19",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maria kept the station organized and supported teammates throughout service. A guest asked for clearer allergen labels before choosing a meal. Opening, service, and closin..."
+        },
+        {
+          "source_submission_id": "FM-0285",
+          "date": "2026-05-21",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Avery kept the station organized and supported teammates throughout service. Three guests asked whether the tofu bowl was vegan. Opening, service, and closing procedures r..."
+        }
+      ],
+      "operational_issue:equipment_failure": [
+        {
+          "source_submission_id": "FM-0034",
+          "date": "2026-03-10",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "All menu items stayed available and presentation was strong. Noah kept the station organized and supported teammates throughout service. A guest asked whether a beverage option could be added. The warming unit required a reset and create..."
+        },
+        {
+          "source_submission_id": "FM-0058",
+          "date": "2026-03-17",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Omar kept the station organized and supported teammates throughout service. Guests were positive and service moved smoothly. The receipt printer failed twice and orders ha..."
+        },
+        {
+          "source_submission_id": "FM-0082",
+          "date": "2026-03-24",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Anika communicated clearly and helped the line recover during the rush. One guest complimented the team and no concerns were reported. The receipt printer failed twice and..."
+        },
+        {
+          "source_submission_id": "FM-0106",
+          "date": "2026-03-31",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Lee communicated clearly and helped the line recover during the rush. One guest said the portion felt small for the price. The register froze during lunch and slowed the l..."
+        },
+        {
+          "source_submission_id": "FM-0130",
+          "date": "2026-04-07",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Noah kept the station organized and supported teammates throughout service. Guests were positive and service moved smoothly. The warming unit required a reset and created..."
+        },
+        {
+          "source_submission_id": "FM-0178",
+          "date": "2026-04-21",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Anika kept the station organized and supported teammates throughout service. A guest requested a lower-sodium option. The warming unit required a reset and created a picku..."
+        },
+        {
+          "source_submission_id": "FM-0202",
+          "date": "2026-04-28",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Lee kept the station organized and supported teammates throughout service. Guests were positive and service moved smoothly. The register froze during lunch and slowed the..."
+        },
+        {
+          "source_submission_id": "FM-0226",
+          "date": "2026-05-05",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Noah kept the station organized and supported teammates throughout service. Several guests complimented the food quality. The warming unit required a reset and created a p..."
+        },
+        {
+          "source_submission_id": "FM-0250",
+          "date": "2026-05-12",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Omar handled guest questions professionally and maintained a steady pace. No major guest issues today. The register froze during lunch and slowed the line for several minu..."
+        },
+        {
+          "source_submission_id": "FM-0274",
+          "date": "2026-05-19",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Anika kept the station organized and supported teammates throughout service. Several guests complimented the food quality. The warming unit required a reset and created a..."
+        }
+      ],
+      "recognition:maya_chen": [
+        {
+          "source_submission_id": "FM-0005",
+          "date": "2026-03-02",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maya Chen noticed a prep issue early and coordinated a quick recovery. Several guests complimented the food quality. No major operational concerns."
+        },
+        {
+          "source_submission_id": "FM-0017",
+          "date": "2026-03-04",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "All menu items stayed available and presentation was strong. Maya Chen noticed a prep issue early and coordinated a quick recovery. Guests were positive and service moved smoothly. No major operational concerns."
+        },
+        {
+          "source_submission_id": "FM-0029",
+          "date": "2026-03-09",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maya Chen received positive guest feedback for patient, clear service. A guest requested a lower-sodium option. No major operational concerns."
+        },
+        {
+          "source_submission_id": "FM-0041",
+          "date": "2026-03-11",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "All menu items stayed available and presentation was strong. Maya Chen received positive guest feedback for patient, clear service. No major guest issues today. Opening, service, and closing procedures ran normally."
+        },
+        {
+          "source_submission_id": "FM-0053",
+          "date": "2026-03-16",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maya Chen kept the line moving and coached a newer employee during the rush. A guest asked whether a beverage option could be added. Opening, service, and closing procedur..."
+        },
+        {
+          "source_submission_id": "FM-0065",
+          "date": "2026-03-18",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Maya Chen noticed a prep issue early and coordinated a quick recovery. Several guests complimented the food quality. The shift stayed organized with no unusual delays."
+        },
+        {
+          "source_submission_id": "FM-0077",
+          "date": "2026-03-23",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "All menu items stayed available and presentation was strong. Maya Chen received positive guest feedback for patient, clear service. A guest asked whether a beverage option could be added. Opening, service, and closing procedures ran norm..."
+        },
+        {
+          "source_submission_id": "FM-0089",
+          "date": "2026-03-25",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "All menu items stayed available and presentation was strong. Maya Chen kept the line moving and coached a newer employee during the rush. Two guests asked for a spicier sauce. No major operational concerns."
+        },
+        {
+          "source_submission_id": "FM-0101",
+          "date": "2026-03-30",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Maya Chen kept the line moving and coached a newer employee during the rush. A guest requested a lower-sodium option. Opening, service, and closing procedures ran normally."
+        },
+        {
+          "source_submission_id": "FM-0113",
+          "date": "2026-04-01",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maya Chen kept the line moving and coached a newer employee during the rush. One guest complimented the team and no concerns were reported. No major operational concerns."
+        },
+        {
+          "source_submission_id": "FM-0125",
+          "date": "2026-04-06",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maya Chen received positive guest feedback for patient, clear service. A guest requested a lower-sodium option. The shift stayed organized with no unusual delays."
+        },
+        {
+          "source_submission_id": "FM-0137",
+          "date": "2026-04-08",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "All menu items stayed available and presentation was strong. Maya Chen kept the line moving and coached a newer employee during the rush. A guest asked when a previous seasonal item might return. No major operational concerns."
+        },
+        {
+          "source_submission_id": "FM-0149",
+          "date": "2026-04-13",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maya Chen kept the line moving and coached a newer employee during the rush. One guest said the portion felt small for the price. Opening, service, and closing procedures..."
+        },
+        {
+          "source_submission_id": "FM-0161",
+          "date": "2026-04-15",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maya Chen noticed a prep issue early and coordinated a quick recovery. Guests were positive and service moved smoothly. No major operational concerns. The shared register..."
+        },
+        {
+          "source_submission_id": "FM-0173",
+          "date": "2026-04-20",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maya Chen received positive guest feedback for patient, clear service. No major guest issues today. Opening, service, and closing procedures ran normally."
+        },
+        {
+          "source_submission_id": "FM-0185",
+          "date": "2026-04-22",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maya Chen kept the line moving and coached a newer employee during the rush. A guest asked whether a beverage option could be added. The shift stayed organized with no unu..."
+        },
+        {
+          "source_submission_id": "FM-0209",
+          "date": "2026-04-29",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Maya Chen received positive guest feedback for patient, clear service. No major guest issues today. No major operational concerns."
+        },
+        {
+          "source_submission_id": "FM-0221",
+          "date": "2026-05-04",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maya Chen kept the line moving and coached a newer employee during the rush. Two guests questioned whether the serving size had changed. Opening, service, and closing proc..."
+        },
+        {
+          "source_submission_id": "FM-0233",
+          "date": "2026-05-06",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Maya Chen noticed a prep issue early and coordinated a quick recovery. A guest requested a lower-sodium option. Opening, service, and closing procedures ran normally."
+        },
+        {
+          "source_submission_id": "FM-0245",
+          "date": "2026-05-11",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "All menu items stayed available and presentation was strong. Maya Chen noticed a prep issue early and coordinated a quick recovery. One guest complimented the team and no concerns were reported. No major operational concerns."
+        },
+        {
+          "source_submission_id": "FM-0257",
+          "date": "2026-05-13",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maya Chen received positive guest feedback for patient, clear service. One guest complimented the team and no concerns were reported. Opening, service, and closing procedu..."
+        },
+        {
+          "source_submission_id": "FM-0269",
+          "date": "2026-05-18",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Maya Chen kept the line moving and coached a newer employee during the rush. Several guests complimented the food quality. No major operational concerns."
+        },
+        {
+          "source_submission_id": "FM-0281",
+          "date": "2026-05-20",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "All menu items stayed available and presentation was strong. Maya Chen received positive guest feedback for patient, clear service. One guest said the portion felt small for the price. Opening, service, and closing procedures ran normally."
+        }
+      ],
+      "inventory:inconsistent_prep": [
+        {
+          "source_submission_id": "FM-0012",
+          "date": "2026-03-03",
+          "kiosk": "Street Eats",
+          "excerpt": "Inventory counts did not match the remaining taco portions near closing. Maya kept the station organized and supported teammates throughout service. Guests were positive and service moved smoothly. The handoff should include clearer rema..."
+        },
+        {
+          "source_submission_id": "FM-0024",
+          "date": "2026-03-05",
+          "kiosk": "Street Eats",
+          "excerpt": "Inventory counts did not match the remaining taco portions near closing. Ben kept the station organized and supported teammates throughout service. One guest said the portion felt small for the price. The handoff should include clearer r..."
+        },
+        {
+          "source_submission_id": "FM-0060",
+          "date": "2026-03-17",
+          "kiosk": "Street Eats",
+          "excerpt": "Inventory counts did not match the remaining taco portions near closing. Ben handled guest questions professionally and maintained a steady pace. A guest asked whether a beverage option could be added. The handoff should include clearer..."
+        },
+        {
+          "source_submission_id": "FM-0072",
+          "date": "2026-03-19",
+          "kiosk": "Street Eats",
+          "excerpt": "Inventory counts did not match the remaining taco portions near closing. Maya communicated clearly and helped the line recover during the rush. A guest asked when a previous seasonal item might return. The handoff should include clearer..."
+        },
+        {
+          "source_submission_id": "FM-0096",
+          "date": "2026-03-26",
+          "kiosk": "Street Eats",
+          "excerpt": "Cilantro rice ran low while extra street corn remained at closing. Devin handled guest questions professionally and maintained a steady pace. A guest asked whether a beverage option could be added. The handoff should include clearer rema..."
+        },
+        {
+          "source_submission_id": "FM-0108",
+          "date": "2026-03-31",
+          "kiosk": "Street Eats",
+          "excerpt": "Inventory counts did not match the remaining taco portions near closing. Maya handled guest questions professionally and maintained a steady pace. A guest requested a lower-sodium option. The handoff should include clearer remaining-inve..."
+        },
+        {
+          "source_submission_id": "FM-0120",
+          "date": "2026-04-02",
+          "kiosk": "Street Eats",
+          "excerpt": "Cilantro rice ran low while extra street corn remained at closing. Ben handled guest questions professionally and maintained a steady pace. A guest asked whether a beverage option could be added. The handoff should include clearer remain..."
+        },
+        {
+          "source_submission_id": "FM-0144",
+          "date": "2026-04-09",
+          "kiosk": "Street Eats",
+          "excerpt": "Cilantro rice ran low while extra street corn remained at closing. Iris handled guest questions professionally and maintained a steady pace. One guest complimented the team and no concerns were reported. The handoff should include cleare..."
+        },
+        {
+          "source_submission_id": "FM-0156",
+          "date": "2026-04-14",
+          "kiosk": "Street Eats",
+          "excerpt": "Inventory counts did not match the remaining taco portions near closing. Ben handled guest questions professionally and maintained a steady pace. Two guests asked for a spicier sauce. The handoff should include clearer remaining-inventor..."
+        },
+        {
+          "source_submission_id": "FM-0168",
+          "date": "2026-04-16",
+          "kiosk": "Street Eats",
+          "excerpt": "Inventory counts did not match the remaining taco portions near closing. Maya handled guest questions professionally and maintained a steady pace. Several guests complimented the food quality. The handoff should include clearer remaining..."
+        },
+        {
+          "source_submission_id": "FM-0192",
+          "date": "2026-04-23",
+          "kiosk": "Street Eats",
+          "excerpt": "Tofu taco prep did not match demand and beef tacos were overprepared. Devin handled guest questions professionally and maintained a steady pace. One guest complimented the team and no concerns were reported. The handoff should include cl..."
+        },
+        {
+          "source_submission_id": "FM-0204",
+          "date": "2026-04-28",
+          "kiosk": "Street Eats",
+          "excerpt": "Inventory counts did not match the remaining taco portions near closing. Maya handled guest questions professionally and maintained a steady pace. No major guest issues today. The handoff should include clearer remaining-inventory counts."
+        },
+        {
+          "source_submission_id": "FM-0216",
+          "date": "2026-04-30",
+          "kiosk": "Street Eats",
+          "excerpt": "Inventory counts did not match the remaining taco portions near closing. Ben communicated clearly and helped the line recover during the rush. Two guests asked for a spicier sauce. The handoff should include clearer remaining-inventory c..."
+        },
+        {
+          "source_submission_id": "FM-0252",
+          "date": "2026-05-12",
+          "kiosk": "Street Eats",
+          "excerpt": "Inventory counts did not match the remaining taco portions near closing. Ben handled guest questions professionally and maintained a steady pace. A guest asked when a previous seasonal item might return. The handoff should include cleare..."
+        },
+        {
+          "source_submission_id": "FM-0264",
+          "date": "2026-05-14",
+          "kiosk": "Street Eats",
+          "excerpt": "Cilantro rice ran low while extra street corn remained at closing. Maya handled guest questions professionally and maintained a steady pace. No major guest issues today. Guests asked for more beverage variety, including unsweetened optio..."
+        },
+        {
+          "source_submission_id": "FM-0288",
+          "date": "2026-05-21",
+          "kiosk": "Street Eats",
+          "excerpt": "Cilantro rice ran low while extra street corn remained at closing. Devin communicated clearly and helped the line recover during the rush. One guest said the portion felt small for the price. The handoff should include clearer remaining-..."
+        }
+      ],
+      "cross_kiosk:register_disruption_week_7": [
+        {
+          "source_submission_id": "FM-0157",
+          "date": "2026-04-15",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Maria handled guest questions professionally and maintained a steady pace. A guest requested a lower-sodium option. Opening, service, and closing procedures ran normally...."
+        },
+        {
+          "source_submission_id": "FM-0158",
+          "date": "2026-04-15",
+          "kiosk": "Market Grill",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Sam handled guest questions professionally and maintained a steady pace. One guest complimented the team and no concerns were reported. Production exceeded afternoon deman..."
+        },
+        {
+          "source_submission_id": "FM-0159",
+          "date": "2026-04-15",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Taylor communicated clearly and helped the line recover during the rush. One guest complimented the team and no concerns were reported. Opening, service, and closing proce..."
+        },
+        {
+          "source_submission_id": "FM-0160",
+          "date": "2026-04-15",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Anika kept the station organized and supported teammates throughout service. A guest asked when a previous seasonal item might return. The shift stayed organized with no u..."
+        },
+        {
+          "source_submission_id": "FM-0161",
+          "date": "2026-04-15",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maya Chen noticed a prep issue early and coordinated a quick recovery. Guests were positive and service moved smoothly. No major operational concerns. The shared register..."
+        },
+        {
+          "source_submission_id": "FM-0162",
+          "date": "2026-04-15",
+          "kiosk": "Street Eats",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Iris kept the station organized and supported teammates throughout service. No major guest issues today. Opening, service, and closing procedures ran normally. The shared..."
+        }
+      ],
+      "cross_kiosk:portion_complaints_weeks_9_10": [
+        {
+          "source_submission_id": "FM-0193",
+          "date": "2026-04-27",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Kung Pao chicken ran low during the lunch rush and backup prep was started. Maria kept the station organized and supported teammates throughout service. Several guests said portions looked smaller than earlier in the month. Recommend inc..."
+        },
+        {
+          "source_submission_id": "FM-0194",
+          "date": "2026-04-27",
+          "kiosk": "Market Grill",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Sam handled guest questions professionally and maintained a steady pace. A guest complained that the portion did not match the listed value. Several prepared meals remaine..."
+        },
+        {
+          "source_submission_id": "FM-0195",
+          "date": "2026-04-27",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Taylor communicated clearly and helped the line recover during the rush. Two guests questioned whether the serving size had changed. No major operational concerns."
+        },
+        {
+          "source_submission_id": "FM-0196",
+          "date": "2026-04-27",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Anika handled guest questions professionally and maintained a steady pace. Two guests questioned whether the serving size had changed. No major operational concerns."
+        },
+        {
+          "source_submission_id": "FM-0198",
+          "date": "2026-04-27",
+          "kiosk": "Street Eats",
+          "excerpt": "All menu items stayed available and presentation was strong. Iris kept the station organized and supported teammates throughout service. Two guests questioned whether the serving size had changed. Opening, service, and closing procedures..."
+        },
+        {
+          "source_submission_id": "FM-0217",
+          "date": "2026-05-04",
+          "kiosk": "Bowls & Buns",
+          "excerpt": "Kung Pao chicken ran low during the lunch rush and backup prep was started. Chris kept the station organized and supported teammates throughout service. Several guests said portions looked smaller than earlier in the month. Recommend inc..."
+        },
+        {
+          "source_submission_id": "FM-0218",
+          "date": "2026-05-04",
+          "kiosk": "Market Grill",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Jordan handled guest questions professionally and maintained a steady pace. A guest complained that the portion did not match the listed value. Production exceeded afterno..."
+        },
+        {
+          "source_submission_id": "FM-0219",
+          "date": "2026-05-04",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "No food concerns today; quality and quantity remained consistent. Jules handled guest questions professionally and maintained a steady pace. A guest complained that the portion did not match the listed value. The shift stayed organized w..."
+        },
+        {
+          "source_submission_id": "FM-0220",
+          "date": "2026-05-04",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Lee handled guest questions professionally and maintained a steady pace. Several guests said portions looked smaller than earlier in the month. The shift stayed organized..."
+        },
+        {
+          "source_submission_id": "FM-0221",
+          "date": "2026-05-04",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maya Chen kept the line moving and coached a newer employee during the rush. Two guests questioned whether the serving size had changed. Opening, service, and closing proc..."
+        },
+        {
+          "source_submission_id": "FM-0222",
+          "date": "2026-05-04",
+          "kiosk": "Street Eats",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Maya communicated clearly and helped the line recover during the rush. Several guests said portions looked smaller than earlier in the month. Opening, service, and closing..."
+        }
+      ],
+      "guest_request:beverage_variety": [
+        {
+          "source_submission_id": "FM-0260",
+          "date": "2026-05-14",
+          "kiosk": "Market Grill",
+          "excerpt": "All menu items stayed available and presentation was strong. Jordan kept the station organized and supported teammates throughout service. Several guests complimented the food quality. Guests asked for more beverage variety, including un..."
+        },
+        {
+          "source_submission_id": "FM-0261",
+          "date": "2026-05-14",
+          "kiosk": "Verde Kitchen",
+          "excerpt": "All menu items stayed available and presentation was strong. Jules handled guest questions professionally and maintained a steady pace. Three guests asked whether the tofu bowl was vegan. Guests asked for more beverage variety, including..."
+        },
+        {
+          "source_submission_id": "FM-0262",
+          "date": "2026-05-14",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "All menu items stayed available and presentation was strong. Lee handled guest questions professionally and maintained a steady pace. A guest requested a lower-sodium option. Guests asked for more beverage variety, including unsweetened..."
+        },
+        {
+          "source_submission_id": "FM-0263",
+          "date": "2026-05-14",
+          "kiosk": "Hearth & Grain",
+          "excerpt": "All menu items stayed available and presentation was strong. Andre handled guest questions professionally and maintained a steady pace. A guest asked when a previous seasonal item might return. Guests asked for more beverage variety, inc..."
+        },
+        {
+          "source_submission_id": "FM-0264",
+          "date": "2026-05-14",
+          "kiosk": "Street Eats",
+          "excerpt": "Cilantro rice ran low while extra street corn remained at closing. Maya handled guest questions professionally and maintained a steady pace. No major guest issues today. Guests asked for more beverage variety, including unsweetened optio..."
+        }
+      ],
+      "sensitive_personnel:ambiguous_comment": [
+        {
+          "source_submission_id": "FM-0184",
+          "date": "2026-04-22",
+          "kiosk": "Coastal Cafe",
+          "excerpt": "Food held well throughout service and prep levels matched demand. Lee kept the station organized and supported teammates throughout service. No major guest issues today. Tony seemed frustrated and stepped away twice, but the report does..."
+        }
+      ]
+    }
+  }
+}

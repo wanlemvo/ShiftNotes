@@ -1,0 +1,152 @@
+[
+  {
+    "period": "2026-03",
+    "expected_reports": 108,
+    "valid_reports": 101,
+    "missing_or_invalid_reports": 7,
+    "overall": {
+      "report_count": 101,
+      "average_food_quality_rating": 4.3,
+      "average_food_quantity_rating": 3.7,
+      "total_unclaimed_lunches": 462
+    },
+    "kiosks": {
+      "Bowls & Buns": {
+        "report_count": 16,
+        "average_food_quality_rating": 4.31,
+        "average_food_quantity_rating": 2.69,
+        "total_unclaimed_lunches": 55
+      },
+      "Coastal Cafe": {
+        "report_count": 17,
+        "average_food_quality_rating": 4.12,
+        "average_food_quantity_rating": 4.06,
+        "total_unclaimed_lunches": 88
+      },
+      "Hearth & Grain": {
+        "report_count": 17,
+        "average_food_quality_rating": 4.47,
+        "average_food_quantity_rating": 4.71,
+        "total_unclaimed_lunches": 26
+      },
+      "Market Grill": {
+        "report_count": 17,
+        "average_food_quality_rating": 4.41,
+        "average_food_quantity_rating": 3.94,
+        "total_unclaimed_lunches": 161
+      },
+      "Street Eats": {
+        "report_count": 17,
+        "average_food_quality_rating": 4,
+        "average_food_quantity_rating": 2.82,
+        "total_unclaimed_lunches": 78
+      },
+      "Verde Kitchen": {
+        "report_count": 17,
+        "average_food_quality_rating": 4.47,
+        "average_food_quantity_rating": 3.94,
+        "total_unclaimed_lunches": 54
+      }
+    }
+  },
+  {
+    "period": "2026-04",
+    "expected_reports": 108,
+    "valid_reports": 101,
+    "missing_or_invalid_reports": 7,
+    "overall": {
+      "report_count": 101,
+      "average_food_quality_rating": 4.36,
+      "average_food_quantity_rating": 3.74,
+      "total_unclaimed_lunches": 516
+    },
+    "kiosks": {
+      "Bowls & Buns": {
+        "report_count": 17,
+        "average_food_quality_rating": 4.29,
+        "average_food_quantity_rating": 2.88,
+        "total_unclaimed_lunches": 67
+      },
+      "Coastal Cafe": {
+        "report_count": 16,
+        "average_food_quality_rating": 4.06,
+        "average_food_quantity_rating": 3.69,
+        "total_unclaimed_lunches": 78
+      },
+      "Hearth & Grain": {
+        "report_count": 17,
+        "average_food_quality_rating": 4.35,
+        "average_food_quantity_rating": 4.53,
+        "total_unclaimed_lunches": 32
+      },
+      "Market Grill": {
+        "report_count": 17,
+        "average_food_quality_rating": 4.65,
+        "average_food_quantity_rating": 3.94,
+        "total_unclaimed_lunches": 199
+      },
+      "Street Eats": {
+        "report_count": 17,
+        "average_food_quality_rating": 4.18,
+        "average_food_quantity_rating": 3.24,
+        "total_unclaimed_lunches": 90
+      },
+      "Verde Kitchen": {
+        "report_count": 17,
+        "average_food_quality_rating": 4.59,
+        "average_food_quantity_rating": 4.18,
+        "total_unclaimed_lunches": 50
+      }
+    }
+  },
+  {
+    "period": "2026-05",
+    "expected_reports": 72,
+    "valid_reports": 65,
+    "missing_or_invalid_reports": 7,
+    "overall": {
+      "report_count": 65,
+      "average_food_quality_rating": 4.23,
+      "average_food_quantity_rating": 3.75,
+      "total_unclaimed_lunches": 287
+    },
+    "kiosks": {
+      "Bowls & Buns": {
+        "report_count": 11,
+        "average_food_quality_rating": 3.64,
+        "average_food_quantity_rating": 2.36,
+        "total_unclaimed_lunches": 31
+      },
+      "Coastal Cafe": {
+        "report_count": 11,
+        "average_food_quality_rating": 4.18,
+        "average_food_quantity_rating": 4,
+        "total_unclaimed_lunches": 54
+      },
+      "Hearth & Grain": {
+        "report_count": 11,
+        "average_food_quality_rating": 4.64,
+        "average_food_quantity_rating": 4.55,
+        "total_unclaimed_lunches": 21
+      },
+      "Market Grill": {
+        "report_count": 11,
+        "average_food_quality_rating": 4.36,
+        "average_food_quantity_rating": 4.27,
+        "total_unclaimed_lunches": 99
+      },
+      "Street Eats": {
+        "report_count": 10,
+        "average_food_quality_rating": 3.9,
+        "average_food_quantity_rating": 3.2,
+        "total_unclaimed_lunches": 49
+      },
+      "Verde Kitchen": {
+        "report_count": 11,
+        "average_food_quality_rating": 4.64,
+        "average_food_quantity_rating": 4.09,
+        "total_unclaimed_lunches": 33
+      }
+    }
+  }
+]

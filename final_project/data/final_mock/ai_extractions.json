@@ -1,0 +1,4818 @@
+[
+  {
+    "source_submission_id": "DUP-001",
+    "signals": []
+  },
+  {
+    "source_submission_id": "DUP-002",
+    "signals": [
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "dietary or allergy question",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests requested clearer allergy information for the avocado salsa.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "DUP-003",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "kung pao chicken",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Chicken prep was below demand and the final pan ran close to shortage.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0001",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "Kung Pao chicken",
+        "severity": "high",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Kung Pao chicken ran low during the lunch rush",
+        "sensitive": false,
+        "rationale": "Shortage during lunch rush, backup prep started."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Maria",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maria kept the station organized and supported teammates",
+        "sensitive": false,
+        "rationale": "Positive performance, organized station and support."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "portion",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest said the portion felt small for the price",
+        "sensitive": false,
+        "rationale": "Guest complaint about portion size."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0002",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Sam",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Sam communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive recognition of employee performance."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "prepared meals",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Several prepared meals remained after service despite steady quality.",
+        "sensitive": false,
+        "rationale": "Indicates leftover food after service."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0003",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Taylor",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Taylor handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive recognition of employee performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0004",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Anika",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Anika handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of team member performance."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added.",
+        "sensitive": false,
+        "rationale": "Guest requested additional beverage option."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0005",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maya Chen",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen noticed a prep issue early and coordinated a quick recovery.",
+        "sensitive": false,
+        "rationale": "Positive recognition of employee performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0006",
+    "signals": [
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added.",
+        "sensitive": false,
+        "rationale": "Guest requested additional beverage option."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Iris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Iris handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Employee performed well."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0007",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Chris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Chris handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive feedback about employee performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0008",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Jordan",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Jordan kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of Jordan's performance in keeping the station organized and supporting teammates."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked when a previous seasonal item might return.",
+        "sensitive": false,
+        "rationale": "Guest inquiry about menu item return, not a specific operational issue."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "production",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Indicates overproduction leading to waste; suggests reducing backup prep."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0009",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Jules",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Jules handled guest questions professionally",
+        "sensitive": false,
+        "rationale": "Positive description of team member performance."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Guests asked about gluten-free ingredients",
+        "sensitive": false,
+        "rationale": "Guest inquiry about gluten-free ingredients and cross-contact."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0011",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Andre",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Andre kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive recognition of employee performance."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "Guest request for spicier sauce",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests asked for a spicier sauce.",
+        "sensitive": false,
+        "rationale": "Guest requested a spicier sauce."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0012",
+    "signals": [
+      {
+        "category": "inventory_inconsistency",
+        "subject": "Inventory counts mismatch",
+        "severity": "medium",
+        "confidence": 0.9,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Inventory counts did not match the remaining taco portions near closing.",
+        "sensitive": false,
+        "rationale": "Mismatch between inventory counts and actual remaining portions indicates inconsistency."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Maya's station organization and support",
+        "severity": "low",
+        "confidence": 0.95,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "Improved handoff inventory communication",
+        "severity": "low",
+        "confidence": 0.8,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The handoff should include clearer remaining-inventory counts.",
+        "sensitive": false,
+        "rationale": "Suggestion to improve handoff clarity."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0013",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Iris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Iris kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of Iris's organizational support and teamwork."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0014",
+    "signals": [
+      {
+        "category": "portion_complaint",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest said the portion felt small for the price.",
+        "sensitive": false,
+        "rationale": "Guest expressed portion size dissatisfaction."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "prepared meals",
+        "severity": "low",
+        "confidence": 0.8,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Several prepared meals remained after service despite steady quality.",
+        "sensitive": false,
+        "rationale": "Prepared meals remained after service."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Elena",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Elena handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0015",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Avery",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Avery kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0016",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Noah",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Noah handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0017",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maya Chen",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen noticed a prep issue early and coordinated a quick recovery.",
+        "sensitive": false,
+        "rationale": "Positive recognition of employee performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0018",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Devin",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Devin handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0019",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Dom",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Dom handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive recognition of Dom's professional handling of guest questions and steady pace."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0020",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Nina",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Nina kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive praise for team member's performance."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "Production",
+        "severity": "medium",
+        "confidence": 0.9,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Production exceeded demand, indicating overproduction."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0021",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Priya",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Priya kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether the black bean bowl contained dairy.",
+        "sensitive": false,
+        "rationale": "Guest asked about dairy content."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0022",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Omar",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Omar kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive recognition of Omar's performance."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked when a previous seasonal item might return.",
+        "sensitive": false,
+        "rationale": "Guest inquiry about menu item return."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0023",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Grace",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Grace kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0024",
+    "signals": [
+      {
+        "category": "inventory_inconsistency",
+        "subject": "Inventory counts",
+        "severity": "high",
+        "confidence": 0.9,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Inventory counts did not match the remaining taco portions near closing.",
+        "sensitive": false,
+        "rationale": "Mismatch between inventory counts and actual remaining portions indicates potential inventory inconsistency."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Ben",
+        "severity": "low",
+        "confidence": 0.95,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Ben kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of Ben's performance."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "Guest",
+        "severity": "medium",
+        "confidence": 0.9,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest said the portion felt small for the price.",
+        "sensitive": false,
+        "rationale": "Guest complaint about portion size."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "Handoff",
+        "severity": "low",
+        "confidence": 0.8,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The handoff should include clearer remaining-inventory counts.",
+        "sensitive": false,
+        "rationale": "Improvement suggestion for handoff process."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0025",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Chris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Chris kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "food_shortage",
+        "subject": "Kung Pao chicken",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Kung Pao chicken sold out near 1 PM",
+        "sensitive": false,
+        "rationale": "Item sold out during service."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0026",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Jordan",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Jordan handled guest questions professionally",
+        "sensitive": false,
+        "rationale": "Positive description of Jordan's performance."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "portion",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "portion felt small for the price",
+        "sensitive": false,
+        "rationale": "Guest complaint about portion size."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "prepared meals",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Several prepared meals remained after service",
+        "sensitive": false,
+        "rationale": "Prepared meals remained after service indicating overproduction."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0027",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Jules",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Jules handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive recognition of Jules' professional handling of guest questions and steady pace."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0028",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Lee",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Lee kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive recognition of employee performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0029",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maya Chen",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen received positive guest feedback for patient, clear service.",
+        "sensitive": false,
+        "rationale": "Positive feedback indicates good performance."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest requested a lower-sodium option.",
+        "sensitive": false,
+        "rationale": "Guest requested lower-sodium option, indicating dietary preference."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0030",
+    "signals": [
+      {
+        "category": "portion_complaint",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest said the portion felt small for the price.",
+        "sensitive": false,
+        "rationale": "Guest reported portion size was small for the price."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Maya",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0031",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Iris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Iris handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of Iris's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0033",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Avery",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Avery handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "Avocado salsa",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests requested clearer allergy information for the avocado salsa.",
+        "sensitive": false,
+        "rationale": "Guest request for clearer allergy information."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0034",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Noah",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Noah kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added.",
+        "sensitive": false,
+        "rationale": "Guest requested additional beverage option."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "warming unit",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The warming unit required a reset and created a pickup bottleneck.",
+        "sensitive": false,
+        "rationale": "Warming unit reset caused bottleneck."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0035",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Luis",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Luis communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive recognition of employee performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0036",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Devin",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Devin kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked when a previous seasonal item might return.",
+        "sensitive": false,
+        "rationale": "Guest inquiry about menu item."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0037",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "Kung Pao chicken",
+        "severity": "medium",
+        "confidence": 0.9,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Kung Pao chicken ran low during the lunch rush",
+        "sensitive": false,
+        "rationale": "Indicates a shortage of a menu item during service."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Dom",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Dom handled guest questions professionally",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0038",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Nina",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Nina communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of team member's clear communication and assistance during rush."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Unclaimed lunches were above target and closing waste should be reviewed.",
+        "sensitive": false,
+        "rationale": "Indicates overproduction of lunches leading to excess waste."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0039",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Priya",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Priya handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0040",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Omar",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Omar handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added.",
+        "sensitive": false,
+        "rationale": "Guest requested additional beverage option."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0041",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maya Chen",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen received positive guest feedback for patient, clear service.",
+        "sensitive": false,
+        "rationale": "Positive feedback indicates good performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0042",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Ben",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Ben kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive recognition of Ben's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0043",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maria",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maria kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "guest portion complaint",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest said the portion felt small for the price.",
+        "sensitive": false,
+        "rationale": "Guest expressed portion size dissatisfaction."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0044",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Sam",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Sam kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive recognition of employee performance."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "Production",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Excess production leading to waste."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0045",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Taylor",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Taylor kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "gluten-free ingredients",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Guests asked about gluten-free ingredients and possible cross-contact.",
+        "sensitive": false,
+        "rationale": "Guest inquiry about dietary restrictions."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0046",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Anika",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Anika communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive recognition of employee performance."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "guest request",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests asked for a spicier sauce.",
+        "sensitive": false,
+        "rationale": "Guest requested a spicier sauce, indicating a food preference adjustment."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0047",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Mina",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Mina kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0049",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "Kung Pao chicken",
+        "severity": "high",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Kung Pao chicken ran low during the lunch rush",
+        "sensitive": false,
+        "rationale": "Ran low during lunch rush, backup prep started."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Iris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Iris communicated clearly and helped the line recover during the rush",
+        "sensitive": false,
+        "rationale": "Positive performance during rush."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "guest portion",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest said the portion felt small for the price",
+        "sensitive": false,
+        "rationale": "Guest complaint about portion size."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "Kung Pao chicken prep",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Recommend increasing Kung Pao chicken prep before peak service",
+        "sensitive": false,
+        "rationale": "Recommendation to increase prep."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0050",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "prepared meals",
+        "severity": "medium",
+        "confidence": 0.9,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Several prepared meals remained after service",
+        "sensitive": false,
+        "rationale": "The note indicates leftover meals after service, implying overproduction."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Elena",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Elena handled guest questions professionally",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0051",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Avery",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Avery kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of Avery's performance."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest requested a lower-sodium option.",
+        "sensitive": false,
+        "rationale": "Guest requested a lower-sodium option."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0052",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Noah",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Noah communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0053",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maya Chen",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen kept the line moving and coached a newer employee during the rush.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added.",
+        "sensitive": false,
+        "rationale": "Guest requested additional beverage option."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0054",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Devin",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Devin handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive performance noted for handling guest questions and maintaining pace."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added.",
+        "sensitive": false,
+        "rationale": "Guest requested addition of a beverage option."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0055",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Dom",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Dom handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0056",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Nina",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Nina kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked when a previous seasonal item might return.",
+        "sensitive": false,
+        "rationale": "Guest inquiry about menu item availability."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Unclaimed lunches were above target and closing waste should be reviewed.",
+        "sensitive": false,
+        "rationale": "Prepared food remained or production exceeded demand."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0057",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Priya",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Priya handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "avocado salsa",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests requested clearer allergy information for the avocado salsa.",
+        "sensitive": false,
+        "rationale": "Guests requested clearer allergy information."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0058",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Omar",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Omar kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of Omar's organizational support."
+      },
+      {
+        "category": "equipment_failure",
+        "subject": "Receipt printer",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The receipt printer failed twice and orders had to be called manually.",
+        "sensitive": false,
+        "rationale": "Receipt printer malfunction caused manual order handling."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0059",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Grace",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Grace kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of a team member's performance"
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0060",
+    "signals": [
+      {
+        "category": "inventory_inconsistency",
+        "subject": "taco portions",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Inventory counts did not match the remaining taco portions near closing.",
+        "sensitive": false,
+        "rationale": "Inventory counts discrepancy indicates inconsistency."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Ben",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Ben handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added.",
+        "sensitive": false,
+        "rationale": "Guest requested additional beverage option."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "handoff process",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The handoff should include clearer remaining-inventory counts.",
+        "sensitive": false,
+        "rationale": "Improvement suggestion for handoff."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0062",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Sam",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Sam handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of Sam's performance."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "Unclaimed lunches",
+        "severity": "medium",
+        "confidence": 0.8,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Unclaimed lunches were above target and closing waste should be reviewed.",
+        "sensitive": false,
+        "rationale": "Indicates excess waste that needs review."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0063",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Taylor",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Taylor kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0064",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Anika",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Anika communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "portion",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest said the portion felt small for the price.",
+        "sensitive": false,
+        "rationale": "Guest complaint about portion size."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0065",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maya Chen",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen noticed a prep issue early and coordinated a quick recovery.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0066",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Iris",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Iris kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of Iris's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0067",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Chris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Chris handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0068",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Jordan",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Jordan communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "Production",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Prepared food exceeded demand, indicating overproduction."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0069",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Jules",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Jules handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "gluten-free ingredients",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Guests asked about gluten-free ingredients and possible cross-contact.",
+        "sensitive": false,
+        "rationale": "Guest asked about gluten-free ingredients and possible cross-contact."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0070",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Lee",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Lee kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0071",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Andre",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Andre handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive performance noted for handling guest questions and maintaining pace."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "Spicier sauce request",
+        "severity": "low",
+        "confidence": 0.8,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests asked for a spicier sauce.",
+        "sensitive": false,
+        "rationale": "Guests requested a spicier sauce, indicating a potential need to adjust sauce options."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0072",
+    "signals": [
+      {
+        "category": "inventory_inconsistency",
+        "subject": "Taco inventory mismatch",
+        "severity": "medium",
+        "confidence": 0.9,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Inventory counts did not match the remaining taco portions near closing.",
+        "sensitive": false,
+        "rationale": "Mismatch between inventory counts and actual remaining portions indicates inventory inconsistency."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Maya's communication and assistance",
+        "severity": "low",
+        "confidence": 0.95,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive performance recognized."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "Guest inquiry about seasonal item return",
+        "severity": "low",
+        "confidence": 0.8,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked when a previous seasonal item might return.",
+        "sensitive": false,
+        "rationale": "Guest asked about menu item availability."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "Improvement suggestion for handoff inventory counts",
+        "severity": "low",
+        "confidence": 0.7,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The handoff should include clearer remaining-inventory counts.",
+        "sensitive": false,
+        "rationale": "Suggests clearer inventory counts during handoff."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0073",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "Chicken prep",
+        "severity": "medium",
+        "confidence": 0.9,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Chicken prep was below demand and the final pan ran close to shortage.",
+        "sensitive": false,
+        "rationale": "Indicates insufficient chicken prep leading to near shortage."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0074",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Nina",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Nina communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Unclaimed lunches were above target and closing waste should be reviewed.",
+        "sensitive": false,
+        "rationale": "Unclaimed lunches above target indicates overproduction."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0075",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Priya",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Priya kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive recognition of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0076",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Omar",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Omar communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive description of a team member\u2019s performance."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "guest",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest said the portion felt small for the price.",
+        "sensitive": false,
+        "rationale": "Guest expressed dissatisfaction with portion size."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0077",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maya Chen",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen received positive guest feedback for patient, clear service.",
+        "sensitive": false,
+        "rationale": "Positive feedback indicates good performance."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added.",
+        "sensitive": false,
+        "rationale": "Guest requested additional beverage option."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0078",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Ben",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Ben communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive recognition of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0080",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Sam",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Sam communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive recognition of Sam's clear communication and assistance during a rush."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "Production",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Excess production leading to waste and a recommendation to reduce backup prep."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0081",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Taylor",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Taylor communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "gluten-free ingredients",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Guests asked about gluten-free ingredients and possible cross-contact.",
+        "sensitive": false,
+        "rationale": "Guest asked about gluten-free ingredients and cross-contact."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0082",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Anika",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Anika communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "equipment_failure",
+        "subject": "receipt printer",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The receipt printer failed twice and orders had to be called manually.",
+        "sensitive": false,
+        "rationale": "Receipt printer failure noted."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0083",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Mina",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Mina communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0084",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Iris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Iris handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive recognition of Iris's professional handling of guest questions and steady pace."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0085",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "Kung Pao chicken",
+        "severity": "high",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Kung Pao chicken sold out near 1 PM",
+        "sensitive": false,
+        "rationale": "Sold out indicates a shortage of the item."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "lower-sodium option",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest requested a lower-sodium option",
+        "sensitive": false,
+        "rationale": "Guest requested a lower-sodium alternative."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "Kung Pao chicken prep",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Recommend increasing Kung Pao chicken prep before peak service",
+        "sensitive": false,
+        "rationale": "Suggestion to increase prep to avoid future shortages."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Chris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Chris handled guest questions professionally and maintained a steady pace",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0086",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Jordan",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Jordan kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive recognition of Jordan's performance."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "unclaimed lunches",
+        "severity": "high",
+        "confidence": 0.8,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Unclaimed lunches were above target and closing waste should be reviewed.",
+        "sensitive": false,
+        "rationale": "Indicates excess food production leading to waste."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0087",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Jules",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Jules kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive recognition of employee performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0088",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Lee",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Lee kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0089",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maya Chen",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen kept the line moving and coached a newer employee during the rush.",
+        "sensitive": false,
+        "rationale": "Positive recognition of employee performance."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "spicier sauce request",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests asked for a spicier sauce.",
+        "sensitive": false,
+        "rationale": "Guest requested a spicier sauce, indicating a condiment preference."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0090",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maya",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "Guest inquiry about seasonal item",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked when a previous seasonal item might return.",
+        "sensitive": false,
+        "rationale": "Guest question regarding menu item return."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0091",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Iris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Iris communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of employee performance."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked when a previous seasonal item might return.",
+        "sensitive": false,
+        "rationale": "Guest inquiry about menu item return."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0092",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Elena",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Elena communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "guest seasonal item inquiry",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked when a previous seasonal item might return.",
+        "sensitive": false,
+        "rationale": "Guest asked about menu item return."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "prepared meals remained after service",
+        "severity": "high",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Several prepared meals remained after service despite steady quality.",
+        "sensitive": false,
+        "rationale": "Excess prepared meals remained."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0094",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Noah",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Noah handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0095",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Luis",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Luis handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added.",
+        "sensitive": false,
+        "rationale": "Guest requested additional beverage option."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0096",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "Cilantro rice",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Cilantro rice ran low",
+        "sensitive": false,
+        "rationale": "Ran low indicates a shortage."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Devin",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Devin handled guest questions professionally",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added.",
+        "sensitive": false,
+        "rationale": "Guest requested an additional beverage option."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "handoff",
+        "severity": "medium",
+        "confidence": 0.8,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The handoff should include clearer remaining-inventory counts.",
+        "sensitive": false,
+        "rationale": "Need clearer inventory counts during handoff."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0097",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "Kung Pao chicken",
+        "severity": "high",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Kung Pao chicken ran low",
+        "sensitive": false,
+        "rationale": "Shortage of Kung Pao chicken during lunch rush"
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Maria",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maria kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive recognition of Maria's performance"
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added.",
+        "sensitive": false,
+        "rationale": "Guest requested additional beverage option"
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0098",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Sam",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Sam communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of Sam\u2019s clear communication and assistance during a rush, indicating strong performance."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "prepared meals",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Several prepared meals remained after service despite steady quality.",
+        "sensitive": false,
+        "rationale": "Indicates leftover meals after service, suggesting overproduction or waste."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0099",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Taylor",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Taylor handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0100",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Anika",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Anika handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0101",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maya Chen",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen kept the line moving and coached a newer employee during the rush.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "lower-sodium request",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest requested a lower-sodium option.",
+        "sensitive": false,
+        "rationale": "Guest dietary request."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0102",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Iris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Iris handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of Iris's professional handling of guest questions and steady pace."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 0.8,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked when a previous seasonal item might return.",
+        "sensitive": false,
+        "rationale": "Guest inquiry about menu item return indicates a potential need for menu communication or inventory planning."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0103",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Chris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Chris kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "guest inquiry about seasonal item return",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked when a previous seasonal item might return.",
+        "sensitive": false,
+        "rationale": "Guest inquiry about menu item availability."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0104",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Jordan",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Jordan handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "spicier sauce request",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests asked for a spicier sauce.",
+        "sensitive": false,
+        "rationale": "Guest requested a spicier sauce."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "prepared meals remained",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Several prepared meals remained after service despite steady quality.",
+        "sensitive": false,
+        "rationale": "Prepared meals remained after service."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0105",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Jules",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Jules communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "Guests",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Guests asked about gluten-free ingredients and possible cross-contact.",
+        "sensitive": false,
+        "rationale": "Guest inquiry about gluten-free ingredients."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0106",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Lee",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Lee communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "guest",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest said the portion felt small for the price.",
+        "sensitive": false,
+        "rationale": "Guest complaint about portion size."
+      },
+      {
+        "category": "register_disruption",
+        "subject": "register",
+        "severity": "high",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The register froze during lunch and slowed the line for several minutes.",
+        "sensitive": false,
+        "rationale": "Register freeze caused delay."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0108",
+    "signals": [
+      {
+        "category": "inventory_inconsistency",
+        "subject": "Inventory counts mismatch",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Inventory counts did not match the remaining taco portions near closing.",
+        "sensitive": false,
+        "rationale": "Mismatch between inventory counts and actual remaining portions indicates an inconsistency in inventory tracking."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Maya's performance",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of employee performance."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "Guest lower-sodium request",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest requested a lower-sodium option.",
+        "sensitive": false,
+        "rationale": "Guest requested a lower-sodium option."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "Handoff clarity",
+        "severity": "low",
+        "confidence": 0.8,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The handoff should include clearer remaining-inventory counts.",
+        "sensitive": false,
+        "rationale": "Need clearer handoff of inventory counts."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0109",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Iris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Iris handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of Iris's professional handling of guest questions and steady pace."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest requested a lower-sodium option.",
+        "sensitive": false,
+        "rationale": "Guest requested lower-sodium option, indicating a dietary preference."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0110",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Elena",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Elena kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive recognition of Elena's performance."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "Production",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Excess production leading to waste."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0111",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Avery",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Avery kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of performance."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added.",
+        "sensitive": false,
+        "rationale": "Guest requested additional beverage option."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0112",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Noah",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Noah handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive praise for team member performance."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "team",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest complimented the team",
+        "sensitive": false,
+        "rationale": "Positive guest compliment."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0113",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maya Chen",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen kept the line moving and coached a newer employee during the rush.",
+        "sensitive": false,
+        "rationale": "Positive recognition of employee performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0114",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Devin",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Devin communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest said the portion felt small for the price.",
+        "sensitive": false,
+        "rationale": "Guest expressed portion size dissatisfaction."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0115",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Dom",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Dom communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0116",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Nina",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Nina handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of team member's performance."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "Production",
+        "severity": "medium",
+        "confidence": 0.9,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Indicates overproduction and waste."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0117",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Priya",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Priya communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "avocado salsa",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests requested clearer allergy information for the avocado salsa.",
+        "sensitive": false,
+        "rationale": "Guests requested clearer allergy info."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0118",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Omar",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Omar handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of Omar\u2019s professional handling of guest questions and steady pace."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest said the portion felt small for the price.",
+        "sensitive": false,
+        "rationale": "Guest expressed dissatisfaction with portion size relative to price."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0119",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Grace",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Grace communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "Spice request",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests asked for a spicier sauce.",
+        "sensitive": false,
+        "rationale": "Guest requested a change to sauce."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0120",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "Cilantro rice",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Cilantro rice ran low",
+        "sensitive": false,
+        "rationale": "The note indicates that cilantro rice ran low."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Ben",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Ben handled guest questions professionally",
+        "sensitive": false,
+        "rationale": "The note praises Ben's performance."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest beverage request",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added",
+        "sensitive": false,
+        "rationale": "The note indicates a guest requested a beverage option."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "handoff clarity",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The handoff should include clearer remaining-inventory counts",
+        "sensitive": false,
+        "rationale": "The note suggests improvement in handoff inventory counts."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0121",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "Kung Pao chicken",
+        "severity": "high",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Kung Pao chicken sold out near 1 PM",
+        "sensitive": false,
+        "rationale": "Sold out near peak service."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "portion",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest said the portion felt small for the price",
+        "sensitive": false,
+        "rationale": "Guest complaint about portion size."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Chris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Chris handled guest questions professionally and maintained a steady pace",
+        "sensitive": false,
+        "rationale": "Positive performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0122",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Jordan",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Jordan handled guest questions professionally",
+        "sensitive": false,
+        "rationale": "Jordan maintained a steady pace and handled guest questions professionally."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added",
+        "sensitive": false,
+        "rationale": "Guest requested an additional beverage option."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "prepared meals",
+        "severity": "high",
+        "confidence": 0.9,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Several prepared meals remained after service",
+        "sensitive": false,
+        "rationale": "Excess prepared meals remained after service indicating overproduction."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0123",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Jules",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Jules kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added.",
+        "sensitive": false,
+        "rationale": "Guest request for beverage option."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0124",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Lee",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Lee communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive recognition of Lee's communication and assistance during rush."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "spicier sauce",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests asked for a spicier sauce.",
+        "sensitive": false,
+        "rationale": "Guests requested a spicier sauce, indicating a guest preference issue."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0125",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maya Chen",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen received positive guest feedback for patient, clear service.",
+        "sensitive": false,
+        "rationale": "Positive feedback indicates good performance."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "lower-sodium request",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest requested a lower-sodium option.",
+        "sensitive": false,
+        "rationale": "Guest requested lower-sodium option."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0127",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Iris",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Iris communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of Iris's clear communication and assistance during rush."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "spicier sauce request",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests asked for a spicier sauce.",
+        "sensitive": false,
+        "rationale": "Guests requested a spicier sauce, indicating a guest preference issue."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0128",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Elena",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Elena handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "guest",
+        "severity": "medium",
+        "confidence": 0.9,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest said the portion felt small for the price.",
+        "sensitive": false,
+        "rationale": "Guest expressed portion size dissatisfaction."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "unclaimed lunches",
+        "severity": "high",
+        "confidence": 0.8,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Unclaimed lunches were above target and closing waste should be reviewed.",
+        "sensitive": false,
+        "rationale": "Waste noted in unclaimed lunches."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0129",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Avery",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Avery communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive performance noted for clear communication and line recovery during rush."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "tofu bowl",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Three guests asked whether the tofu bowl was vegan.",
+        "sensitive": false,
+        "rationale": "Guests inquired about vegan status of tofu bowl."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0130",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Noah",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Noah kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "equipment_failure",
+        "subject": "warming unit",
+        "severity": "high",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The warming unit required a reset and created a pickup bottleneck.",
+        "sensitive": false,
+        "rationale": "Equipment failure caused a pickup bottleneck."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0131",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Luis",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Luis kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0132",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Devin",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Devin handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of Devin's professional handling of guest questions."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added.",
+        "sensitive": false,
+        "rationale": "Guest requested an additional beverage option."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0133",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "Kung Pao chicken",
+        "severity": "high",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Kung Pao chicken sold out near 1 PM",
+        "sensitive": false,
+        "rationale": "Sold out indicates a shortage of the item."
+      },
+      {
+        "category": "employee_recognition",
+        "subject": "Dom",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Dom handled guest questions professionally",
+        "sensitive": false,
+        "rationale": "Positive description of a team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0135",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Priya",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Priya handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of employee performance."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "portion",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "One guest said the portion felt small for the price.",
+        "sensitive": false,
+        "rationale": "Guest complaint about portion size."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0136",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Omar",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Omar handled guest questions professionally",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of Omar's professional handling of guest questions."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest requested a lower-sodium option",
+        "sensitive": false,
+        "rationale": "Guest requested a lower-sodium option, indicating a dietary preference."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0137",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maya Chen",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen kept the line moving and coached a newer employee during the rush.",
+        "sensitive": false,
+        "rationale": "Positive performance noted."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked when a previous seasonal item might return.",
+        "sensitive": false,
+        "rationale": "Guest inquiry about menu item availability."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0138",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Ben",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Ben kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of a team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0139",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maria",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maria kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive recognition of Maria's organization and support."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "lower-sodium option",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest requested a lower-sodium option.",
+        "sensitive": false,
+        "rationale": "Guest requested a lower-sodium option, indicating a dietary preference."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0140",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Sam",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Sam handled guest questions professionally",
+        "sensitive": false,
+        "rationale": "Positive acknowledgment of Sam's professional handling of guest questions."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "guest",
+        "severity": "low",
+        "confidence": 0.9,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether a beverage option could be added",
+        "sensitive": false,
+        "rationale": "Guest requested an additional beverage option."
+      },
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "production",
+        "severity": "high",
+        "confidence": 0.9,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand",
+        "sensitive": false,
+        "rationale": "Excess production indicates overproduction and potential waste."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0141",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Taylor",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Taylor kept the station organized and supported teammates throughout service.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "Guest inquiry about tofu bowl vegan status",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Three guests asked whether the tofu bowl was vegan.",
+        "sensitive": false,
+        "rationale": "Guests asked about vegan status."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0142",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0143",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0144",
+    "signals": [
+      {
+        "category": "inventory_inconsistency",
+        "subject": "inconsistent prep",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Cilantro rice ran low while extra street corn remained at closing.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0145",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "kung pao chicken",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Chicken prep was below demand and the final pan ran close to shortage.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0146",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0148",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0149",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "maya chen",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen kept the line moving and coached a newer employee during the rush.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0150",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0151",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0152",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0153",
+    "signals": [
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "dietary or allergy question",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Three guests asked whether the tofu bowl was vegan.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0155",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0156",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Ben",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Ben handled guest questions professionally and maintained a steady pace.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      },
+      {
+        "category": "inventory_inconsistency",
+        "subject": "taco portions",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Inventory counts did not match the remaining taco portions near closing.",
+        "sensitive": false,
+        "rationale": "Mismatch between inventory counts and actual remaining portions indicates inconsistency."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "spicier sauce",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests asked for a spicier sauce.",
+        "sensitive": false,
+        "rationale": "Guest request for spicier sauce."
+      },
+      {
+        "category": "other_operational_issue",
+        "subject": "handoff",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The handoff should include clearer remaining-inventory counts.",
+        "sensitive": false,
+        "rationale": "Suggestion to improve handoff process."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0157",
+    "signals": [
+      {
+        "category": "register_disruption",
+        "subject": "register disruption week 7",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Opening, service, and closing procedures ran normally. The shared register connection dropped briefly and delayed service.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0158",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days. The shared register connection dropped briefly and delayed service.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      },
+      {
+        "category": "register_disruption",
+        "subject": "register disruption week 7",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days. The shared register connection dropped briefly and delayed service.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0159",
+    "signals": [
+      {
+        "category": "register_disruption",
+        "subject": "register disruption week 7",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Opening, service, and closing procedures ran normally. The shared register connection dropped briefly and delayed service.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0160",
+    "signals": [
+      {
+        "category": "register_disruption",
+        "subject": "register disruption week 7",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The shift stayed organized with no unusual delays. The shared register connection dropped briefly and delayed service.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0161",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "maya chen",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen noticed a prep issue early and coordinated a quick recovery.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      },
+      {
+        "category": "register_disruption",
+        "subject": "register disruption week 7",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "No major operational concerns. The shared register connection dropped briefly and delayed service.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0162",
+    "signals": [
+      {
+        "category": "register_disruption",
+        "subject": "register disruption week 7",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Opening, service, and closing procedures ran normally. The shared register connection dropped briefly and delayed service.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0163",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0164",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Several prepared meals remained after service despite steady quality.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0165",
+    "signals": [
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "dietary or allergy question",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Three guests asked whether the tofu bowl was vegan.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0166",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0167",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0168",
+    "signals": [
+      {
+        "category": "inventory_inconsistency",
+        "subject": "inconsistent prep",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Inventory counts did not match the remaining taco portions near closing.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0170",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0171",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0172",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0173",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "maya chen",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen received positive guest feedback for patient, clear service.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0174",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0175",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0176",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Several prepared meals remained after service despite steady quality.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0177",
+    "signals": [
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "dietary or allergy question",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether the black bean bowl contained dairy.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0178",
+    "signals": [
+      {
+        "category": "equipment_failure",
+        "subject": "equipment failure",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The warming unit required a reset and created a pickup bottleneck.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0179",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0180",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0181",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "kung pao chicken",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Chicken prep was below demand and the final pan ran close to shortage.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0182",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Unclaimed lunches were above target and closing waste should be reviewed.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0183",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0184",
+    "signals": [
+      {
+        "category": "sensitive_personnel_note",
+        "subject": "ambiguous comment",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Tony seemed frustrated and stepped away twice, but the report does not establish misconduct or a performance conclusion.",
+        "sensitive": true,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0185",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "maya chen",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen kept the line moving and coached a newer employee during the rush.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0186",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0187",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0188",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0189",
+    "signals": [
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "dietary or allergy question",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked whether the black bean bowl contained dairy.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0191",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0192",
+    "signals": [
+      {
+        "category": "inventory_inconsistency",
+        "subject": "inconsistent prep",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Tofu taco prep did not match demand and beef tacos were overprepared.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0193",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "kung pao chicken",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Kung Pao chicken ran low during the lunch rush and backup prep was started.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "portion complaints weeks 9 10",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Several guests said portions looked smaller than earlier in the month.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0194",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Several prepared meals remained after service despite steady quality.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "portion complaints weeks 9 10",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest complained that the portion did not match the listed value.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0195",
+    "signals": [
+      {
+        "category": "portion_complaint",
+        "subject": "portion complaints weeks 9 10",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests questioned whether the serving size had changed.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0196",
+    "signals": [
+      {
+        "category": "portion_complaint",
+        "subject": "portion complaints weeks 9 10",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests questioned whether the serving size had changed.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0198",
+    "signals": [
+      {
+        "category": "portion_complaint",
+        "subject": "portion complaints weeks 9 10",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests questioned whether the serving size had changed.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0199",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0200",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Several prepared meals remained after service despite steady quality.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0201",
+    "signals": [
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "dietary or allergy question",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Three guests asked whether the tofu bowl was vegan.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0202",
+    "signals": [
+      {
+        "category": "equipment_failure",
+        "subject": "equipment failure",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The register froze during lunch and slowed the line for several minutes.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0203",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0204",
+    "signals": [
+      {
+        "category": "inventory_inconsistency",
+        "subject": "inconsistent prep",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Inventory counts did not match the remaining taco portions near closing.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0205",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0206",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0207",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0208",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0209",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "maya chen",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen received positive guest feedback for patient, clear service.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0210",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0211",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0212",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Unclaimed lunches were above target and closing waste should be reviewed.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0213",
+    "signals": [
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "dietary or allergy question",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Guests asked about gluten-free ingredients and possible cross-contact.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0214",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0215",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0216",
+    "signals": [
+      {
+        "category": "inventory_inconsistency",
+        "subject": "inconsistent prep",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Inventory counts did not match the remaining taco portions near closing.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0217",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "kung pao chicken",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Kung Pao chicken ran low during the lunch rush and backup prep was started.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "portion complaints weeks 9 10",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Several guests said portions looked smaller than earlier in the month.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0218",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "portion complaints weeks 9 10",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest complained that the portion did not match the listed value.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0219",
+    "signals": [
+      {
+        "category": "portion_complaint",
+        "subject": "portion complaints weeks 9 10",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest complained that the portion did not match the listed value.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0220",
+    "signals": [
+      {
+        "category": "portion_complaint",
+        "subject": "portion complaints weeks 9 10",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Several guests said portions looked smaller than earlier in the month.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0221",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "maya chen",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen kept the line moving and coached a newer employee during the rush.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      },
+      {
+        "category": "portion_complaint",
+        "subject": "portion complaints weeks 9 10",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests questioned whether the serving size had changed.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0222",
+    "signals": [
+      {
+        "category": "portion_complaint",
+        "subject": "portion complaints weeks 9 10",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Several guests said portions looked smaller than earlier in the month.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0223",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0225",
+    "signals": [
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "dietary or allergy question",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Guests asked about gluten-free ingredients and possible cross-contact.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0226",
+    "signals": [
+      {
+        "category": "equipment_failure",
+        "subject": "equipment failure",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The warming unit required a reset and created a pickup bottleneck.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0227",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0228",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0229",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "kung pao chicken",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Chicken prep was below demand and the final pan ran close to shortage.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0230",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Unclaimed lunches were above target and closing waste should be reviewed.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0231",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0232",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0233",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "maya chen",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen noticed a prep issue early and coordinated a quick recovery.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0234",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0235",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0236",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Several prepared meals remained after service despite steady quality.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0237",
+    "signals": [
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "dietary or allergy question",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Two guests requested clearer allergy information for the avocado salsa.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0238",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0239",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0241",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "kung pao chicken",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Kung Pao chicken sold out near 1 PM while tofu stir-fry remained available.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0242",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Unclaimed lunches were above target and closing waste should be reviewed.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0243",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0245",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "maya chen",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen noticed a prep issue early and coordinated a quick recovery.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0246",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0247",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0248",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0249",
+    "signals": [
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "dietary or allergy question",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Guests asked about gluten-free ingredients and possible cross-contact.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0250",
+    "signals": [
+      {
+        "category": "equipment_failure",
+        "subject": "equipment failure",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The register froze during lunch and slowed the line for several minutes.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0251",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0252",
+    "signals": [
+      {
+        "category": "inventory_inconsistency",
+        "subject": "inconsistent prep",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Inventory counts did not match the remaining taco portions near closing.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0253",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "Maria",
+        "severity": "low",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maria communicated clearly and helped the line recover during the rush.",
+        "sensitive": false,
+        "rationale": "Positive description of team member's performance."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0254",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0255",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0256",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0257",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "maya chen",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen received positive guest feedback for patient, clear service.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0258",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0260",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "beverage variety",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Several guests complimented the food quality. Guests asked for more beverage variety, including unsweetened options.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0261",
+    "signals": [
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "dietary or allergy question",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Three guests asked whether the tofu bowl was vegan. Guests asked for more beverage variety, including unsweetened options.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "beverage variety",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Three guests asked whether the tofu bowl was vegan. Guests asked for more beverage variety, including unsweetened options.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0262",
+    "signals": [
+      {
+        "category": "beverage_request",
+        "subject": "beverage variety",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest requested a lower-sodium option. Guests asked for more beverage variety, including unsweetened options.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0263",
+    "signals": [
+      {
+        "category": "beverage_request",
+        "subject": "beverage variety",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked when a previous seasonal item might return. Guests asked for more beverage variety, including unsweetened options.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0264",
+    "signals": [
+      {
+        "category": "inventory_inconsistency",
+        "subject": "inconsistent prep",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Cilantro rice ran low while extra street corn remained at closing.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      },
+      {
+        "category": "beverage_request",
+        "subject": "beverage variety",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "No major guest issues today. Guests asked for more beverage variety, including unsweetened options.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0265",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "kung pao chicken",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Kung Pao chicken sold out near 1 PM while tofu stir-fry remained available.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0266",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0267",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0268",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0269",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "maya chen",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen kept the line moving and coached a newer employee during the rush.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0270",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0271",
+    "signals": [
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "dietary or allergy question",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "A guest asked for clearer allergen labels before choosing a meal.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0272",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Production exceeded afternoon demand; reduce backup prep on slower days.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0274",
+    "signals": [
+      {
+        "category": "equipment_failure",
+        "subject": "equipment failure",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "The warming unit required a reset and created a pickup bottleneck.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0275",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0276",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0277",
+    "signals": [
+      {
+        "category": "food_shortage",
+        "subject": "kung pao chicken",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Chicken prep was below demand and the final pan ran close to shortage.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0278",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Unclaimed lunches were above target and closing waste should be reviewed.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0279",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0280",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0281",
+    "signals": [
+      {
+        "category": "employee_recognition",
+        "subject": "maya chen",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "team_members_who_did_well",
+        "evidence_excerpt": "Maya Chen received positive guest feedback for patient, clear service.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0283",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0284",
+    "signals": [
+      {
+        "category": "high_waste_or_overproduction",
+        "subject": "high unclaimed lunches",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "operational_notes",
+        "evidence_excerpt": "Several prepared meals remained after service despite steady quality.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0285",
+    "signals": [
+      {
+        "category": "dietary_or_allergy_question",
+        "subject": "dietary or allergy question",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "guest_issues_for_the_day",
+        "evidence_excerpt": "Three guests asked whether the tofu bowl was vegan.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  },
+  {
+    "source_submission_id": "FM-0286",
+    "signals": []
+  },
+  {
+    "source_submission_id": "FM-0288",
+    "signals": [
+      {
+        "category": "inventory_inconsistency",
+        "subject": "inconsistent prep",
+        "severity": "medium",
+        "confidence": 1.0,
+        "evidence_field": "food_concerns_or_outages",
+        "evidence_excerpt": "Cilantro rice ran low while extra street corn remained at closing.",
+        "sensitive": false,
+        "rationale": "Matched by the deterministic fallback rule set."
+      }
+    ]
+  }
+]

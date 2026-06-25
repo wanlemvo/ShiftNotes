@@ -1,0 +1,30 @@
+Subject: ShiftNotes Weekly Briefing: 3 kiosks need attention | Week 4: March 23 - March 26, 2026
+
+Week 4: March 23 - March 26, 2026
+
+Reporting health, kiosk performance, and source-backed trends.
+
+At a glance
+- Reporting: 22/24 valid reports
+- Food quality: 4.32/5
+- Food quantity: 3.91/5
+- Unclaimed lunches: 92
+
+Priority findings
+- Overproduction or elevated waste appeared in 4 reports at Market Grill.
+  Sources: FM-0074, FM-0080, FM-0086, FM-0092
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-04-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+- Beverage requests appeared in 2 reports at Hearth & Grain.
+  Sources: FM-0077, FM-0095
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-04-hearth-grain-semantic-beverage-request-beverage-request
+- Employee recognition: Maya Chen appeared in 2 reports at Hearth & Grain.
+  Sources: FM-0077, FM-0089
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-04-hearth-grain-semantic-employee-recognition-maya-chen
+- Food shortages: Chicken prep appeared in 1 report at Bowls & Buns.
+  Sources: FM-0073
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-04-bowls-buns-semantic-food-shortage-chicken-prep
+
+Open full briefing:
+http://localhost:8501
+
+Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

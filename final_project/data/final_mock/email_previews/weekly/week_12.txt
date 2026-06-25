@@ -1,0 +1,30 @@
+Subject: ShiftNotes Weekly Briefing: 4 kiosks need attention | Week 12: May 18 - May 21, 2026
+
+Week 12: May 18 - May 21, 2026
+
+Reporting health, kiosk performance, and source-backed trends.
+
+At a glance
+- Reporting: 21/24 valid reports
+- Food quality: 4.24/5
+- Food quantity: 3.71/5
+- Unclaimed lunches: 97
+
+Priority findings
+- Overproduction or elevated waste appeared in 4 reports at Market Grill.
+  Sources: FM-0266, FM-0272, FM-0278, FM-0284
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-12-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+- Food shortages: Kung Pao chicken appeared in 2 reports at Bowls & Buns.
+  Sources: FM-0265, FM-0277
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-12-bowls-buns-semantic-food-shortage-kung-pao-chicken
+- Employee recognition: Maya Chen appeared in 2 reports at Hearth & Grain.
+  Sources: FM-0269, FM-0281
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-12-hearth-grain-semantic-employee-recognition-maya-chen
+- Equipment-related disruptions appeared in 1 report at Coastal Cafe.
+  Sources: FM-0274
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-12-coastal-cafe-semantic-equipment-failure-equipment-failure
+
+Open full briefing:
+http://localhost:8501
+
+Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

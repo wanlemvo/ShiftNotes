@@ -1,0 +1,19 @@
+ShiftNotes Week 6 evidence
+Captured: 2026-06-20
+
+COMMAND
+python final_project/src/shiftnotes/cli.py workflow-start --thread-id week6-retry-approve --mode demo --simulate-failures 1 --max-retries 2 --expected-kiosk "Bowls & Buns"
+
+OUTPUT
+Thread ID: week6-retry-approve
+Status: awaiting_review
+LOG planner: mode=demo; expected_kiosks=['Bowls & Buns']; max_retries=2
+LOG ingest_tool: failed; simulated ingestion failure on attempt 1
+LOG evaluator: retrying ingestion; retry=1/2; reason=simulated ingestion failure on attempt 1
+LOG ingest_tool: success; source=final_project/data/demo/jotform_submissions.json; submissions=4; attempt=2
+LOG evaluator: ingestion output accepted
+LOG normalize: reports=4; valid=4; needs_review=0
+LOG analyze: claims=8; missing_reports=1
+LOG draft_briefing: created source-backed briefing
+HITL INTERRUPT: workflow paused before briefing finalization.
+Review options: approve, correct, reject

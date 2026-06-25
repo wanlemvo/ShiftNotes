@@ -1,0 +1,1099 @@
+{
+  "dataset_version": "1.0",
+  "seed": 20260621,
+  "period": {
+    "start_date": "2026-03-02",
+    "end_date": "2026-05-21",
+    "weeks": 12,
+    "service_days_per_week": 4
+  },
+  "expected_schedule": {
+    "total_expected": 288,
+    "valid_scheduled": 267,
+    "missing": 18,
+    "malformed": 3
+  },
+  "duplicates": [
+    {
+      "duplicate_submission_id": "DUP-001",
+      "original_submission_id": "FM-0031"
+    },
+    {
+      "duplicate_submission_id": "DUP-002",
+      "original_submission_id": "FM-0117"
+    },
+    {
+      "duplicate_submission_id": "DUP-003",
+      "original_submission_id": "FM-0229"
+    }
+  ],
+  "events": {
+    "cross_kiosk:portion_complaints_weeks_9_10": {
+      "expected_count": 11,
+      "source_records": [
+        {
+          "source_submission_id": "FM-0193",
+          "date": "2026-04-27",
+          "week": "9",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0194",
+          "date": "2026-04-27",
+          "week": "9",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0195",
+          "date": "2026-04-27",
+          "week": "9",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0196",
+          "date": "2026-04-27",
+          "week": "9",
+          "kiosk": "Coastal Cafe"
+        },
+        {
+          "source_submission_id": "FM-0198",
+          "date": "2026-04-27",
+          "week": "9",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0217",
+          "date": "2026-05-04",
+          "week": "10",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0218",
+          "date": "2026-05-04",
+          "week": "10",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0219",
+          "date": "2026-05-04",
+          "week": "10",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0220",
+          "date": "2026-05-04",
+          "week": "10",
+          "kiosk": "Coastal Cafe"
+        },
+        {
+          "source_submission_id": "FM-0221",
+          "date": "2026-05-04",
+          "week": "10",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0222",
+          "date": "2026-05-04",
+          "week": "10",
+          "kiosk": "Street Eats"
+        }
+      ]
+    },
+    "cross_kiosk:register_disruption_week_7": {
+      "expected_count": 6,
+      "source_records": [
+        {
+          "source_submission_id": "FM-0157",
+          "date": "2026-04-15",
+          "week": "7",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0158",
+          "date": "2026-04-15",
+          "week": "7",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0159",
+          "date": "2026-04-15",
+          "week": "7",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0160",
+          "date": "2026-04-15",
+          "week": "7",
+          "kiosk": "Coastal Cafe"
+        },
+        {
+          "source_submission_id": "FM-0161",
+          "date": "2026-04-15",
+          "week": "7",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0162",
+          "date": "2026-04-15",
+          "week": "7",
+          "kiosk": "Street Eats"
+        }
+      ]
+    },
+    "cross_kiosk:waste_spike_weeks_7_8": {
+      "expected_count": 8,
+      "source_records": [
+        {
+          "source_submission_id": "FM-0146",
+          "date": "2026-04-13",
+          "week": "7",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0152",
+          "date": "2026-04-14",
+          "week": "7",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0158",
+          "date": "2026-04-15",
+          "week": "7",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0164",
+          "date": "2026-04-16",
+          "week": "7",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0170",
+          "date": "2026-04-20",
+          "week": "8",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0176",
+          "date": "2026-04-21",
+          "week": "8",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0182",
+          "date": "2026-04-22",
+          "week": "8",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0188",
+          "date": "2026-04-23",
+          "week": "8",
+          "kiosk": "Market Grill"
+        }
+      ]
+    },
+    "food_shortage:kung_pao_chicken": {
+      "expected_count": 17,
+      "source_records": [
+        {
+          "source_submission_id": "FM-0001",
+          "date": "2026-03-02",
+          "week": "1",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0025",
+          "date": "2026-03-09",
+          "week": "2",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0037",
+          "date": "2026-03-11",
+          "week": "2",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0049",
+          "date": "2026-03-16",
+          "week": "3",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0073",
+          "date": "2026-03-23",
+          "week": "4",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0085",
+          "date": "2026-03-25",
+          "week": "4",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0097",
+          "date": "2026-03-30",
+          "week": "5",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0121",
+          "date": "2026-04-06",
+          "week": "6",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0133",
+          "date": "2026-04-08",
+          "week": "6",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0145",
+          "date": "2026-04-13",
+          "week": "7",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0181",
+          "date": "2026-04-22",
+          "week": "8",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0193",
+          "date": "2026-04-27",
+          "week": "9",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0217",
+          "date": "2026-05-04",
+          "week": "10",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0229",
+          "date": "2026-05-06",
+          "week": "10",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0241",
+          "date": "2026-05-11",
+          "week": "11",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0265",
+          "date": "2026-05-18",
+          "week": "12",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0277",
+          "date": "2026-05-20",
+          "week": "12",
+          "kiosk": "Bowls & Buns"
+        }
+      ]
+    },
+    "guest_request:beverage_variety": {
+      "expected_count": 5,
+      "source_records": [
+        {
+          "source_submission_id": "FM-0260",
+          "date": "2026-05-14",
+          "week": "11",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0261",
+          "date": "2026-05-14",
+          "week": "11",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0262",
+          "date": "2026-05-14",
+          "week": "11",
+          "kiosk": "Coastal Cafe"
+        },
+        {
+          "source_submission_id": "FM-0263",
+          "date": "2026-05-14",
+          "week": "11",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0264",
+          "date": "2026-05-14",
+          "week": "11",
+          "kiosk": "Street Eats"
+        }
+      ]
+    },
+    "guest_theme:dietary_or_allergy_question": {
+      "expected_count": 23,
+      "source_records": [
+        {
+          "source_submission_id": "FM-0009",
+          "date": "2026-03-03",
+          "week": "1",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0021",
+          "date": "2026-03-05",
+          "week": "1",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0033",
+          "date": "2026-03-10",
+          "week": "2",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0045",
+          "date": "2026-03-12",
+          "week": "2",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0057",
+          "date": "2026-03-17",
+          "week": "3",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0069",
+          "date": "2026-03-19",
+          "week": "3",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0081",
+          "date": "2026-03-24",
+          "week": "4",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0105",
+          "date": "2026-03-31",
+          "week": "5",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0117",
+          "date": "2026-04-02",
+          "week": "5",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0129",
+          "date": "2026-04-07",
+          "week": "6",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0141",
+          "date": "2026-04-09",
+          "week": "6",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0153",
+          "date": "2026-04-14",
+          "week": "7",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0165",
+          "date": "2026-04-16",
+          "week": "7",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0177",
+          "date": "2026-04-21",
+          "week": "8",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0189",
+          "date": "2026-04-23",
+          "week": "8",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0201",
+          "date": "2026-04-28",
+          "week": "9",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0213",
+          "date": "2026-04-30",
+          "week": "9",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0225",
+          "date": "2026-05-05",
+          "week": "10",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0237",
+          "date": "2026-05-07",
+          "week": "10",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0249",
+          "date": "2026-05-12",
+          "week": "11",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0261",
+          "date": "2026-05-14",
+          "week": "11",
+          "kiosk": "Verde Kitchen"
+        },
+        {
+          "source_submission_id": "FM-0271",
+          "date": "2026-05-19",
+          "week": "12",
+          "kiosk": "Bowls & Buns"
+        },
+        {
+          "source_submission_id": "FM-0285",
+          "date": "2026-05-21",
+          "week": "12",
+          "kiosk": "Verde Kitchen"
+        }
+      ]
+    },
+    "inventory:inconsistent_prep": {
+      "expected_count": 17,
+      "source_records": [
+        {
+          "source_submission_id": "FM-0012",
+          "date": "2026-03-03",
+          "week": "1",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0024",
+          "date": "2026-03-05",
+          "week": "1",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0060",
+          "date": "2026-03-17",
+          "week": "3",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0072",
+          "date": "2026-03-19",
+          "week": "3",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0096",
+          "date": "2026-03-26",
+          "week": "4",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0108",
+          "date": "2026-03-31",
+          "week": "5",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0120",
+          "date": "2026-04-02",
+          "week": "5",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0144",
+          "date": "2026-04-09",
+          "week": "6",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0156",
+          "date": "2026-04-14",
+          "week": "7",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0168",
+          "date": "2026-04-16",
+          "week": "7",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0192",
+          "date": "2026-04-23",
+          "week": "8",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0204",
+          "date": "2026-04-28",
+          "week": "9",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0216",
+          "date": "2026-04-30",
+          "week": "9",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0240",
+          "date": "2026-05-07",
+          "week": "10",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0252",
+          "date": "2026-05-12",
+          "week": "11",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0264",
+          "date": "2026-05-14",
+          "week": "11",
+          "kiosk": "Street Eats"
+        },
+        {
+          "source_submission_id": "FM-0288",
+          "date": "2026-05-21",
+          "week": "12",
+          "kiosk": "Street Eats"
+        }
+      ]
+    },
+    "operational_issue:equipment_failure": {
+      "expected_count": 11,
+      "source_records": [
+        {
+          "source_submission_id": "FM-0034",
+          "date": "2026-03-10",
+          "week": "2",
+          "kiosk": "Coastal Cafe"
+        },
+        {
+          "source_submission_id": "FM-0058",
+          "date": "2026-03-17",
+          "week": "3",
+          "kiosk": "Coastal Cafe"
+        },
+        {
+          "source_submission_id": "FM-0082",
+          "date": "2026-03-24",
+          "week": "4",
+          "kiosk": "Coastal Cafe"
+        },
+        {
+          "source_submission_id": "FM-0106",
+          "date": "2026-03-31",
+          "week": "5",
+          "kiosk": "Coastal Cafe"
+        },
+        {
+          "source_submission_id": "FM-0130",
+          "date": "2026-04-07",
+          "week": "6",
+          "kiosk": "Coastal Cafe"
+        },
+        {
+          "source_submission_id": "FM-0154",
+          "date": "2026-04-14",
+          "week": "7",
+          "kiosk": "Coastal Cafe"
+        },
+        {
+          "source_submission_id": "FM-0178",
+          "date": "2026-04-21",
+          "week": "8",
+          "kiosk": "Coastal Cafe"
+        },
+        {
+          "source_submission_id": "FM-0202",
+          "date": "2026-04-28",
+          "week": "9",
+          "kiosk": "Coastal Cafe"
+        },
+        {
+          "source_submission_id": "FM-0226",
+          "date": "2026-05-05",
+          "week": "10",
+          "kiosk": "Coastal Cafe"
+        },
+        {
+          "source_submission_id": "FM-0250",
+          "date": "2026-05-12",
+          "week": "11",
+          "kiosk": "Coastal Cafe"
+        },
+        {
+          "source_submission_id": "FM-0274",
+          "date": "2026-05-19",
+          "week": "12",
+          "kiosk": "Coastal Cafe"
+        }
+      ]
+    },
+    "recognition:maya_chen": {
+      "expected_count": 23,
+      "source_records": [
+        {
+          "source_submission_id": "FM-0005",
+          "date": "2026-03-02",
+          "week": "1",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0017",
+          "date": "2026-03-04",
+          "week": "1",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0029",
+          "date": "2026-03-09",
+          "week": "2",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0041",
+          "date": "2026-03-11",
+          "week": "2",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0053",
+          "date": "2026-03-16",
+          "week": "3",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0065",
+          "date": "2026-03-18",
+          "week": "3",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0077",
+          "date": "2026-03-23",
+          "week": "4",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0089",
+          "date": "2026-03-25",
+          "week": "4",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0101",
+          "date": "2026-03-30",
+          "week": "5",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0113",
+          "date": "2026-04-01",
+          "week": "5",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0125",
+          "date": "2026-04-06",
+          "week": "6",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0137",
+          "date": "2026-04-08",
+          "week": "6",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0149",
+          "date": "2026-04-13",
+          "week": "7",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0161",
+          "date": "2026-04-15",
+          "week": "7",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0173",
+          "date": "2026-04-20",
+          "week": "8",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0185",
+          "date": "2026-04-22",
+          "week": "8",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0209",
+          "date": "2026-04-29",
+          "week": "9",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0221",
+          "date": "2026-05-04",
+          "week": "10",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0233",
+          "date": "2026-05-06",
+          "week": "10",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0245",
+          "date": "2026-05-11",
+          "week": "11",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0257",
+          "date": "2026-05-13",
+          "week": "11",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0269",
+          "date": "2026-05-18",
+          "week": "12",
+          "kiosk": "Hearth & Grain"
+        },
+        {
+          "source_submission_id": "FM-0281",
+          "date": "2026-05-20",
+          "week": "12",
+          "kiosk": "Hearth & Grain"
+        }
+      ]
+    },
+    "sensitive_personnel:ambiguous_comment": {
+      "expected_count": 1,
+      "source_records": [
+        {
+          "source_submission_id": "FM-0184",
+          "date": "2026-04-22",
+          "week": "8",
+          "kiosk": "Coastal Cafe"
+        }
+      ]
+    },
+    "waste:high_unclaimed_lunches": {
+      "expected_count": 45,
+      "source_records": [
+        {
+          "source_submission_id": "FM-0002",
+          "date": "2026-03-02",
+          "week": "1",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0008",
+          "date": "2026-03-03",
+          "week": "1",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0014",
+          "date": "2026-03-04",
+          "week": "1",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0020",
+          "date": "2026-03-05",
+          "week": "1",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0026",
+          "date": "2026-03-09",
+          "week": "2",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0038",
+          "date": "2026-03-11",
+          "week": "2",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0044",
+          "date": "2026-03-12",
+          "week": "2",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0050",
+          "date": "2026-03-16",
+          "week": "3",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0056",
+          "date": "2026-03-17",
+          "week": "3",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0062",
+          "date": "2026-03-18",
+          "week": "3",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0068",
+          "date": "2026-03-19",
+          "week": "3",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0074",
+          "date": "2026-03-23",
+          "week": "4",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0080",
+          "date": "2026-03-24",
+          "week": "4",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0086",
+          "date": "2026-03-25",
+          "week": "4",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0092",
+          "date": "2026-03-26",
+          "week": "4",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0098",
+          "date": "2026-03-30",
+          "week": "5",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0104",
+          "date": "2026-03-31",
+          "week": "5",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0110",
+          "date": "2026-04-01",
+          "week": "5",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0116",
+          "date": "2026-04-02",
+          "week": "5",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0122",
+          "date": "2026-04-06",
+          "week": "6",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0128",
+          "date": "2026-04-07",
+          "week": "6",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0140",
+          "date": "2026-04-09",
+          "week": "6",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0146",
+          "date": "2026-04-13",
+          "week": "7",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0152",
+          "date": "2026-04-14",
+          "week": "7",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0158",
+          "date": "2026-04-15",
+          "week": "7",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0164",
+          "date": "2026-04-16",
+          "week": "7",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0170",
+          "date": "2026-04-20",
+          "week": "8",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0176",
+          "date": "2026-04-21",
+          "week": "8",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0182",
+          "date": "2026-04-22",
+          "week": "8",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0188",
+          "date": "2026-04-23",
+          "week": "8",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0194",
+          "date": "2026-04-27",
+          "week": "9",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0200",
+          "date": "2026-04-28",
+          "week": "9",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0206",
+          "date": "2026-04-29",
+          "week": "9",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0212",
+          "date": "2026-04-30",
+          "week": "9",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0218",
+          "date": "2026-05-04",
+          "week": "10",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0230",
+          "date": "2026-05-06",
+          "week": "10",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0236",
+          "date": "2026-05-07",
+          "week": "10",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0242",
+          "date": "2026-05-11",
+          "week": "11",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0248",
+          "date": "2026-05-12",
+          "week": "11",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0254",
+          "date": "2026-05-13",
+          "week": "11",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0260",
+          "date": "2026-05-14",
+          "week": "11",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0266",
+          "date": "2026-05-18",
+          "week": "12",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0272",
+          "date": "2026-05-19",
+          "week": "12",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0278",
+          "date": "2026-05-20",
+          "week": "12",
+          "kiosk": "Market Grill"
+        },
+        {
+          "source_submission_id": "FM-0284",
+          "date": "2026-05-21",
+          "week": "12",
+          "kiosk": "Market Grill"
+        }
+      ]
+    }
+  },
+  "benchmark_questions": [
+    "Which kiosk has the highest total unclaimed lunches?",
+    "Which kiosk repeatedly experiences food shortages?",
+    "Which employee is recognized most frequently?",
+    "Which kiosk has the most equipment-related operational friction?",
+    "Which kiosk receives the most dietary or allergy questions?",
+    "Which kiosk has the most inconsistent inventory notes?",
+    "Which kiosk/date reports are missing?",
+    "What cross-kiosk issues increased during Weeks 7 through 10?"
+  ]
+}

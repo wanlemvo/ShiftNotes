@@ -1,0 +1,30 @@
+Subject: ShiftNotes Weekly Briefing: 4 kiosks need attention | Week 1: March 2 - March 5, 2026
+
+Week 1: March 2 - March 5, 2026
+
+Reporting health, kiosk performance, and source-backed trends.
+
+At a glance
+- Reporting: 23/24 valid reports
+- Food quality: 4.43/5
+- Food quantity: 3.43/5
+- Unclaimed lunches: 122
+
+Priority findings
+- Overproduction or elevated waste appeared in 4 reports at Market Grill.
+  Sources: FM-0002, FM-0008, FM-0014, FM-0020
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-01-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+- Dietary and allergy questions appeared in 2 reports at Verde Kitchen.
+  Sources: FM-0009, FM-0021
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-01-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
+- Employee recognition: Maya Chen appeared in 2 reports at Hearth & Grain.
+  Sources: FM-0005, FM-0017
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-01-hearth-grain-semantic-employee-recognition-maya-chen
+- Food shortages: Kung Pao chicken appeared in 1 report at Bowls & Buns.
+  Sources: FM-0001
+  Inspect/challenge: http://localhost:8501?claim=weekly-week-01-bowls-buns-semantic-food-shortage-kung-pao-chicken
+
+Open full briefing:
+http://localhost:8501
+
+Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

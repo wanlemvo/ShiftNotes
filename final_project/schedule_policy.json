@@ -1,0 +1,7 @@
+{
+  "timezone": "America/Los_Angeles",
+  "weekly_weekday": "Thursday",
+  "weekly_time": "15:30",
+  "monthly_rule": "day_before_final_expected_reporting_day",
+  "monthly_time": "15:30"
+}

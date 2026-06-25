@@ -1,175 +1,125 @@
 # ShiftNotes
 
-### Transforming Operational Reporting into Actionable Intelligence
+ShiftNotes is an email-first operational intelligence prototype for
+JotForm-style shift reports.
 
----
+The final project demonstrates how recurring operational notes from multiple
+kiosks can be transformed into source-backed weekly and monthly management
+briefings. The dashboard is secondary. The primary user experience is a
+briefing email that helps a manager understand trends without manually reading
+every individual shift-note report.
 
-## Overview
+## Final Project Location
 
-ShiftNotes is an AI-powered intake and intelligence system designed to transform operational shift reports into structured data, automated insights, and actionable operational intelligence.
-
-The project originated from operational reporting workflows used by **Dsquared Hospitality at T-Mobile Headquarters**. Shift leads submit daily reports containing information about food quality, inventory concerns, guest feedback, staffing observations, and operational notes.
-
-While these reports contain valuable information, much of that knowledge becomes archived in emails and folders, making historical analysis, trend detection, and operational insight extraction largely manual processes.
-
-ShiftNotes acts as an intelligence layer on top of the existing reporting workflow. Instead of simply storing reports, the system organizes information, identifies recurring patterns, generates operational summaries, and surfaces insights that help leadership make more informed operational decisions.
-
-Although the initial prototype focuses on hospitality operations within the T-Mobile Headquarters environment, the underlying concepts can be applied to any organization that relies on recurring operational reporting.
-
----
-
-## Current Scope
-
-| Category      | Details                                          |
-| ------------- | ------------------------------------------------ |
-| Environment   | Dsquared Hospitality at T-Mobile Headquarters    |
-| Data Source   | Shift Lead Reports & Operational Notes           |
-| Primary Goal  | Operational Insight Generation & Trend Detection |
-| Current Stage | Prototype / Proof of Concept                     |
-
----
-
-## The Problem
-
-Current operational reporting workflows are effective at collecting information but are not optimized for extracting intelligence.
-
-### Current Workflow
+The final independent implementation lives in:
 
 ```text
-Shift Lead
-    ↓
-JotForm Submission
-    ↓
-Email Inbox
-    ↓
-Folder Organization
-    ↓
-Manual Review
-    ↓
-Operational Action
+final_project/
 ```
 
-While this process successfully captures information, it relies heavily on manual review, individual memory, and historical searching.
+Key artifacts:
 
-As reports accumulate over time, recurring patterns and operational trends become increasingly difficult to identify.
+- `final_project/README.md` - setup, run steps, demo path, and limitations.
+- `final_project/TECHNICAL_REPORT.md` - final technical report sections.
+- `final_project/PRODUCT_WORKFLOW.md` - email-first workflow and HITL behavior.
+- `final_project/MODEL_SELECTION_AND_BENCHMARK.md` - model rationale and benchmark evidence.
+- `final_project/data/final_mock/email_previews/` - demo-ready weekly/monthly email previews.
+- `final_project/data/final_mock/` - synthetic dataset, claims, briefings, and benchmark artifacts.
+- `tests/` - automated test suite.
+- `SOLO_WORK_LOG.md` - independent work log after the Week 8 team checkpoint.
 
-Examples include:
+## Quick Demo
 
-* Recurring food outages
-* Staffing trends
-* Guest feedback patterns
-* Repeated operational issues
-* Employee recognition trends
-* Inventory concerns
-* Escalation frequency
-
-Many of these insights already exist within the reports but require significant manual effort to uncover.
-
----
-
-## The Solution
-
-ShiftNotes introduces an intelligence layer on top of existing reporting workflows.
-
-### Proposed Workflow
+Open these files in a browser:
 
 ```text
-Operational Reports
-        ↓
-Processing Layer
-        ↓
-Structured Intelligence
-        ↓
-Trend Detection
-        ↓
-Operational Insights
-        ↓
-Leadership Reporting
+final_project/data/final_mock/email_previews/weekly/week_01.html
+final_project/data/final_mock/email_previews/monthly/2026-03.html
 ```
 
-Instead of simply storing operational reports, ShiftNotes transforms them into searchable and analyzable organizational knowledge.
-
-The system is designed to:
-
-* Extract meaningful operational signals
-* Organize unstructured reporting data
-* Detect recurring trends
-* Generate automated summaries
-* Surface actionable insights
-* Reduce manual review effort
-
----
-
-## Core Objectives
-
-* Preserve existing reporting workflows
-* Reduce information loss
-* Improve operational visibility
-* Support leadership decision-making
-* Identify recurring operational trends
-* Transform operational notes into organizational intelligence
-
----
-
-## Planned Architecture
+These previews show the core product flow:
 
 ```text
-Operational Reports
-        ↓
-Processing Layer
-        ↓
-Data Enrichment
-        ↓
-Analytics Engine
-        ↓
-Insight Generation
-        ↓
-Operational Dashboard / Reporting
+JotForm-style shift reports
+-> cleaned operational records
+-> source-backed trend analysis
+-> weekly/monthly briefing email
+-> optional source inspection and claim correction
 ```
 
----
+## Run Locally
 
-## Documentation Guide
+Install the project from the repository root:
 
-The following documents provide deeper insight into the design, implementation, and evolution of ShiftNotes.
+```bash
+python -m pip install -e .
+```
 
-| Document                 | Purpose                                                                               |
-| ------------------------ | ------------------------------------------------------------------------------------- |
-| PRODUCT_VISION.md        | Defines the purpose, philosophy, goals, and future direction of ShiftNotes.           |
-| CURRENT_FORM_ANALYSIS.md | Examines the current reporting workflow and identifies opportunities for improvement. |
-| USER_EXPERIENCE.md       | Defines how users interact with the system and consume insights.                      |
-| ARCHITECTURE.md          | Documents system components, data flow, and technical design decisions.               |
-| TECHNICAL_DECISIONS.md   | Explains major implementation choices and tradeoffs.                                  |
-| CURRENT_STATE.md         | Tracks functionality, assumptions, limitations, and known issues.                     |
-| DEMO_SCRIPT.md           | Structured walkthrough for presentations and demonstrations.                          |
-| DEVELOPMENT_LOG.md       | Engineering journal documenting project evolution and implementation progress.        |
-| FUTURE_EXPANSION.md      | Long-term ideas, future capabilities, and potential system growth.                    |
+Run tests:
 
----
+```bash
+python -m pytest -q
+```
 
-## Status
+Generate final briefing artifacts:
 
-### Current Phase
+```bash
+python final_project/src/shiftnotes/cli.py briefings
+python final_project/src/shiftnotes/cli.py product-assets
+```
 
-* Workflow Analysis
-* Form Evaluation
-* Architecture Design
-* Prototype Planning
+Run the optional inspection workspace:
 
-### Next Milestones
+```bash
+python -m streamlit run final_project/app.py
+```
 
-* Analyze current reporting structure
-* Design intelligence pipeline
-* Create synthetic operational dataset
-* Develop passive operational insight layer
+## Setup for a Real JotForm Account
 
----
+Copy the template:
 
-## Project Goal
+```bash
+copy final_project\.env.example final_project\.env
+```
 
-The goal of ShiftNotes is not to replace existing reporting workflows.
+Fill in:
 
-The goal is to augment them.
+```env
+JOTFORM_API_KEY=your_api_key_here
+JOTFORM_FORM_ID=your_form_id_here
+GROQ_API_KEY=your_groq_api_key_here
+GROQ_MODEL=openai/gpt-oss-20b
+```
 
-By transforming operational reports into structured intelligence, ShiftNotes aims to reduce information loss, improve visibility, and help leadership make better operational decisions using information that already exists within the organization.
-s
+Do not commit `.env`.
+
+## What Is Implemented
+
+- JotForm-style normalization and validation.
+- Missing report detection by expected kiosk/date.
+- Duplicate and malformed report handling.
+- Weekly and monthly briefing generation.
+- HTML and plain-text email previews.
+- Groq semantic extraction with strict source evidence validation.
+- Deterministic Python metrics for ratings, dates, waste, and completeness.
+- Source-backed claim catalog.
+- Optional Streamlit source inspection workspace.
+- Human-in-the-loop claim challenge and correction confirmation.
+- Responsible AI guardrails for personnel-sensitive notes.
+- Benchmark artifacts and tests.
+
+## Known Limitations
+
+- Gmail delivery is not connected yet; emails are generated as local previews.
+- The scheduler is documented but not deployed as a production job.
+- The final demo uses synthetic JotForm-shaped data.
+- A full Groq backfill hit on-demand quota limits and used deterministic fallback
+  for unresolved batches.
+- The Streamlit workspace is local, not hosted or authenticated.
+- Source links point to the local inspection workflow, not original JotForm URLs.
+
+## Submission Notes
+
+The complete final submission ZIP is generated under `dist/`, but `dist/` is not
+tracked in Git. The repository itself contains the code, docs, tests, and demo
+artifacts needed to reproduce the project on another machine.
