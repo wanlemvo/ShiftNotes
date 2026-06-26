@@ -7,6 +7,8 @@ submission packages and what still requires human action.
 
 | Assignment | Status | Submit |
 | --- | --- | --- |
+| Week 3 Model and Workflow Comparison Memo | Ready | `dist/ShiftNotes_Week3_Model_Workflow_Comparison_20260626.zip` |
+| Week 4 Multi-Model Comparison Tool and Recommendation | Ready | `dist/ShiftNotes_Week4_Model_Comparison_20260626.zip` |
 | Week 6 LangGraph Stateful Agent Checkpoint | Ready | `dist/ShiftNotes_Week6_LangGraph_Checkpoint.zip` |
 | Week 9 Implementation Sprint QA Checkpoint | Assembled locally | `dist/ShiftNotes_Week9_QA_Checkpoint_20260626.zip` |
 | Final Submission: Codebase and Technical Report | Ready | GitHub repo link or `dist/ShiftNotes_Final_Submission_COMPLETE_20260623_211043.zip` |
