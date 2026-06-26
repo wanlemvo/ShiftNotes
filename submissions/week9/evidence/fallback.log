@@ -1,0 +1,16 @@
+ShiftNotes Week 6 evidence
+Captured: 2026-06-20
+
+COMMAND
+python final_project/src/shiftnotes/cli.py workflow-start --thread-id week6-fallback --mode demo --simulate-failures 3 --max-retries 2 --expected-kiosk "Bowls & Buns"
+
+OUTPUT
+Thread ID: week6-fallback
+Status: failed
+LOG ingest_tool: failed; simulated ingestion failure on attempt 1
+LOG evaluator: retrying ingestion; retry=1/2; reason=simulated ingestion failure on attempt 1
+LOG ingest_tool: failed; simulated ingestion failure on attempt 2
+LOG evaluator: retrying ingestion; retry=2/2; reason=simulated ingestion failure on attempt 2
+LOG ingest_tool: failed; simulated ingestion failure on attempt 3
+LOG evaluator: retry limit reached; routing to fallback; reason=simulated ingestion failure on attempt 3
+LOG fallback: manual review required; reason=simulated ingestion failure on attempt 3
