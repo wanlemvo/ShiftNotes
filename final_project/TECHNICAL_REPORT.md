@@ -148,7 +148,7 @@ or cancel before anything is saved. This design is more realistic than asking
 Ted to approve every briefing before receiving it. The product should reduce
 his workload, not create a new approval chore.
 
-Streamlit is used as a local inspection workspace. It is intentionally not the
+Streamlit is used as a secondary inspection workspace. It is intentionally not the
 primary interface. The primary interface is the generated briefing email. The
 workspace supports demo needs: source inspection, challenge review,
 confirmation checkpoint, safety refusals, and correction history. In a
@@ -427,9 +427,10 @@ one-time Google Cloud OAuth client setup and user authorization. The scheduler
 is represented as policy metadata rather than a deployed job.
 The demo uses synthetic data instead of private production reports. The
 challenge interpretation is deterministic/mock behavior behind a replaceable
-provider boundary. The Streamlit workspace is local, not hosted or
-authenticated. Source links point to local inspection views rather than
-original JotForm records or emails.
+provider boundary. The Streamlit demonstration is publicly hosted at
+`https://shiftnotes.streamlit.app`, but it is not authenticated. Source links
+open hosted inspection views backed by synthetic reports rather than original
+JotForm records or emails.
 
 Future work should focus on:
 

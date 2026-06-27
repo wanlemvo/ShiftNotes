@@ -18,35 +18,35 @@ Prioritized findings
 IMMEDIATE ATTENTION
 - Sensitive personnel note requiring careful review: Ambiguous comment appeared in 1 report at Coastal Cafe.
   Sources: FM-0184
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-04-coastal-cafe-semantic-sensitive-personnel-note-ambiguous-comment
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-04-coastal-cafe-semantic-sensitive-personnel-note-ambiguous-comment
 - Equipment-related disruptions appeared in 3 reports at Coastal Cafe.
   Sources: FM-0130, FM-0178, FM-0202
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-04-coastal-cafe-semantic-equipment-failure-equipment-failure
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-04-coastal-cafe-semantic-equipment-failure-equipment-failure
 - Register disruptions appeared in 1 report at Bowls & Buns.
   Sources: FM-0157
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-04-bowls-buns-semantic-register-disruption-register-disruption
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-04-bowls-buns-semantic-register-disruption-register-disruption
 - Register disruptions appeared in 1 report at Coastal Cafe.
   Sources: FM-0160
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-04-coastal-cafe-semantic-register-disruption-register-disruption
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-04-coastal-cafe-semantic-register-disruption-register-disruption
 - Register disruptions appeared in 1 report at Hearth & Grain.
   Sources: FM-0161
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-04-hearth-grain-semantic-register-disruption-register-disruption
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-04-hearth-grain-semantic-register-disruption-register-disruption
 - Register disruptions appeared in 1 report at Market Grill.
   Sources: FM-0158
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-04-market-grill-semantic-register-disruption-register-disruption
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-04-market-grill-semantic-register-disruption-register-disruption
 - Register disruptions appeared in 1 report at Street Eats.
   Sources: FM-0162
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-04-street-eats-semantic-register-disruption-register-disruption
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-04-street-eats-semantic-register-disruption-register-disruption
 - Register disruptions appeared in 1 report at Verde Kitchen.
   Sources: FM-0159
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-04-verde-kitchen-semantic-register-disruption-register-disruption
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-04-verde-kitchen-semantic-register-disruption-register-disruption
 
 IMPORTANT FOLLOW-UP
 - Overproduction or elevated waste appeared in 17 reports at Market Grill.
   Sources: FM-0110, FM-0116, FM-0122, FM-0128, FM-0140, FM-0146, FM-0152, FM-0158, +9 more
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-04-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-04-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
 
 Open full briefing:
-http://localhost:8502
+https://shiftnotes.streamlit.app
 
 Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

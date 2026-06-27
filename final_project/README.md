@@ -231,6 +231,9 @@ Run the Streamlit inspection workspace:
 python -m streamlit run final_project/app.py
 ```
 
+The public synthetic-data demo is deployed at
+https://shiftnotes.streamlit.app.
+
 The email remains the primary interface. Streamlit provides briefing previews,
 claim/source inspection, ordinary-English challenges, a second HITL correction
 confirmation, safety refusals, and correction history.
@@ -359,7 +362,7 @@ Not implemented yet:
   provider boundary; Groq-assisted correction interpretation is future work.
 - Financial impact is described as a possible opportunity because meal cost,
   transaction volume, revenue, and labor-hour data are not inputs yet.
-- The Streamlit workspace is a local inspection tool, not a hosted authenticated
-  production dashboard.
-- Source links point into the local inspection workflow rather than hosted
-  source records or original JotForm emails.
+- The Streamlit workspace is publicly hosted for demonstration but is not an
+  authenticated production dashboard.
+- Source links open hosted inspection views backed by synthetic reports rather
+  than original JotForm records or emails.

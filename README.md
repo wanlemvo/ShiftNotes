@@ -106,6 +106,7 @@ Do not commit `.env`.
 - Deterministic Python metrics for ratings, dates, waste, and completeness.
 - Source-backed claim catalog.
 - Optional Streamlit source inspection workspace.
+- Public demo: https://shiftnotes.streamlit.app
 - Human-in-the-loop claim challenge and correction confirmation.
 - Responsible AI guardrails for personnel-sensitive notes.
 - Benchmark artifacts and tests.
@@ -118,8 +119,8 @@ Do not commit `.env`.
 - The final demo uses synthetic JotForm-shaped data.
 - A full Groq backfill hit on-demand quota limits and used deterministic fallback
   for unresolved batches.
-- The Streamlit workspace is local, not hosted or authenticated.
-- Source links point to the local inspection workflow, not original JotForm URLs.
+- The public Streamlit demo is not authenticated and uses synthetic data only.
+- Source links open hosted inspection views, not original JotForm records.
 
 ## Submission Notes
 

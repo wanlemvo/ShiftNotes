@@ -14,6 +14,13 @@ OUTPUT
 Sent weekly briefing to wanlemvoi@gmail.com.
 Gmail message ID: 19f0721c707b2313
 
+Public-link delivery validation
+Date: 2026-06-26
+Recipient: wanlemvoi@gmail.com
+Briefing: weekly, week-12
+Base URL: https://shiftnotes.streamlit.app
+Gmail message ID: 19f074626c51a755
+
 RESULT
 The generated Week 1 multipart HTML/plain-text ShiftNotes briefing was accepted
 by Gmail for delivery to the intended test recipient.

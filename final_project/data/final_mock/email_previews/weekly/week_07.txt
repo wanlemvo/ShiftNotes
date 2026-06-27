@@ -15,29 +15,29 @@ Prioritized findings
 IMMEDIATE ATTENTION
 - Register disruptions appeared in 1 report at Bowls & Buns.
   Sources: FM-0157
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-07-bowls-buns-semantic-register-disruption-register-disruption
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-07-bowls-buns-semantic-register-disruption-register-disruption
 - Register disruptions appeared in 1 report at Coastal Cafe.
   Sources: FM-0160
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-07-coastal-cafe-semantic-register-disruption-register-disruption
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-07-coastal-cafe-semantic-register-disruption-register-disruption
 - Register disruptions appeared in 1 report at Hearth & Grain.
   Sources: FM-0161
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-07-hearth-grain-semantic-register-disruption-register-disruption
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-07-hearth-grain-semantic-register-disruption-register-disruption
 - Register disruptions appeared in 1 report at Market Grill.
   Sources: FM-0158
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-07-market-grill-semantic-register-disruption-register-disruption
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-07-market-grill-semantic-register-disruption-register-disruption
 - Register disruptions appeared in 1 report at Street Eats.
   Sources: FM-0162
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-07-street-eats-semantic-register-disruption-register-disruption
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-07-street-eats-semantic-register-disruption-register-disruption
 - Register disruptions appeared in 1 report at Verde Kitchen.
   Sources: FM-0159
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-07-verde-kitchen-semantic-register-disruption-register-disruption
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-07-verde-kitchen-semantic-register-disruption-register-disruption
 
 IMPORTANT FOLLOW-UP
 - Overproduction or elevated waste appeared in 4 reports at Market Grill.
   Sources: FM-0146, FM-0152, FM-0158, FM-0164
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-07-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-07-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
 
 Open full briefing:
-http://localhost:8502
+https://shiftnotes.streamlit.app
 
 Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

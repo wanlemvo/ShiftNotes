@@ -15,31 +15,31 @@ Prioritized findings
 IMMEDIATE ATTENTION
 - Equipment-related disruptions appeared in 1 report at Coastal Cafe.
   Sources: FM-0250
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-11-coastal-cafe-semantic-equipment-failure-equipment-failure
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-11-coastal-cafe-semantic-equipment-failure-equipment-failure
 
 IMPORTANT FOLLOW-UP
 - Overproduction or elevated waste appeared in 4 reports at Market Grill.
   Sources: FM-0242, FM-0248, FM-0254, FM-0260
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-11-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-11-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
 - Food shortages: Kung Pao chicken appeared in 1 report at Bowls & Buns.
   Sources: FM-0241
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-11-bowls-buns-semantic-food-shortage-kung-pao-chicken
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-11-bowls-buns-semantic-food-shortage-kung-pao-chicken
 - Inventory and prep inconsistencies: Inconsistent prep appeared in 2 reports at Street Eats.
   Sources: FM-0252, FM-0264
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-11-street-eats-semantic-inventory-inconsistency-inconsistent-prep
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-11-street-eats-semantic-inventory-inconsistency-inconsistent-prep
 - Dietary and allergy questions appeared in 2 reports at Verde Kitchen.
   Sources: FM-0249, FM-0261
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-11-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-11-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
 
 MONITOR AND RECOGNIZE
 - Beverage requests appeared in 1 report at Coastal Cafe.
   Sources: FM-0262
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-11-coastal-cafe-semantic-beverage-request-beverage-request
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-11-coastal-cafe-semantic-beverage-request-beverage-request
 - Beverage requests appeared in 1 report at Hearth & Grain.
   Sources: FM-0263
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-11-hearth-grain-semantic-beverage-request-beverage-request
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-11-hearth-grain-semantic-beverage-request-beverage-request
 
 Open full briefing:
-http://localhost:8502
+https://shiftnotes.streamlit.app
 
 Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

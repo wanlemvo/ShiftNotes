@@ -18,35 +18,35 @@ Prioritized findings
 IMMEDIATE ATTENTION
 - Equipment-related disruptions appeared in 2 reports at Coastal Cafe.
   Sources: FM-0058, FM-0082
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-03-coastal-cafe-semantic-equipment-failure-equipment-failure
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-03-coastal-cafe-semantic-equipment-failure-equipment-failure
 - Register disruptions appeared in 1 report at Coastal Cafe.
   Sources: FM-0106
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-03-coastal-cafe-semantic-register-disruption-register-disruption
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-03-coastal-cafe-semantic-register-disruption-register-disruption
 
 IMPORTANT FOLLOW-UP
 - Overproduction or elevated waste appeared in 17 reports at Market Grill.
   Sources: FM-0002, FM-0008, FM-0014, FM-0020, FM-0026, FM-0038, FM-0044, FM-0050, +9 more
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-03-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-03-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
 - Food shortages: Kung Pao chicken appeared in 6 reports at Bowls & Buns.
   Sources: FM-0001, FM-0025, FM-0037, FM-0049, FM-0085, FM-0097
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-03-bowls-buns-semantic-food-shortage-kung-pao-chicken
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-03-bowls-buns-semantic-food-shortage-kung-pao-chicken
 - Food shortages: Chicken prep appeared in 1 report at Bowls & Buns.
   Sources: FM-0073
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-03-bowls-buns-semantic-food-shortage-chicken-prep
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-03-bowls-buns-semantic-food-shortage-chicken-prep
 - Food shortages: Cilantro rice appeared in 1 report at Street Eats.
   Sources: FM-0096
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-03-street-eats-semantic-food-shortage-cilantro-rice
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-03-street-eats-semantic-food-shortage-cilantro-rice
 - Inventory and prep inconsistencies: Inventory counts mismatch appeared in 2 reports at Street Eats.
   Sources: FM-0012, FM-0108
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-03-street-eats-semantic-inventory-inconsistency-inventory-counts-mismatch
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-03-street-eats-semantic-inventory-inconsistency-inventory-counts-mismatch
 - Inventory and prep inconsistencies: Inventory counts appeared in 1 report at Street Eats.
   Sources: FM-0024
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-03-street-eats-semantic-inventory-inconsistency-inventory-counts
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-03-street-eats-semantic-inventory-inconsistency-inventory-counts
 - Inventory and prep inconsistencies: Taco inventory mismatch appeared in 1 report at Street Eats.
   Sources: FM-0072
-  Inspect/challenge: http://localhost:8502?claim=monthly-2026-03-street-eats-semantic-inventory-inconsistency-taco-inventory-mismatch
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=monthly-2026-03-street-eats-semantic-inventory-inconsistency-taco-inventory-mismatch
 
 Open full briefing:
-http://localhost:8502
+https://shiftnotes.streamlit.app
 
 Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

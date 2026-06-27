@@ -15,29 +15,29 @@ Prioritized findings
 IMMEDIATE ATTENTION
 - Register disruptions appeared in 1 report at Coastal Cafe.
   Sources: FM-0106
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-05-coastal-cafe-semantic-register-disruption-register-disruption
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-05-coastal-cafe-semantic-register-disruption-register-disruption
 
 IMPORTANT FOLLOW-UP
 - Overproduction or elevated waste appeared in 4 reports at Market Grill.
   Sources: FM-0098, FM-0104, FM-0110, FM-0116
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-05-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-05-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
 - Food shortages: Cilantro rice appeared in 1 report at Street Eats.
   Sources: FM-0120
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-05-street-eats-semantic-food-shortage-cilantro-rice
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-05-street-eats-semantic-food-shortage-cilantro-rice
 - Food shortages: Kung Pao chicken appeared in 1 report at Bowls & Buns.
   Sources: FM-0097
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-05-bowls-buns-semantic-food-shortage-kung-pao-chicken
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-05-bowls-buns-semantic-food-shortage-kung-pao-chicken
 - Inventory and prep inconsistencies: Inventory counts mismatch appeared in 1 report at Street Eats.
   Sources: FM-0108
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-05-street-eats-semantic-inventory-inconsistency-inventory-counts-mismatch
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-05-street-eats-semantic-inventory-inconsistency-inventory-counts-mismatch
 - Dietary and allergy questions appeared in 2 reports at Verde Kitchen.
   Sources: FM-0105, FM-0117
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-05-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-05-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
 - Dietary and allergy questions appeared in 1 report at Bowls & Buns.
   Sources: FM-0109
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-05-bowls-buns-semantic-dietary-or-allergy-question-dietary-or-allergy-question
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-05-bowls-buns-semantic-dietary-or-allergy-question-dietary-or-allergy-question
 
 Open full briefing:
-http://localhost:8502
+https://shiftnotes.streamlit.app
 
 Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

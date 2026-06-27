@@ -15,29 +15,29 @@ Prioritized findings
 IMMEDIATE ATTENTION
 - Equipment-related disruptions appeared in 1 report at Coastal Cafe.
   Sources: FM-0202
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-09-coastal-cafe-semantic-equipment-failure-equipment-failure
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-09-coastal-cafe-semantic-equipment-failure-equipment-failure
 
 IMPORTANT FOLLOW-UP
 - Overproduction or elevated waste appeared in 4 reports at Market Grill.
   Sources: FM-0194, FM-0200, FM-0206, FM-0212
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-09-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-09-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
 - Food shortages: Kung Pao chicken appeared in 1 report at Bowls & Buns.
   Sources: FM-0193
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-09-bowls-buns-semantic-food-shortage-kung-pao-chicken
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-09-bowls-buns-semantic-food-shortage-kung-pao-chicken
 - Inventory and prep inconsistencies: Inconsistent prep appeared in 2 reports at Street Eats.
   Sources: FM-0204, FM-0216
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-09-street-eats-semantic-inventory-inconsistency-inconsistent-prep
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-09-street-eats-semantic-inventory-inconsistency-inconsistent-prep
 - Dietary and allergy questions appeared in 2 reports at Verde Kitchen.
   Sources: FM-0201, FM-0213
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-09-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-09-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
 - Portion-size concerns appeared in 1 report at Bowls & Buns.
   Sources: FM-0193
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-09-bowls-buns-semantic-portion-complaint-portion-complaint
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-09-bowls-buns-semantic-portion-complaint-portion-complaint
 - Portion-size concerns appeared in 1 report at Coastal Cafe.
   Sources: FM-0196
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-09-coastal-cafe-semantic-portion-complaint-portion-complaint
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-09-coastal-cafe-semantic-portion-complaint-portion-complaint
 
 Open full briefing:
-http://localhost:8502
+https://shiftnotes.streamlit.app
 
 Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

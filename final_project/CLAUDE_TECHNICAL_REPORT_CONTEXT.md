@@ -28,8 +28,9 @@ readable academic prose. Do not inflate the report with repeated background.
 - Automatic production scheduling is not deployed.
 - JotForm API ingestion works, but the large final evaluation dataset is
   synthetic and shaped like normalized JotForm submissions.
-- The Streamlit interface is local and unauthenticated.
-- Source links currently point to local inspection views.
+- The Streamlit synthetic-data demo is publicly hosted and unauthenticated at
+  `https://shiftnotes.streamlit.app`.
+- Source links point to hosted inspection views backed by synthetic reports.
 - Full-dataset Groq analysis reached an on-demand quota limit and used
   deterministic fallback for unresolved batches.
 - Coaching-review signals are prompts for private human review, not disciplinary
@@ -103,7 +104,7 @@ JotForm API or reproducible JotForm-shaped fixtures
 - Pydantic enforces semantic-output schemas.
 - LangGraph provides stateful orchestration, conditional routing, retries,
   fallback, persistence, and HITL interrupts.
-- Streamlit provides a secondary local inspection and correction interface.
+- Streamlit provides a secondary hosted inspection and correction interface.
 - Gmail API sends multipart HTML/plain-text briefings.
 - Pytest verifies normalization, analysis, source traceability, LangGraph,
   responsible-AI refusal, email rendering, prioritization, and Gmail payloads.
@@ -385,10 +386,11 @@ be included in the report or repository.
 - Gmail requires per-installation OAuth setup.
 - The final large dataset is synthetic.
 - Groq full backfills need quota-aware batching.
-- Streamlit is local and unauthenticated.
+- Streamlit is publicly hosted for demonstration and unauthenticated.
 - Challenge interpretation remains deterministic behind a replaceable provider
   boundary.
-- Source links are local rather than hosted JotForm links.
+- Source links open hosted synthetic-report views rather than original JotForm
+  records.
 - Financial impact is qualitative without cost, volume, revenue, and labor data.
 - The priority rules are transparent prototype rules and require workplace
   validation before production use.

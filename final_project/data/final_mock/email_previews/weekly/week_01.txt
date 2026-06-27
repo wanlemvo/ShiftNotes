@@ -15,27 +15,27 @@ Prioritized findings
 IMPORTANT FOLLOW-UP
 - Overproduction or elevated waste appeared in 4 reports at Market Grill.
   Sources: FM-0002, FM-0008, FM-0014, FM-0020
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-01-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-01-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
 - Food shortages: Kung Pao chicken appeared in 1 report at Bowls & Buns.
   Sources: FM-0001
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-01-bowls-buns-semantic-food-shortage-kung-pao-chicken
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-01-bowls-buns-semantic-food-shortage-kung-pao-chicken
 - Inventory and prep inconsistencies: Inventory counts appeared in 1 report at Street Eats.
   Sources: FM-0024
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-01-street-eats-semantic-inventory-inconsistency-inventory-counts
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-01-street-eats-semantic-inventory-inconsistency-inventory-counts
 - Inventory and prep inconsistencies: Inventory counts mismatch appeared in 1 report at Street Eats.
   Sources: FM-0012
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-01-street-eats-semantic-inventory-inconsistency-inventory-counts-mismatch
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-01-street-eats-semantic-inventory-inconsistency-inventory-counts-mismatch
 - Dietary and allergy questions appeared in 2 reports at Verde Kitchen.
   Sources: FM-0009, FM-0021
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-01-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-01-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
 - Portion-size concerns appeared in 1 report at Bowls & Buns.
   Sources: FM-0001
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-01-bowls-buns-semantic-portion-complaint-portion-complaint
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-01-bowls-buns-semantic-portion-complaint-portion-complaint
 - Portion-size concerns appeared in 1 report at Market Grill.
   Sources: FM-0014
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-01-market-grill-semantic-portion-complaint-portion-complaint
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-01-market-grill-semantic-portion-complaint-portion-complaint
 
 Open full briefing:
-http://localhost:8502
+https://shiftnotes.streamlit.app
 
 Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

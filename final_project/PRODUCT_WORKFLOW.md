@@ -14,6 +14,9 @@ The Streamlit application is a secondary inspection workspace. Ted does not
 need to open it unless he wants to inspect evidence, challenge a claim, or
 review correction history.
 
+The synthetic-data demonstration is hosted at
+https://shiftnotes.streamlit.app.
+
 ## Email Preview
 
 The implemented email includes:
@@ -208,5 +211,5 @@ See `MODEL_SELECTION_AND_BENCHMARK.md`.
 
 - Groq-assisted challenge interpretation;
 - production scheduler;
-- hosted source links;
+- authenticated production source links;
 - authenticated manager access.

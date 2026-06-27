@@ -15,29 +15,29 @@ Prioritized findings
 IMMEDIATE ATTENTION
 - Equipment-related disruptions appeared in 1 report at Coastal Cafe.
   Sources: FM-0226
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-10-coastal-cafe-semantic-equipment-failure-equipment-failure
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-10-coastal-cafe-semantic-equipment-failure-equipment-failure
 
 IMPORTANT FOLLOW-UP
 - Overproduction or elevated waste appeared in 3 reports at Market Grill.
   Sources: FM-0218, FM-0230, FM-0236
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-10-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-10-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
 - Food shortages: Kung Pao chicken appeared in 2 reports at Bowls & Buns.
   Sources: FM-0217, FM-0229
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-10-bowls-buns-semantic-food-shortage-kung-pao-chicken
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-10-bowls-buns-semantic-food-shortage-kung-pao-chicken
 - Dietary and allergy questions appeared in 2 reports at Verde Kitchen.
   Sources: FM-0225, FM-0237
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-10-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-10-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
 - Portion-size concerns appeared in 1 report at Bowls & Buns.
   Sources: FM-0217
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-10-bowls-buns-semantic-portion-complaint-portion-complaint
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-10-bowls-buns-semantic-portion-complaint-portion-complaint
 - Portion-size concerns appeared in 1 report at Coastal Cafe.
   Sources: FM-0220
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-10-coastal-cafe-semantic-portion-complaint-portion-complaint
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-10-coastal-cafe-semantic-portion-complaint-portion-complaint
 - Portion-size concerns appeared in 1 report at Hearth & Grain.
   Sources: FM-0221
-  Inspect/challenge: http://localhost:8502?claim=weekly-week-10-hearth-grain-semantic-portion-complaint-portion-complaint
+  Inspect/challenge: https://shiftnotes.streamlit.app?claim=weekly-week-10-hearth-grain-semantic-portion-complaint-portion-complaint
 
 Open full briefing:
-http://localhost:8502
+https://shiftnotes.streamlit.app
 
 Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

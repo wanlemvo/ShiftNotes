@@ -1,0 +1,32 @@
+ShiftNotes public deployment validation
+Date: 2026-06-26
+URL: https://shiftnotes.streamlit.app
+Repository: wanlemvo/ShiftNotes
+Branch: codex/final-submission
+Entrypoint: final_project/app.py
+
+Initial deployment result:
+- Streamlit Community Cloud build completed successfully.
+- Public application loaded successfully.
+- Synthetic dataset label displayed.
+- 273 submitted records displayed.
+- 399 source-backed claims displayed.
+- Briefings, Claims & Sources, Challenge Review, and Correction History tabs loaded.
+
+Additional public deep-link and correction-flow checks are recorded after the
+email assets are regenerated with this public base URL.
+
+Public deep-link validation:
+- Opened a Week 12 equipment-failure challenge URL directly.
+- The Challenge Review tab opened automatically.
+- The correct Coastal Cafe claim was selected.
+- The original claim and ordinary-English challenge control were displayed.
+- The complete propose, interrupt, confirm, and correction-history path was
+  previously browser-validated locally and is recorded in
+  challenge_review_browser_validation.log.
+
+Public-link email delivery:
+- Recipient: wanlemvoi@gmail.com
+- Briefing: weekly, week-12
+- Gmail message ID: 19f074626c51a755
+- Generated HTML and plain-text previews contain no localhost or 127.0.0.1 URLs.
