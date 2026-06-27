@@ -16,6 +16,7 @@ from shiftnotes.storage import read_json
 
 
 EVENT_LABELS = {
+    "safety:immediate_review": "safety concern requiring immediate review",
     "food_shortage:kung_pao_chicken": "Kung Pao chicken shortages",
     "waste:high_unclaimed_lunches": "overproduction or elevated unclaimed lunches",
     "guest_theme:dietary_or_allergy_question": "dietary and allergy questions",
@@ -26,9 +27,11 @@ EVENT_LABELS = {
     "cross_kiosk:portion_complaints_weeks_9_10": "portion-size concerns",
     "guest_request:beverage_variety": "requests for beverage variety",
     "sensitive_personnel:ambiguous_comment": "an ambiguous personnel note requiring careful review",
+    "personnel:coaching_review": "potential coaching or training opportunity requiring review",
 }
 
 EVENT_FOLLOW_UPS = {
+    "safety:immediate_review": "Inspect the source immediately and follow the applicable workplace safety process.",
     "food_shortage:kung_pao_chicken": "Compare prep levels with lunch-rush demand.",
     "waste:high_unclaimed_lunches": "Review prep quantities and unclaimed-lunch patterns before adjusting production.",
     "guest_theme:dietary_or_allergy_question": "Confirm that dietary and allergen information is easy for staff and guests to access.",
@@ -39,6 +42,7 @@ EVENT_FOLLOW_UPS = {
     "cross_kiosk:portion_complaints_weeks_9_10": "Compare portion guidance across kiosks before changing service standards.",
     "guest_request:beverage_variety": "Track whether beverage requests continue before changing the offering.",
     "sensitive_personnel:ambiguous_comment": "Inspect the original report; do not infer misconduct or take personnel action from this note alone.",
+    "personnel:coaching_review": "Review the source privately and confirm whether supportive training or clarification is appropriate.",
 }
 
 SENSITIVE_CATEGORY = "sensitive_personnel:ambiguous_comment"

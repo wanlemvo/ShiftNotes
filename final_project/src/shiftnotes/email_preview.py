@@ -32,7 +32,7 @@ def render_weekly_email(
     quality = extract_bullet(weekly_markdown, "Average food quality:")
     quantity = extract_bullet(weekly_markdown, "Average food quantity:")
     unclaimed = extract_bullet(weekly_markdown, "Unclaimed lunches:")
-    attention_claims = priority_claims(claims, limit=4)
+    attention_claims = priority_claims(claims, limit=7)
     subject = weekly_subject(period, attention_claims)
     html_body = email_shell(
         eyebrow="Weekly operations briefing",
@@ -48,7 +48,7 @@ def render_weekly_email(
             ("Unclaimed lunches", unclaimed),
         ],
         sections=(
-            attention_section(attention_claims, base_url)
+            prioritized_sections(attention_claims, base_url)
             + action_links(base_url)
             + limits_section()
         ),
@@ -86,7 +86,7 @@ def render_monthly_email(
         monthly_markdown,
         "Unclaimed lunches per valid report:",
     )
-    attention_claims = priority_claims(claims, limit=5)
+    attention_claims = priority_claims(claims, limit=9)
     subject = monthly_subject(period, monthly_markdown)
     html_body = email_shell(
         eyebrow="Monthly operations briefing",
@@ -103,7 +103,7 @@ def render_monthly_email(
         ],
         sections=(
             cost_signal_section(monthly_markdown)
-            + attention_section(attention_claims, base_url)
+            + prioritized_sections(attention_claims, base_url)
             + action_links(base_url)
             + limits_section()
         ),
@@ -135,7 +135,10 @@ def write_email_preview(
     output_dir.mkdir(parents=True, exist_ok=True)
     html_path = output_dir / f"{name}.html"
     text_path = output_dir / f"{name}.txt"
-    html_path.write_text(preview["html"], encoding="utf-8")
+    clean_html = "\n".join(
+        line.rstrip() for line in preview["html"].splitlines()
+    ) + "\n"
+    html_path.write_text(clean_html, encoding="utf-8")
     text_path.write_text(
         f"Subject: {preview['subject']}\n\n{preview['text']}",
         encoding="utf-8",
@@ -185,16 +188,57 @@ def email_shell(
 </html>"""
 
 
-def attention_section(
+def prioritized_sections(
     claims: list[dict[str, Any]],
     base_url: str,
 ) -> str:
     if not claims:
         return section("Priority findings", "<p>No source-backed priority finding was selected.</p>")
+    grouped = {"urgent": [], "important": [], "monitor": []}
+    for claim in claims:
+        grouped[claim_urgency(claim)].append(claim)
+    sections = [
+        priority_section(
+            "Immediate attention",
+            grouped["urgent"],
+            base_url,
+            empty_message="No source-backed urgent finding was detected.",
+            tone=COLORS["red"],
+            soft=COLORS["red_soft"],
+        ),
+        priority_section(
+            "Important follow-up",
+            grouped["important"],
+            base_url,
+            empty_message="No additional important follow-up was selected.",
+            tone=COLORS["amber"],
+            soft=COLORS["amber_soft"],
+        ),
+        priority_section(
+            "Monitor and recognize",
+            grouped["monitor"],
+            base_url,
+            empty_message="No monitoring or recognition item was selected.",
+            tone=COLORS["teal"],
+            soft=COLORS["teal_soft"],
+        ),
+    ]
+    return "".join(sections)
+
+
+def priority_section(
+    title: str,
+    claims: list[dict[str, Any]],
+    base_url: str,
+    *,
+    empty_message: str,
+    tone: str,
+    soft: str,
+) -> str:
+    if not claims:
+        return section(title, f"<p>{html.escape(empty_message)}</p>")
     rows = []
     for claim in claims:
-        tone = COLORS["red"] if claim["sensitive"] else COLORS["teal"]
-        soft = COLORS["red_soft"] if claim["sensitive"] else COLORS["teal_soft"]
         source_ids = list(claim.get("source_submission_ids", []))
         visible_sources = ", ".join(source_ids[:6])
         if len(source_ids) > 6:
@@ -208,14 +252,14 @@ def attention_section(
                 {f" | Sources: {html.escape(visible_sources)}" if visible_sources else ""}
               </div>
               <div style="margin-top:10px">
-                <a href="{base_url}?claim={claim['claim_id']}" style="color:{tone};font-weight:700;text-decoration:none">View sources</a>
+                <a href="{base_url}?claim={claim['claim_id']}" target="_blank" rel="noopener noreferrer" style="color:{tone};font-weight:700;text-decoration:none">View sources</a>
                 &nbsp;&nbsp;
-                <a href="{base_url}?claim={claim['claim_id']}&action=challenge" style="color:{tone};font-weight:700;text-decoration:none">Challenge this claim</a>
+                <a href="{base_url}?claim={claim['claim_id']}&action=challenge" target="_blank" rel="noopener noreferrer" style="color:{tone};font-weight:700;text-decoration:none">Challenge this claim</a>
               </div>
             </div>
             """
         )
-    return section("Priority findings", "".join(rows))
+    return section(title, "".join(rows))
 
 
 def priority_claims(claims: list[dict[str, Any]], limit: int) -> list[dict[str, Any]]:
@@ -228,15 +272,17 @@ def priority_claims(claims: list[dict[str, Any]], limit: int) -> list[dict[str, 
     return sorted(
         pool,
         key=lambda claim: (
-            bool(claim.get("sensitive")),
-            int(claim.get("source_count", 0)),
+            {"urgent": 3, "important": 2, "monitor": 1}[claim_urgency(claim)],
             category_priority(str(claim.get("category", ""))),
+            int(claim.get("source_count", 0)),
         ),
         reverse=True,
     )[:limit]
 
 
 def category_priority(category: str) -> int:
+    if "safety_concern" in category or category.startswith("safety:"):
+        return 110
     if "sensitive_personnel" in category:
         return 100
     if "high_waste_or_overproduction" in category or "waste" in category:
@@ -255,7 +301,34 @@ def category_priority(category: str) -> int:
         return 60
     if "employee_recognition" in category:
         return 45
+    if "coaching_review" in category:
+        return 82
     return 10
+
+
+def claim_urgency(claim: dict[str, Any]) -> str:
+    category = str(claim.get("category", ""))
+    source_count = int(claim.get("source_count", 0))
+    if (
+        "safety_concern" in category
+        or category.startswith("safety:")
+        or "equipment_failure" in category
+        or "register_disruption" in category
+        or "sensitive_personnel" in category
+    ):
+        return "urgent"
+    if (
+        "food_shortage" in category
+        or "waste" in category
+        or "inventory_inconsistency" in category
+        or category.startswith("inventory:")
+        or "dietary_or_allergy" in category
+        or "portion_complaint" in category
+        or "coaching_review" in category
+        or source_count >= 4
+    ):
+        return "important"
+    return "monitor"
 
 
 def plain_text_email(
@@ -277,16 +350,25 @@ def plain_text_email(
     lines.extend(f"- {label}: {value or 'N/A'}" for label, value in metrics)
     if extra_note:
         lines.extend(["", "Cost and inventory signal", f"- {extra_note}"])
-    lines.extend(["", "Priority findings"])
+    lines.extend(["", "Prioritized findings"])
     if not claims:
         lines.append("- No source-backed priority finding was selected.")
-    for claim in claims:
-        sources = ", ".join(claim.get("source_submission_ids", [])[:8])
-        if len(claim.get("source_submission_ids", [])) > 8:
-            sources += f", +{len(claim['source_submission_ids']) - 8} more"
-        lines.append(f"- {claim['claim_text']}")
-        lines.append(f"  Sources: {sources or 'N/A'}")
-        lines.append(f"  Inspect/challenge: {base_url}?claim={claim['claim_id']}")
+    for urgency, heading in (
+        ("urgent", "IMMEDIATE ATTENTION"),
+        ("important", "IMPORTANT FOLLOW-UP"),
+        ("monitor", "MONITOR AND RECOGNIZE"),
+    ):
+        grouped_claims = [claim for claim in claims if claim_urgency(claim) == urgency]
+        if not grouped_claims:
+            continue
+        lines.extend(["", heading])
+        for claim in grouped_claims:
+            sources = ", ".join(claim.get("source_submission_ids", [])[:8])
+            if len(claim.get("source_submission_ids", [])) > 8:
+                sources += f", +{len(claim['source_submission_ids']) - 8} more"
+            lines.append(f"- {claim['claim_text']}")
+            lines.append(f"  Sources: {sources or 'N/A'}")
+            lines.append(f"  Inspect/challenge: {base_url}?claim={claim['claim_id']}")
     lines.extend(
         [
             "",
@@ -318,7 +400,7 @@ def cost_signal_section(markdown: str) -> str:
 def action_links(base_url: str) -> str:
     return f"""
     <div style="margin-top:24px;padding-top:20px;border-top:1px solid {COLORS['line']}">
-      <a href="{base_url}" style="display:inline-block;padding:11px 16px;background:{COLORS['teal']};color:white;text-decoration:none;font-weight:700">Open full briefing</a>
+      <a href="{base_url}" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:11px 16px;background:{COLORS['teal']};color:white;text-decoration:none;font-weight:700">Open full briefing</a>
       <a href="{base_url}?view=sources" style="display:inline-block;margin-left:8px;padding:10px 14px;border:1px solid {COLORS['teal']};color:{COLORS['teal']};text-decoration:none;font-weight:700">Inspect sources</a>
     </div>
     """

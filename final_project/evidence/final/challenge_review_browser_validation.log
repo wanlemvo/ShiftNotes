@@ -1,0 +1,41 @@
+ShiftNotes Challenge Review browser validation
+Captured: 2026-06-26 Pacific / 2026-06-27 UTC
+Environment: local Streamlit deployment at http://localhost:8502
+Data classification: synthetic demonstration data
+
+STARTING CLAIM
+Claim ID:
+weekly-week-12-coastal-cafe-semantic-equipment-failure-equipment-failure
+
+Claim text:
+Equipment-related disruptions appeared in 1 report at Coastal Cafe.
+
+Supporting source:
+FM-0274
+
+CHALLENGE
+This is wrong. Remove FM-0274; it should not support this claim.
+
+OBSERVED HITL BEHAVIOR
+1. Challenge Review opened the claim selected by the email deep link.
+2. Review challenge produced a proposed correction.
+3. Original and revised claims were displayed side by side.
+4. The workflow paused for Confirm correction, Revise challenge, or Cancel.
+5. No correction was saved before confirmation.
+
+PROPOSED CORRECTION
+No remaining reports support equipment-related disruptions at Coastal Cafe.
+
+CONFIRMATION RESULT
+The Confirm correction action succeeded.
+The interface displayed:
+"Correction confirmed and saved to audit history."
+
+HISTORY RESULT
+Correction History displayed a confirmed record for the affected claim with
+timestamp 2026-06-27T03:51:36.687625+00:00.
+
+CONCLUSION
+The browser-level post-delivery HITL flow passed end to end: deep link,
+ordinary-English challenge, proposal, interrupt, explicit confirmation, claim
+update, and auditable history.

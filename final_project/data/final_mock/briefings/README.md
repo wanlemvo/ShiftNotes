@@ -15,5 +15,6 @@ The weekly format is kiosk-centered. The monthly format emphasizes normalized
 waste, operational trends, reporting compliance, and cautious management
 priorities.
 
-These files are Markdown prototypes for review. Email delivery, clickable source
-inspection, and natural-language claim challenges are not implemented yet.
+These Markdown files feed the implemented HTML/plain-text email renderer,
+source-inspection workspace, claim-challenge flow, and optional Gmail delivery.
+Hosted source links and automatic scheduling remain future work.

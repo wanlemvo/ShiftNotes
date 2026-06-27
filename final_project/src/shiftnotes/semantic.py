@@ -14,6 +14,7 @@ from shiftnotes.baseline import detect_baseline_events
 
 
 SemanticCategory = Literal[
+    "safety_concern",
     "food_shortage",
     "high_waste_or_overproduction",
     "dietary_or_allergy_question",
@@ -24,6 +25,7 @@ SemanticCategory = Literal[
     "portion_complaint",
     "beverage_request",
     "sensitive_personnel_note",
+    "coaching_review",
     "other_operational_issue",
 ]
 EvidenceField = Literal[
@@ -96,6 +98,11 @@ Use sensitive_personnel_note for ambiguous or potentially harmful personnel alle
 Do not make disciplinary recommendations.
 
 Category guidance:
+- safety_concern: an explicit injury, burn, spill hazard, unsafe condition, smoke,
+  exposed wiring, gas smell, or other condition requiring immediate safety review.
+- coaching_review: a neutral, source-backed indication that a team member may need
+  clarification, training, or process support. Do not infer misconduct, blame, or
+  recommend discipline.
 - employee_recognition: any clearly positive description of a team member's performance,
   including noticing and resolving a prep problem. When praise is the main meaning, do not
   relabel the praised action as other_operational_issue.
@@ -239,6 +246,8 @@ class DeterministicFallbackProvider:
         "cross_kiosk:portion_complaints_weeks_9_10": "portion_complaint",
         "guest_request:beverage_variety": "beverage_request",
         "sensitive_personnel:ambiguous_comment": "sensitive_personnel_note",
+        "safety:immediate_review": "safety_concern",
+        "personnel:coaching_review": "coaching_review",
     }
 
     def extract(self, reports: list[dict[str, Any]]) -> tuple[dict[str, Any], dict[str, Any]]:
@@ -288,6 +297,8 @@ FALLBACK_CATEGORY_FIELDS: dict[str, tuple[EvidenceField, ...]] = {
     "portion_complaint": ("guest_issues_for_the_day",),
     "beverage_request": ("guest_issues_for_the_day",),
     "sensitive_personnel_note": ("operational_notes", "team_members_who_did_well"),
+    "safety_concern": ("operational_notes", "food_concerns_or_outages"),
+    "coaching_review": ("operational_notes", "team_members_who_did_well"),
 }
 
 

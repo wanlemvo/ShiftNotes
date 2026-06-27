@@ -276,6 +276,27 @@ def detect_baseline_events(
             report,
             ("does not establish misconduct",),
         ),
+        "safety:immediate_review": lambda report: contains_any(
+            report,
+            (
+                "safety concern",
+                "unsafe condition",
+                "slip hazard",
+                "burn injury",
+                "smoke from",
+                "exposed wire",
+                "gas smell",
+            ),
+        ),
+        "personnel:coaching_review": lambda report: contains_any(
+            report,
+            (
+                "needs additional training",
+                "needed a process reminder",
+                "requested more training",
+                "needs clarification on",
+            ),
+        ),
     }
 
     events: dict[str, list[dict[str, Any]]] = {}

@@ -1,4 +1,4 @@
-Subject: ShiftNotes Weekly Briefing: 3 kiosks need attention | Week 6: April 6 - April 9, 2026
+Subject: ShiftNotes Weekly Briefing: 5 kiosks need attention | Week 6: April 6 - April 9, 2026
 
 Week 6: April 6 - April 9, 2026
 
@@ -10,21 +10,34 @@ At a glance
 - Food quantity: 3.68/5
 - Unclaimed lunches: 105
 
-Priority findings
+Prioritized findings
+
+IMMEDIATE ATTENTION
+- Equipment-related disruptions appeared in 1 report at Coastal Cafe.
+  Sources: FM-0130
+  Inspect/challenge: http://localhost:8502?claim=weekly-week-06-coastal-cafe-semantic-equipment-failure-equipment-failure
+
+IMPORTANT FOLLOW-UP
 - Overproduction or elevated waste appeared in 3 reports at Market Grill.
   Sources: FM-0122, FM-0128, FM-0140
-  Inspect/challenge: http://localhost:8501?claim=weekly-week-06-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
+  Inspect/challenge: http://localhost:8502?claim=weekly-week-06-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
 - Food shortages: Kung Pao chicken appeared in 2 reports at Bowls & Buns.
   Sources: FM-0121, FM-0133
-  Inspect/challenge: http://localhost:8501?claim=weekly-week-06-bowls-buns-semantic-food-shortage-kung-pao-chicken
+  Inspect/challenge: http://localhost:8502?claim=weekly-week-06-bowls-buns-semantic-food-shortage-kung-pao-chicken
+- Inventory and prep inconsistencies: Inconsistent prep appeared in 1 report at Street Eats.
+  Sources: FM-0144
+  Inspect/challenge: http://localhost:8502?claim=weekly-week-06-street-eats-semantic-inventory-inconsistency-inconsistent-prep
 - Dietary and allergy questions appeared in 2 reports at Verde Kitchen.
   Sources: FM-0129, FM-0141
-  Inspect/challenge: http://localhost:8501?claim=weekly-week-06-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
-- Beverage requests appeared in 2 reports at Market Grill.
-  Sources: FM-0122, FM-0140
-  Inspect/challenge: http://localhost:8501?claim=weekly-week-06-market-grill-semantic-beverage-request-beverage-request
+  Inspect/challenge: http://localhost:8502?claim=weekly-week-06-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
+- Dietary and allergy questions appeared in 1 report at Bowls & Buns.
+  Sources: FM-0139
+  Inspect/challenge: http://localhost:8502?claim=weekly-week-06-bowls-buns-semantic-dietary-or-allergy-question-dietary-or-allergy-question
+- Dietary and allergy questions appeared in 1 report at Coastal Cafe.
+  Sources: FM-0136
+  Inspect/challenge: http://localhost:8502?claim=weekly-week-06-coastal-cafe-semantic-dietary-or-allergy-question-dietary-or-allergy-question
 
 Open full briefing:
-http://localhost:8501
+http://localhost:8502
 
 Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

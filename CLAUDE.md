@@ -20,7 +20,10 @@ Implemented scope:
 - generate deterministic metrics for ratings, reporting completeness, and waste;
 - use Groq semantic extraction for free-text operational signals;
 - preserve source IDs and exact evidence excerpts for meaningful claims;
-- generate weekly and monthly email previews in HTML and plain text;
+- generate weekly and monthly briefings in HTML and plain text;
+- classify findings into immediate attention, important follow-up, and
+  monitoring/recognition sections;
+- send an explicitly confirmed briefing through Gmail after OAuth authorization;
 - support source inspection and ordinary-English claim challenge flows;
 - require human confirmation before saving a proposed correction;
 - refuse or flag unsafe personnel-related requests;
@@ -28,7 +31,6 @@ Implemented scope:
 
 Out of scope for this submission:
 
-- sending live Gmail messages;
 - production hosting and authentication;
 - production scheduler deployment;
 - live Ted account integration;

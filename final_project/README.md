@@ -185,6 +185,46 @@ Generate claim records and polished email previews:
 python final_project/src/shiftnotes/cli.py product-assets
 ```
 
+### Send a Briefing Through Gmail
+
+1. Enable the Gmail API in a Google Cloud project.
+2. Configure an OAuth consent screen and add the sending account as a test user.
+3. Create a Desktop app OAuth client.
+4. Save the downloaded client JSON as:
+
+   ```text
+   final_project/google_credentials.json
+   ```
+
+5. Add the default recipient to `final_project/.env`:
+
+   ```env
+   GMAIL_CLIENT_SECRET_PATH=final_project/google_credentials.json
+   GMAIL_TOKEN_PATH=final_project/.gmail_token.json
+   GMAIL_DEFAULT_RECIPIENT=manager@example.com
+   ```
+
+6. Authorize once:
+
+   ```bash
+   python final_project/src/shiftnotes/cli.py gmail-auth
+   ```
+
+7. Inspect the exact message without sending:
+
+   ```bash
+   python final_project/src/shiftnotes/cli.py gmail-preview --type weekly --period week-01
+   ```
+
+8. Send the selected briefing:
+
+   ```bash
+   python final_project/src/shiftnotes/cli.py gmail-send --type weekly --period week-01 --confirm-send
+   ```
+
+The OAuth token is stored locally and ignored by Git. ShiftNotes requests only
+the `gmail.send` scope; it does not read the mailbox.
+
 Run the Streamlit inspection workspace:
 
 ```bash
@@ -295,18 +335,20 @@ Implemented:
 - Use saved AI semantic signals in weekly/monthly briefings and dashboard claims
 - Generate monthly briefings
 - Generate email previews
+- Classify findings as immediate attention, important follow-up, or monitor and recognize
+- Detect explicit safety concerns and guarded coaching/training review signals
+- Send a selected briefing through Gmail after one-time OAuth authorization
 - Provide dashboard/source inspection
 
 Not implemented yet:
 
-- Email briefing delivery
 - Production scheduler and hosted authentication
 - Quota-aware full-dataset Groq backfill without fallback
 
 ## Known Limitations
 
-- Email delivery is previewed locally as HTML/plain text; Gmail sending is not
-  connected in this submission.
+- Gmail delivery requires a Desktop OAuth client and one-time authorization on
+  each installation. It is not scheduled automatically.
 - The scheduler policy is represented in configuration, but no production cron,
   cloud job, or hosted scheduler is deployed.
 - The final demo uses synthetic JotForm-shaped data rather than Ted's private

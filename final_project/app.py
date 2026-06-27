@@ -168,6 +168,7 @@ with st.sidebar:
     st.write("Monthly: day before final expected reporting day")
     st.divider()
     st.caption("Dataset")
+    st.write("Synthetic demonstration data")
     st.write(f"{len(reports)} submitted records")
     st.write(f"{len(claims)} source-backed claims")
 
@@ -175,7 +176,7 @@ st.markdown(
     """
     <div class="sn-bar">
       <strong>Email-first operations intelligence</strong><br>
-      Briefings are delivered automatically. This workspace is used only when a manager wants to inspect evidence or challenge a claim.
+      Briefings can be delivered through Gmail. This workspace is used when a manager wants to inspect evidence or challenge a claim.
     </div>
     """,
     unsafe_allow_html=True,

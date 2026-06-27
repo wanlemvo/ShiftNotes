@@ -11,7 +11,7 @@ from langgraph.types import Command
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from shiftnotes.config import load_groq_settings, load_settings
+from shiftnotes.config import load_gmail_settings, load_groq_settings, load_settings
 from shiftnotes.ai_benchmark import benchmark_semantic_extractions
 from shiftnotes.analysis import analyze_reports, render_weekly_briefing
 from shiftnotes.baseline import (
@@ -26,6 +26,11 @@ from shiftnotes.email_preview import (
     write_email_preview,
 )
 from shiftnotes.graph import build_persistent_graph
+from shiftnotes.gmail_delivery import (
+    authorize_gmail,
+    load_email_preview,
+    send_briefing,
+)
 from shiftnotes.jotform_client import fetch_form_submissions
 from shiftnotes.normalize import normalize_submissions
 from shiftnotes.product import build_claim_catalog, save_claim_catalog
@@ -282,6 +287,82 @@ def ai_run_command(args: argparse.Namespace) -> int:
     return 0
 
 
+def gmail_auth_command(args: argparse.Namespace) -> int:
+    settings = load_gmail_settings()
+    credentials = authorize_gmail(
+        settings.client_secret_path,
+        settings.token_path,
+    )
+    print("Gmail authorization succeeded.")
+    print(f"Token saved locally: {settings.token_path}")
+    print(f"Authorized scopes: {', '.join(credentials.scopes or [])}")
+    return 0
+
+
+def gmail_send_command(args: argparse.Namespace) -> int:
+    if not args.confirm_send:
+        print(
+            "Refusing to send without --confirm-send. "
+            "Use gmail-preview to inspect the selected message.",
+            file=sys.stderr,
+        )
+        return 2
+
+    settings = load_gmail_settings()
+    recipient = args.to or settings.default_recipient
+    if not recipient:
+        print(
+            "Missing recipient. Use --to or set GMAIL_DEFAULT_RECIPIENT.",
+            file=sys.stderr,
+        )
+        return 2
+
+    try:
+        preview = load_email_preview(
+            args.dataset_dir,
+            args.type,
+            args.period,
+        )
+        credentials = authorize_gmail(
+            settings.client_secret_path,
+            settings.token_path,
+        )
+        result = send_briefing(
+            recipient=recipient,
+            subject=preview["subject"],
+            text_body=preview["text"],
+            html_body=preview["html"],
+            credentials=credentials,
+        )
+    except (RuntimeError, ValueError) as exc:
+        print(f"Gmail delivery error: {exc}", file=sys.stderr)
+        return 2
+
+    print(f"Sent {args.type} briefing to {recipient}.")
+    print(f"Gmail message ID: {result.get('id', 'unknown')}")
+    return 0
+
+
+def gmail_preview_command(args: argparse.Namespace) -> int:
+    try:
+        preview = load_email_preview(
+            args.dataset_dir,
+            args.type,
+            args.period,
+        )
+    except (RuntimeError, ValueError) as exc:
+        print(f"Email preview error: {exc}", file=sys.stderr)
+        return 2
+    settings = load_gmail_settings()
+    recipient = args.to or settings.default_recipient or "(not configured)"
+    print(f"To: {recipient}")
+    print(f"Subject: {preview['subject']}")
+    print(f"HTML bytes: {len(preview['html'].encode('utf-8'))}")
+    print(f"Plain-text bytes: {len(preview['text'].encode('utf-8'))}")
+    print("No email was sent.")
+    return 0
+
+
 def workflow_config(thread_id: str) -> dict:
     return {"configurable": {"thread_id": thread_id}}
 
@@ -436,6 +517,45 @@ def build_parser() -> argparse.ArgumentParser:
     ai_run.add_argument("--max-retries", type=int, default=2)
     ai_run.add_argument("--retry-delay", type=float, default=1.0)
     ai_run.set_defaults(func=ai_run_command)
+
+    gmail_auth = subparsers.add_parser(
+        "gmail-auth",
+        help="Authorize ShiftNotes to send Gmail messages",
+    )
+    gmail_auth.set_defaults(func=gmail_auth_command)
+
+    gmail_preview = subparsers.add_parser(
+        "gmail-preview",
+        help="Inspect the exact generated briefing selected for Gmail delivery",
+    )
+    gmail_preview.add_argument("--type", choices=("weekly", "monthly"), required=True)
+    gmail_preview.add_argument("--period", required=True)
+    gmail_preview.add_argument("--to")
+    gmail_preview.add_argument(
+        "--dataset-dir",
+        type=Path,
+        default=FINAL_MOCK_DIR,
+    )
+    gmail_preview.set_defaults(func=gmail_preview_command)
+
+    gmail_send = subparsers.add_parser(
+        "gmail-send",
+        help="Send a generated briefing through the Gmail API",
+    )
+    gmail_send.add_argument("--type", choices=("weekly", "monthly"), required=True)
+    gmail_send.add_argument("--period", required=True)
+    gmail_send.add_argument("--to")
+    gmail_send.add_argument(
+        "--dataset-dir",
+        type=Path,
+        default=FINAL_MOCK_DIR,
+    )
+    gmail_send.add_argument(
+        "--confirm-send",
+        action="store_true",
+        help="Required acknowledgement that this command sends a real email.",
+    )
+    gmail_send.set_defaults(func=gmail_send_command)
 
     workflow_start = subparsers.add_parser(
         "workflow-start",

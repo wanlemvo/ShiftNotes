@@ -22,6 +22,13 @@ class GroqSettings:
     model: str = "openai/gpt-oss-20b"
 
 
+@dataclass(frozen=True)
+class GmailSettings:
+    client_secret_path: Path
+    token_path: Path
+    default_recipient: str = ""
+
+
 def _read_env_file(path: Path = ENV_PATH) -> dict[str, str]:
     values: dict[str, str] = {}
     if not path.exists():
@@ -75,3 +82,30 @@ def load_groq_settings(path: Path = ENV_PATH) -> GroqSettings:
             "Do not commit that file."
         )
     return GroqSettings(api_key=api_key, model=model)
+
+
+def load_gmail_settings(path: Path = ENV_PATH) -> GmailSettings:
+    env_path = path
+    if not env_path.exists() and path == ENV_PATH:
+        env_path = ALT_ENV_PATH
+
+    values = _read_env_file(env_path)
+    client_secret = values.get(
+        "GMAIL_CLIENT_SECRET_PATH",
+        "final_project/google_credentials.json",
+    )
+    token = values.get(
+        "GMAIL_TOKEN_PATH",
+        "final_project/.gmail_token.json",
+    )
+    client_secret_path = Path(client_secret)
+    token_path = Path(token)
+    if not client_secret_path.is_absolute():
+        client_secret_path = ROOT / client_secret_path
+    if not token_path.is_absolute():
+        token_path = ROOT / token_path
+    return GmailSettings(
+        client_secret_path=client_secret_path,
+        token_path=token_path,
+        default_recipient=values.get("GMAIL_DEFAULT_RECIPIENT", ""),
+    )

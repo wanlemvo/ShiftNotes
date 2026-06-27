@@ -1,0 +1,19 @@
+ShiftNotes live Gmail delivery evidence
+Captured: 2026-06-26
+
+AUTHORIZATION
+OAuth client type: Desktop app
+Authorized account: wanlemvoi@gmail.com
+Scope: https://www.googleapis.com/auth/gmail.send
+Credential and token files: stored locally and ignored by Git
+
+COMMAND
+python final_project/src/shiftnotes/cli.py gmail-send --type weekly --period week-01 --to wanlemvoi@gmail.com --confirm-send
+
+OUTPUT
+Sent weekly briefing to wanlemvoi@gmail.com.
+Gmail message ID: 19f0721c707b2313
+
+RESULT
+The generated Week 1 multipart HTML/plain-text ShiftNotes briefing was accepted
+by Gmail for delivery to the intended test recipient.

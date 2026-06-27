@@ -100,6 +100,8 @@ Do not commit `.env`.
 - Duplicate and malformed report handling.
 - Weekly and monthly briefing generation.
 - HTML and plain-text email previews.
+- Gmail API delivery with one-time OAuth authorization and explicit send confirmation.
+- Urgent, important, and monitoring/recognition briefing sections.
 - Groq semantic extraction with strict source evidence validation.
 - Deterministic Python metrics for ratings, dates, waste, and completeness.
 - Source-backed claim catalog.
@@ -110,7 +112,8 @@ Do not commit `.env`.
 
 ## Known Limitations
 
-- Gmail delivery is not connected yet; emails are generated as local previews.
+- Gmail delivery is implemented, but each installation must complete one-time
+  Google OAuth setup before sending.
 - The scheduler is documented but not deployed as a production job.
 - The final demo uses synthetic JotForm-shaped data.
 - A full Groq backfill hit on-demand quota limits and used deterministic fallback

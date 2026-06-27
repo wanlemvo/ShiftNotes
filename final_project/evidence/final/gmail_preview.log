@@ -1,0 +1,17 @@
+ShiftNotes Gmail preflight verification
+Captured: 2026-06-26
+
+COMMAND
+python final_project/src/shiftnotes/cli.py gmail-preview --type weekly --period week-01 --to wanlemvoi@gmail.com
+
+OUTPUT
+To: wanlemvoi@gmail.com
+Subject: ShiftNotes Weekly Briefing: 4 kiosks need attention | Week 1: March 2 - March 5, 2026
+HTML bytes: 10837
+Plain-text bytes: 2097
+No email was sent.
+
+INTERPRETATION
+The CLI selected the intended generated HTML/plain-text briefing and recipient.
+This is preflight evidence only. Add a Gmail message ID to a separate delivery
+log after OAuth authorization and a successful live send.

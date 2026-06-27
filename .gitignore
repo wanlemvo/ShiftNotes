@@ -4,12 +4,12 @@ __pycache__/
 .ipynb_checkpoints/
 *.pyc
 *.egg-info/
-uv.lock
-
 # Local secrets and runtime configuration
 .env
 *.env
 final_project/.env
+final_project/google_credentials.json
+final_project/.gmail_token.json
 
 # Local/generated runtime data that should not be committed
 final_project/data/raw/*.json

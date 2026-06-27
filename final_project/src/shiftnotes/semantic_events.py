@@ -5,6 +5,7 @@ from typing import Any
 
 
 AI_CATEGORY_LABELS = {
+    "safety_concern": "safety concern requiring immediate review",
     "food_shortage": "food shortages",
     "high_waste_or_overproduction": "overproduction or elevated waste",
     "dietary_or_allergy_question": "dietary and allergy questions",
@@ -15,10 +16,12 @@ AI_CATEGORY_LABELS = {
     "portion_complaint": "portion-size concerns",
     "beverage_request": "beverage requests",
     "sensitive_personnel_note": "sensitive personnel note requiring careful review",
+    "coaching_review": "potential coaching or training opportunity requiring review",
     "other_operational_issue": "other operational issues",
 }
 
 AI_CATEGORY_FOLLOW_UPS = {
+    "safety_concern": "Inspect the source immediately and follow the applicable workplace safety process.",
     "food_shortage": "Compare prep levels with lunch-rush demand.",
     "high_waste_or_overproduction": "Review prep quantities and unclaimed-lunch patterns before adjusting production.",
     "dietary_or_allergy_question": "Confirm that dietary and allergen information is easy for staff and guests to access.",
@@ -29,6 +32,7 @@ AI_CATEGORY_FOLLOW_UPS = {
     "portion_complaint": "Compare portion guidance across kiosks before changing service standards.",
     "beverage_request": "Track whether beverage requests continue before changing the offering.",
     "sensitive_personnel_note": "Inspect the original report; do not infer misconduct or take personnel action from this note alone.",
+    "coaching_review": "Review the source privately and confirm whether supportive training or clarification is appropriate.",
     "other_operational_issue": "Inspect source reports and decide whether a recurring operational pattern needs follow-up.",
 }
 
@@ -37,6 +41,7 @@ GROUP_BY_SUBJECT_CATEGORIES = {
     "employee_recognition",
     "inventory_inconsistency",
     "sensitive_personnel_note",
+    "coaching_review",
 }
 
 
@@ -67,7 +72,10 @@ def semantic_events_from_extractions(
                     "evidence_field": signal.get("evidence_field", ""),
                     "confidence": signal.get("confidence"),
                     "severity": signal.get("severity", ""),
-                    "sensitive": bool(signal.get("sensitive")),
+                    "sensitive": (
+                        bool(signal.get("sensitive"))
+                        or category == "coaching_review"
+                    ),
                     "semantic_category": category,
                     "subject": subject,
                     "label": semantic_label(category, subject),

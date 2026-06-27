@@ -4,7 +4,11 @@ from langgraph.types import Command
 
 from scripts.generate_final_mock_dataset import build_dataset
 from shiftnotes.correction_graph import build_test_correction_graph
-from shiftnotes.email_preview import render_monthly_email, render_weekly_email
+from shiftnotes.email_preview import (
+    claim_urgency,
+    render_monthly_email,
+    render_weekly_email,
+)
 from shiftnotes.product import (
     apply_correction_history,
     build_claim_catalog,
@@ -197,6 +201,55 @@ def test_email_previews_are_polished_and_source_linked():
     assert "Open full briefing" in monthly["html"]
     assert "Actual dollar" not in monthly["html"]
     assert "possible opportunity" in monthly["html"].lower()
+
+
+def test_email_previews_separate_urgent_follow_up_and_monitoring():
+    claims = [
+        {
+            "claim_id": "safety-1",
+            "category": "semantic:safety_concern:general",
+            "kiosk": "Coastal Cafe",
+            "claim_text": "A safety concern appeared in 1 report.",
+            "source_submission_ids": ["R-1"],
+            "source_count": 1,
+            "sensitive": False,
+        },
+        {
+            "claim_id": "inventory-1",
+            "category": "semantic:inventory_inconsistency:general",
+            "kiosk": "Market Grill",
+            "claim_text": "Inventory inconsistency appeared in 2 reports.",
+            "source_submission_ids": ["R-2", "R-3"],
+            "source_count": 2,
+            "sensitive": False,
+        },
+        {
+            "claim_id": "recognition-1",
+            "category": "semantic:employee_recognition:maria",
+            "kiosk": "Hearth & Grain",
+            "claim_text": "Maria was recognized in 2 reports.",
+            "source_submission_ids": ["R-4", "R-5"],
+            "source_count": 2,
+            "sensitive": False,
+        },
+    ]
+    markdown = (
+        "# ShiftNotes Weekly Operations Briefing\n\n"
+        "Week 1: March 2 - March 5, 2026\n\n"
+        "- Reporting: 24/24 valid reports\n"
+        "- Average food quality: 4.5/5\n"
+        "- Average food quantity: 4.2/5\n"
+        "- Unclaimed lunches: 20\n"
+    )
+
+    rendered = render_weekly_email(markdown, claims)
+
+    assert "Immediate attention" in rendered["html"]
+    assert "Important follow-up" in rendered["html"]
+    assert "Monitor and recognize" in rendered["html"]
+    assert claim_urgency(claims[0]) == "urgent"
+    assert claim_urgency(claims[1]) == "important"
+    assert claim_urgency(claims[2]) == "monitor"
 
 
 def test_schedule_uses_pacific_thursday_and_inventory_timing():

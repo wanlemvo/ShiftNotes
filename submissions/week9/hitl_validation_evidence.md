@@ -1,5 +1,39 @@
 # HITL Validation Evidence
 
+## Non-Team User Validation
+
+**Reviewer:** Ted Snow
+
+**Role:** Intended operational user and T-Mobile Operations General Manager
+
+**Relationship to project:** Workplace stakeholder; not a member of the student
+development team
+
+**Evidence:** Email feedback retained privately by the project author
+
+Ted reviewed the ShiftNotes project as its intended operational user. His
+review decision was effectively **request changes**, rather than unconditionally
+approve the existing output. He asked for:
+
+1. identification of high-priority tasks requiring immediate attention,
+   including safety concerns and malfunctioning equipment;
+2. prioritization of important tasks that are not urgent; and
+3. tracking of employee recognition, including positive feedback and coaching
+   opportunities.
+
+This feedback produced downstream changes in the prototype. Weekly and monthly
+email previews now contain a prioritized findings section. Equipment-related
+disruptions are elevated in the ranking, and employee-recognition findings are
+tracked with supporting source reports. Broader safety escalation and coaching
+recommendations remain limited or deferred because personnel-sensitive
+conclusions require human review.
+
+Ted's email therefore provides non-team validation that the workflow and
+briefing concept were understandable, while also documenting a real user
+decision and the response actions taken afterward. The original screenshot is
+not bundled because it contains personal contact information unrelated to the
+course evaluation.
+
 ## HITL Behavior Demonstrated
 
 ShiftNotes includes two human-in-the-loop patterns:
@@ -38,9 +72,9 @@ HITL INTERRUPT: workflow paused before briefing finalization.
 Review options: approve, correct, reject
 ```
 
-## Non-Team User Validation Script
+## Repeatable Validation Script
 
-Use this script with a non-team reviewer:
+The following script can be used to repeat the validation:
 
 1. Open `evidence/weekly_email_preview.html`.
 2. Ask the reviewer what the briefing says is most important.
@@ -57,9 +91,11 @@ claims and confirming corrections. ShiftNotes does not automatically discipline
 employees, accuse workers, change future classification rules, or send
 personnel-sensitive conclusions without review.
 
-## Remaining Submission Note
+## Evidence Interpretation
 
-If possible, add a screenshot or short written note from a non-team reviewer
-confirming that they reviewed the briefing and understood the approve/challenge
-flow. The technical evidence is present in this folder, but a course grader may
-still expect proof that another person actually performed the validation.
+Ted's feedback documents external user review and a request-changes decision.
+The bundled execution logs separately demonstrate the software's explicit
+LangGraph interrupt, persisted waiting state, approval input, downstream
+finalization, retry behavior, and fallback behavior. Together, the user record
+and technical logs provide the Week 9 HITL validation evidence without claiming
+that Ted personally executed the command-line LangGraph checkpoint.

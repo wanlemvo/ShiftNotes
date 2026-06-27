@@ -38,7 +38,7 @@ Estimated completion for final-project P0 scope: **85% complete**.
 | Hosted dashboard | Streamlit works locally; production hosting/authentication is future work. |
 | Live Ted account integration | Avoided for privacy and class reproducibility. |
 | Full Groq backfill without rate limits | Prototype includes Groq interface and benchmark evidence, with deterministic fallback for quota-safe reproducibility. |
-| External non-team validation screenshot | Needs a real person to review the demo and provide screenshot/note if required by grading. |
+| Additional live usability session | Ted's email documents non-team stakeholder review and response actions. A recorded end-to-end usability session remains optional future evidence. |
 
 ## Test Evidence
 

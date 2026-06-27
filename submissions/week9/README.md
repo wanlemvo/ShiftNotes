@@ -7,7 +7,7 @@ independent ShiftNotes implementation.
 
 | Requirement | File(s) |
 | --- | --- |
-| Peer review feedback received + response actions | `peer_review_feedback_packet.md` |
+| Peer review feedback received + response actions | `peer_review_feedback_packet.md` (Jayden Lawson peer review, Ted Snow stakeholder feedback, and response actions) |
 | HITL validation evidence with non-team user | `hitl_validation_evidence.md`, `evidence/retry_and_hitl.log`, `evidence/persistence_and_approval.log` |
 | Backlog completion report | `backlog_completion_report.md` |
 | Technical report draft sections 1-3 | `technical_report_sections_1_3.md` |

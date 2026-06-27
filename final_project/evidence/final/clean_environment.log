@@ -1,0 +1,18 @@
+ShiftNotes clean-environment verification
+Captured: 2026-06-26
+
+COMMANDS
+$env:UV_PROJECT_ENVIRONMENT="$env:TEMP\ShiftNotesCleanEnv-20260626"
+uv sync --locked
+& "$env:TEMP\ShiftNotesCleanEnv-20260626\Scripts\python.exe" -m pytest -q
+
+RESULT
+Using CPython 3.13.13
+Resolved 173 packages
+Installed 169 packages in a newly created environment
+..............................................................           [100%]
+62 passed in 16.69s
+
+INTERPRETATION
+The locked project installed and the complete automated test suite passed in a
+fresh virtual environment outside the repository.

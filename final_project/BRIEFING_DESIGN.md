@@ -140,10 +140,11 @@ Implemented:
 - menu limitation;
 - sensitive-personnel warning.
 
-Not implemented:
+Implemented after the initial design:
 
-- email delivery;
-- clickable source inspection;
-- natural-language challenge processing;
+- Gmail API delivery with explicit confirmation;
+- clickable local source inspection;
+- deterministic natural-language challenge processing;
 - correction history;
-- AI-assisted semantic extraction.
+- Groq semantic extraction with deterministic fallback;
+- immediate, important, and monitoring/recognition priority tiers.

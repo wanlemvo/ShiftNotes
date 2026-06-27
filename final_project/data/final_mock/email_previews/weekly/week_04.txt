@@ -1,4 +1,4 @@
-Subject: ShiftNotes Weekly Briefing: 3 kiosks need attention | Week 4: March 23 - March 26, 2026
+Subject: ShiftNotes Weekly Briefing: 5 kiosks need attention | Week 4: March 23 - March 26, 2026
 
 Week 4: March 23 - March 26, 2026
 
@@ -10,21 +10,34 @@ At a glance
 - Food quantity: 3.91/5
 - Unclaimed lunches: 92
 
-Priority findings
+Prioritized findings
+
+IMMEDIATE ATTENTION
+- Equipment-related disruptions appeared in 1 report at Coastal Cafe.
+  Sources: FM-0082
+  Inspect/challenge: http://localhost:8502?claim=weekly-week-04-coastal-cafe-semantic-equipment-failure-equipment-failure
+
+IMPORTANT FOLLOW-UP
 - Overproduction or elevated waste appeared in 4 reports at Market Grill.
   Sources: FM-0074, FM-0080, FM-0086, FM-0092
-  Inspect/challenge: http://localhost:8501?claim=weekly-week-04-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
-- Beverage requests appeared in 2 reports at Hearth & Grain.
-  Sources: FM-0077, FM-0095
-  Inspect/challenge: http://localhost:8501?claim=weekly-week-04-hearth-grain-semantic-beverage-request-beverage-request
-- Employee recognition: Maya Chen appeared in 2 reports at Hearth & Grain.
-  Sources: FM-0077, FM-0089
-  Inspect/challenge: http://localhost:8501?claim=weekly-week-04-hearth-grain-semantic-employee-recognition-maya-chen
+  Inspect/challenge: http://localhost:8502?claim=weekly-week-04-market-grill-semantic-high-waste-or-overproduction-high-waste-or-overproduction
 - Food shortages: Chicken prep appeared in 1 report at Bowls & Buns.
   Sources: FM-0073
-  Inspect/challenge: http://localhost:8501?claim=weekly-week-04-bowls-buns-semantic-food-shortage-chicken-prep
+  Inspect/challenge: http://localhost:8502?claim=weekly-week-04-bowls-buns-semantic-food-shortage-chicken-prep
+- Food shortages: Cilantro rice appeared in 1 report at Street Eats.
+  Sources: FM-0096
+  Inspect/challenge: http://localhost:8502?claim=weekly-week-04-street-eats-semantic-food-shortage-cilantro-rice
+- Food shortages: Kung Pao chicken appeared in 1 report at Bowls & Buns.
+  Sources: FM-0085
+  Inspect/challenge: http://localhost:8502?claim=weekly-week-04-bowls-buns-semantic-food-shortage-kung-pao-chicken
+- Dietary and allergy questions appeared in 1 report at Bowls & Buns.
+  Sources: FM-0085
+  Inspect/challenge: http://localhost:8502?claim=weekly-week-04-bowls-buns-semantic-dietary-or-allergy-question-dietary-or-allergy-question
+- Dietary and allergy questions appeared in 1 report at Verde Kitchen.
+  Sources: FM-0081
+  Inspect/challenge: http://localhost:8502?claim=weekly-week-04-verde-kitchen-semantic-dietary-or-allergy-question-dietary-or-allergy-question
 
 Open full briefing:
-http://localhost:8501
+http://localhost:8502
 
 Interpretation note: menu findings reflect only dishes explicitly named in reports. Financial impact remains a possible opportunity until meal-cost, volume, and labor data are available.

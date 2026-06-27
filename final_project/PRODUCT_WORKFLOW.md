@@ -16,17 +16,35 @@ review correction history.
 
 ## Email Preview
 
-The implemented email preview includes:
+The implemented email includes:
 
 - a concise subject line;
 - reporting, quality, quantity, and waste metrics;
-- priority source-backed findings;
+- immediate-attention, important-follow-up, and monitoring/recognition findings;
 - links to supporting reports;
 - links to challenge individual claims;
 - interpretation and financial guardrails;
 - responsive HTML and plain-text alternatives.
 
-The preview is generated locally. It is not sent through Gmail yet.
+ShiftNotes generates a local preview first. After one-time Google OAuth
+authorization, an explicitly confirmed CLI command can send that same HTML and
+plain-text briefing through Gmail. The sender requests only the `gmail.send`
+scope and cannot read the mailbox.
+
+## Priority Model
+
+Findings are divided into three operational tiers:
+
+1. **Immediate attention:** explicit safety concerns, equipment or register
+   disruptions, and sensitive personnel notes requiring private source review.
+2. **Important follow-up:** shortages, waste/overproduction, inventory
+   inconsistencies, dietary questions, portion concerns, and carefully framed
+   coaching or training review signals.
+3. **Monitor and recognize:** lower-risk guest requests, positive employee
+   recognition, and other patterns worth watching.
+
+Coaching signals are prompts for private human review. ShiftNotes does not
+infer misconduct or recommend discipline.
 
 ## Claim and Source Model
 
@@ -163,6 +181,12 @@ The workspace includes:
 - scheduling policy;
 - Streamlit workspace.
 
+## Gmail Delivery
+
+Gmail delivery uses a Google Desktop OAuth client, a locally stored refresh
+token, and the narrow `gmail.send` scope. Live delivery always requires the
+`--confirm-send` CLI flag. Credentials and tokens are excluded from Git.
+
 ## Semantic Intelligence
 
 The Groq integration now implements the provider boundary previously represented
@@ -183,7 +207,6 @@ See `MODEL_SELECTION_AND_BENCHMARK.md`.
 ## Future Integrations
 
 - Groq-assisted challenge interpretation;
-- Gmail email delivery;
 - production scheduler;
 - hosted source links;
 - authenticated manager access.
