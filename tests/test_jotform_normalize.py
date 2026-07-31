@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "final_project" / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "demo" / "src"))
 
 from shiftnotes.normalize import normalize_submissions
 from shiftnotes.analysis import analyze_reports

@@ -7,18 +7,18 @@ __pycache__/
 # Local secrets and runtime configuration
 .env
 *.env
-final_project/.env
-final_project/google_credentials.json
-final_project/.gmail_token.json
+demo/.env
+demo/google_credentials.json
+demo/.gmail_token.json
 
 # Local/generated runtime data that should not be committed
-final_project/data/raw/*.json
-final_project/data/processed/*.json
-final_project/data/briefings/*.md
-final_project/data/checkpoints/
-final_project/data/corrections/
-final_project/data/ai_cache/
-final_project/streamlit*.log
+demo/data/raw/*.json
+demo/data/processed/*.json
+demo/data/briefings/*.md
+demo/data/checkpoints/
+demo/data/corrections/
+demo/data/ai_cache/
+demo/streamlit*.log
 
 # Temporary comparison and submission archives
 _github_compare/

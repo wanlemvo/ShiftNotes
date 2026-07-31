@@ -1,4 +1,4 @@
-# CLAUDE.md
+﻿# CLAUDE.md
 
 ## Project Context
 
@@ -50,12 +50,12 @@ Out of scope for this submission:
 
 ## Important Artifacts
 
-- `final_project/README.md`: setup, run steps, demo path, and limitations.
-- `final_project/TECHNICAL_REPORT.md`: final technical report content.
-- `final_project/PRODUCT_WORKFLOW.md`: email-first product behavior.
-- `final_project/MODEL_SELECTION_AND_BENCHMARK.md`: model rationale and evidence.
-- `final_project/data/final_mock/`: reproducible final dataset and artifacts.
-- `final_project/data/final_mock/email_previews/`: demo-ready email outputs.
+- `demo/README.md`: setup, run steps, demo path, and limitations.
+- `demo/TECHNICAL_REPORT.md`: final technical report content.
+- `demo/PRODUCT_WORKFLOW.md`: email-first product behavior.
+- `demo/MODEL_SELECTION_AND_BENCHMARK.md`: model rationale and evidence.
+- `demo/data/final_mock/`: reproducible final dataset and artifacts.
+- `demo/data/final_mock/email_previews/`: demo-ready email outputs.
 - `tests/`: automated validation suite.
 - `SOLO_WORK_LOG.md`: independent development history after the team checkpoint.
 - `INDEPENDENT_BACKLOG.md`: backlog and deliverable traceability.

@@ -1,1 +1,0 @@
-﻿"""ShiftNotes final project package."""

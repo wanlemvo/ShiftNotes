@@ -12,12 +12,12 @@ from random import Random
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "final_project" / "src"))
+sys.path.insert(0, str(ROOT / "demo" / "src"))
 
 from shiftnotes.normalize import normalize_submissions
 
 
-OUTPUT_DIR = ROOT / "final_project" / "data" / "final_mock"
+OUTPUT_DIR = ROOT / "demo" / "data" / "final_mock"
 START_DATE = date(2026, 3, 2)
 WEEKS = 12
 SERVICE_WEEKDAYS = (0, 1, 2, 3)  # Monday through Thursday

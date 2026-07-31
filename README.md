@@ -1,129 +1,156 @@
 # ShiftNotes
 
-ShiftNotes is an email-first operational intelligence prototype for
-JotForm-style shift reports.
+ShiftNotes is an email-first operational intelligence prototype for kiosk shift
+reports. It turns JotForm-style submissions into source-backed weekly and
+monthly briefings so an operations manager can see trends without manually
+reading every individual report.
 
-The final project demonstrates how recurring operational notes from multiple
-kiosks can be transformed into source-backed weekly and monthly management
-briefings. The dashboard is secondary. The primary user experience is a
-briefing email that helps a manager understand trends without manually reading
-every individual shift-note report.
+The primary interface is email. The Streamlit app is a supporting inspection
+workspace for reviewing sources, challenging claims, and checking correction
+history.
 
-## Final Project Location
+Public demo: https://shiftnotes.streamlit.app
 
-The final independent implementation lives in:
+## Project Ownership
 
-```text
-final_project/
-```
+ShiftNotes was designed from a workplace problem I observed directly: shift-note
+reports already existed, but the useful operational patterns were buried across
+individual submissions. I designed the product concept, email-first workflow,
+source-backed claim model, human review path, and adoption strategy. AI tools
+were used as an implementation partner to help turn that design into code,
+tests, documentation, and refinements.
 
-Key artifacts:
+The core product decision was not to replace the manager's workflow with a new
+dashboard habit. Instead, ShiftNotes adds one high-value briefing email and
+keeps the dashboard available only when a claim needs inspection or correction.
 
-- `final_project/README.md` - setup, run steps, demo path, and limitations.
-- `final_project/TECHNICAL_REPORT.md` - final technical report sections.
-- `final_project/PRODUCT_WORKFLOW.md` - email-first workflow and HITL behavior.
-- `final_project/MODEL_SELECTION_AND_BENCHMARK.md` - model rationale and benchmark evidence.
-- `final_project/data/final_mock/email_previews/` - demo-ready weekly/monthly email previews.
-- `final_project/data/final_mock/` - synthetic dataset, claims, briefings, and benchmark artifacts.
-- `tests/` - automated test suite.
-- `SOLO_WORK_LOG.md` - independent work log after the Week 8 team checkpoint.
-
-## Quick Demo
-
-Open these files in a browser:
+## Project Map
 
 ```text
-final_project/data/final_mock/email_previews/weekly/week_01.html
-final_project/data/final_mock/email_previews/monthly/2026-03.html
+demo/                         runnable ShiftNotes prototype
+demo/src/shiftnotes/           core ingestion, analysis, AI, email, and workflow code
+demo/data/final_mock/          synthetic JotForm-shaped demo dataset and outputs
+docs/                          product documentation and technical writeups
+docs/submissions/              class submission artifacts and report drafts
+docs/archive/                  older planning, team prototype, and class-history material
+tests/                         automated tests for the active prototype
+scripts/                       reproducible data-generation scripts
 ```
 
-These previews show the core product flow:
+Older class and team artifacts are intentionally preserved under `docs/archive/`
+so the root of the repo stays focused on the current prototype.
+
+## Workflow
 
 ```text
 JotForm-style shift reports
--> cleaned operational records
--> source-backed trend analysis
--> weekly/monthly briefing email
--> optional source inspection and claim correction
+-> normalized operational records
+-> deterministic metrics and semantic signal extraction
+-> source-backed weekly/monthly briefings
+-> Gmail delivery
+-> optional Streamlit source inspection and claim correction
 ```
 
-## Run Locally
+The adoption decision is deliberate: ShiftNotes improves the manager's existing
+email workflow instead of requiring a new daily dashboard habit.
 
-Install the project from the repository root:
+## Quick Demo
+
+Run the inspection workspace locally:
 
 ```bash
 python -m pip install -e .
+python -m streamlit run demo/app.py
 ```
 
-Run tests:
+Or open the hosted synthetic-data demo:
+
+```text
+https://shiftnotes.streamlit.app
+```
+
+Useful local preview files:
+
+```text
+demo/data/final_mock/email_previews/weekly/week_01.html
+demo/data/final_mock/email_previews/monthly/2026-03.html
+```
+
+## Setup
+
+Copy the environment template:
 
 ```bash
-python -m pytest -q
+copy demo\.env.example demo\.env
 ```
 
-Generate final briefing artifacts:
-
-```bash
-python final_project/src/shiftnotes/cli.py briefings
-python final_project/src/shiftnotes/cli.py product-assets
-```
-
-Run the optional inspection workspace:
-
-```bash
-python -m streamlit run final_project/app.py
-```
-
-## Setup for a Real JotForm Account
-
-Copy the template:
-
-```bash
-copy final_project\.env.example final_project\.env
-```
-
-Fill in:
+Fill in the values you need:
 
 ```env
 JOTFORM_API_KEY=your_api_key_here
 JOTFORM_FORM_ID=your_form_id_here
 GROQ_API_KEY=your_groq_api_key_here
 GROQ_MODEL=openai/gpt-oss-20b
+GMAIL_CLIENT_SECRET_PATH=demo/google_credentials.json
+GMAIL_TOKEN_PATH=demo/.gmail_token.json
+GMAIL_DEFAULT_RECIPIENT=manager@example.com
 ```
 
-Do not commit `.env`.
+Do not commit `.env`, Google credentials, or Gmail tokens.
+
+## Common Commands
+
+```bash
+python -m pip install -e .
+python -m pytest -q
+python scripts/generate_final_mock_dataset.py
+python demo/src/shiftnotes/cli.py baseline
+python demo/src/shiftnotes/cli.py briefings
+python demo/src/shiftnotes/cli.py product-assets
+python demo/src/shiftnotes/cli.py gmail-preview --type weekly --period week-01
+```
+
+To send a real Gmail briefing after OAuth setup:
+
+```bash
+python demo/src/shiftnotes/cli.py gmail-send --type weekly --period week-01 --confirm-send
+```
 
 ## What Is Implemented
 
-- JotForm-style normalization and validation.
-- Missing report detection by expected kiosk/date.
-- Duplicate and malformed report handling.
+- JotForm API client and JotForm-style data normalization.
+- Required-field validation and malformed report flagging.
+- Missing report detection by kiosk and expected date.
+- Duplicate handling.
+- Three-month synthetic dataset with planted ground-truth patterns.
 - Weekly and monthly briefing generation.
 - HTML and plain-text email previews.
-- Gmail API delivery with one-time OAuth authorization and explicit send confirmation.
-- Urgent, important, and monitoring/recognition briefing sections.
-- Groq semantic extraction with strict source evidence validation.
-- Deterministic Python metrics for ratings, dates, waste, and completeness.
+- Gmail API delivery using the narrow `gmail.send` scope.
+- Groq semantic extraction for free-text operational signals.
+- Strict source evidence validation for AI-generated signals.
+- Retry and deterministic fallback behavior for malformed or failed AI calls.
+- Urgent, important, and monitor/recognize briefing sections.
 - Source-backed claim catalog.
-- Optional Streamlit source inspection workspace.
-- Public demo: https://shiftnotes.streamlit.app
+- Streamlit source inspection workspace.
 - Human-in-the-loop claim challenge and correction confirmation.
-- Responsible AI guardrails for personnel-sensitive notes.
-- Benchmark artifacts and tests.
+- Responsible AI guardrails for sensitive personnel notes.
+- Automated tests for the active prototype.
+
+## Documentation
+
+- `docs/DEMO_GUIDE.md` - how to present the prototype.
+- `docs/PROTOTYPE_STATUS.md` - implemented scope, limits, and next steps.
+- `docs/PRODUCT_WORKFLOW.md` - email-first workflow and HITL behavior.
+- `docs/ARCHITECTURE_OVERVIEW.md` - system architecture and design rationale.
+- `docs/MODEL_SELECTION_AND_BENCHMARK.md` - model rationale and benchmark evidence.
+- `docs/BRIEFING_DESIGN.md` - briefing format and operational guardrails.
+- `docs/DESIGN_AND_ENGINEERING_NOTES.md` - concise design, validation, and scale notes.
 
 ## Known Limitations
 
-- Gmail delivery is implemented, but each installation must complete one-time
-  Google OAuth setup before sending.
-- The scheduler is documented but not deployed as a production job.
-- The final demo uses synthetic JotForm-shaped data.
-- A full Groq backfill hit on-demand quota limits and used deterministic fallback
-  for unresolved batches.
-- The public Streamlit demo is not authenticated and uses synthetic data only.
-- Source links open hosted inspection views, not original JotForm records.
-
-## Submission Notes
-
-The complete final submission ZIP is generated under `dist/`, but `dist/` is not
-tracked in Git. The repository itself contains the code, docs, tests, and demo
-artifacts needed to reproduce the project on another machine.
+- The hosted Streamlit app uses synthetic data and is not authenticated.
+- Gmail delivery works, but each installation needs one-time Google OAuth setup.
+- Scheduling policy is documented, but no production scheduler is deployed yet.
+- Local JSON and SQLite are used for the prototype instead of a production database.
+- Full production rollout would need authentication, tenant isolation, hosted jobs,
+  monitoring, secret management, and stronger operational controls.

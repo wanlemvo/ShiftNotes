@@ -12,18 +12,18 @@ STAGING = DIST / PACKAGE_NAME
 ZIP_PATH = DIST / f"{PACKAGE_NAME}.zip"
 
 FILES = {
-    ROOT / "final_project" / "WEEK6_SUBMISSION_README.md": STAGING / "README.md",
-    ROOT / "final_project" / "WEEK6_ARCHITECTURE.md": STAGING / "ARCHITECTURE.md",
-    ROOT / "final_project" / "week6_requirements.txt": STAGING / "requirements.txt",
-    ROOT / "final_project" / ".env.example": STAGING / "final_project" / ".env.example",
+    ROOT / "demo" / "WEEK6_SUBMISSION_README.md": STAGING / "README.md",
+    ROOT / "demo" / "WEEK6_ARCHITECTURE.md": STAGING / "ARCHITECTURE.md",
+    ROOT / "demo" / "week6_requirements.txt": STAGING / "requirements.txt",
+    ROOT / "demo" / ".env.example": STAGING / "demo" / ".env.example",
     ROOT / "tests" / "test_jotform_normalize.py": STAGING / "tests" / "test_jotform_normalize.py",
     ROOT / "tests" / "test_langgraph_workflow.py": STAGING / "tests" / "test_langgraph_workflow.py",
 }
 
 DIRECTORIES = {
-    ROOT / "final_project" / "src" / "shiftnotes": STAGING / "final_project" / "src" / "shiftnotes",
-    ROOT / "final_project" / "data" / "demo": STAGING / "final_project" / "data" / "demo",
-    ROOT / "final_project" / "evidence" / "week6": STAGING / "evidence",
+    ROOT / "demo" / "src" / "shiftnotes": STAGING / "demo" / "src" / "shiftnotes",
+    ROOT / "demo" / "data" / "demo": STAGING / "demo" / "data" / "demo",
+    ROOT / "demo" / "evidence" / "week6": STAGING / "evidence",
 }
 
 

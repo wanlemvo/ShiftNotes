@@ -3,7 +3,7 @@ from pathlib import Path
 
 from langgraph.types import Command
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "final_project" / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "demo" / "src"))
 
 from shiftnotes.graph import build_persistent_graph, build_test_graph
 
