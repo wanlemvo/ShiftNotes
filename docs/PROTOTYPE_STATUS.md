@@ -20,6 +20,8 @@ ShiftNotes is currently a usable prototype, not a production deployment.
 - Gmail API delivery with explicit send confirmation.
 - Source-backed claim catalog.
 - Streamlit source inspection workspace.
+- Integrated operations dashboard with date/kiosk filters, trend charts,
+  priority queue, comparison/export, recognition, and missing-date inspection.
 - Ordinary-English claim challenge flow.
 - Human confirmation before saving corrections.
 - Correction history.
@@ -37,18 +39,25 @@ ShiftNotes is currently a usable prototype, not a production deployment.
 - Groq-assisted correction interpretation.
 - Direct source links back to original JotForm records.
 - Monitoring and alerting for production jobs.
+- Google Forms, Microsoft Forms, Typeform, or generic CSV input connectors.
+- Automatic pagination and incremental JotForm synchronization.
+- Live fetch-to-rich-dashboard/briefing dataset handoff.
 
 ## Current Evidence
 
-The active test suite passes locally:
+The October 8, 2026 local test run passed:
 
 ```text
-52 active prototype tests after archiving old team-prototype tests.
+58 tests (52 existing tests, 4 dashboard aggregation tests, and 2 app interaction tests).
 ```
 
 Before archive cleanup, the full mixed repo suite had 62 passing tests. The 10
 archived tests covered the older team prototype classifier/state package rather
 than the active email-first ShiftNotes demo.
+
+See [verification](VERIFICATION.md) for current checks and limitations. The
+dashboard update and demo media are prepared for the authorized GitHub release;
+hosted deployment verification is tracked separately in that document.
 
 The dataset includes planted ground-truth patterns so the system can be checked
 against known source-level events instead of only judged by whether briefings
@@ -92,3 +101,12 @@ To become production software, ShiftNotes needs:
 - audit logging;
 - operational monitoring;
 - privacy review for employee-related content.
+
+## Next Implementation Order
+
+1. Connect live ingestion, pagination, the expected reporting schedule, and rich
+   briefing generation through a configurable dataset boundary.
+2. Add authenticated access and durable storage before workplace data hosting.
+3. Deploy scheduled jobs with idempotent sending, monitoring, and recovery.
+4. Pilot with real users and measure review time, accuracy, and correction rates.
+5. Add other form providers only when the pilot establishes a need.

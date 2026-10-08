@@ -1,5 +1,12 @@
 ﻿# Solo Work Log
 
+## Continuation
+
+This log preserves the original independent-development record. Subsequent
+significant changes are recorded in [the current change log](../../CHANGELOG.md),
+including the October 8, 2026 dashboard integration and repository cleanup.
+The original entries below retain their historical dates and context.
+
 ## Purpose
 
 This document records the point where ShiftNotes moved from a team checkpoint project into my independent project work.

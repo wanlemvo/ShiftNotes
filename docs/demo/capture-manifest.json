@@ -1,0 +1,46 @@
+{
+  "dataset": "Bundled synthetic reports; isolated local run",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "claim_id": "weekly-week-07-bowls-buns-semantic-register-disruption-register-disruption",
+  "challenged_source": "FM-0157",
+  "decision": "cancel",
+  "note": "Source removal is a scripted demo action, not a claim that the original analysis was incorrect.",
+  "stages": [
+    {
+      "image": "briefing.png",
+      "description": "1. Read the weekly briefing email preview."
+    },
+    {
+      "image": "dashboard.png",
+      "description": "2. Review the latest week: metrics, priorities, and trends."
+    },
+    {
+      "image": "trends.png",
+      "description": "3. Expand to all 12 weeks of synthetic reports."
+    },
+    {
+      "image": "comparison.png",
+      "description": "4. Compare kiosks using ratings, missing reports, and unclaimed lunches per report."
+    },
+    {
+      "image": "kiosk.png",
+      "description": "5. Narrow the reporting window to one kiosk."
+    },
+    {
+      "image": "sources.png",
+      "description": "6. Inspect the original report fields supporting a finding."
+    },
+    {
+      "image": "correction.png",
+      "description": "7. Review the proposal at the human confirmation checkpoint."
+    },
+    {
+      "image": "history.png",
+      "description": "8. Cancel the proposed change and inspect the recorded decision."
+    }
+  ],
+  "browser_errors": []
+}

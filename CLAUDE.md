@@ -5,12 +5,12 @@
 ShiftNotes is an email-first operational intelligence prototype for workplace
 shift reports.
 
-The final project goal is to prove that JotForm-style shift notes can be turned
+The prototype goal is to prove that JotForm-style shift notes can be turned
 into source-backed weekly and monthly management briefings. The dashboard is a
 secondary inspection surface; the primary user experience is the briefing email
 that Ted can read without manually reviewing every individual shift-note report.
 
-## Final Prototype Scope
+## Active Prototype Scope
 
 Implemented scope:
 
@@ -29,7 +29,7 @@ Implemented scope:
 - refuse or flag unsafe personnel-related requests;
 - provide tests and reproducible synthetic data for grading.
 
-Out of scope for this submission:
+Current implementation limits:
 
 - production hosting and authentication;
 - production scheduler deployment;
@@ -40,25 +40,39 @@ Out of scope for this submission:
 ## Development Guidance
 
 - Keep the email briefing as the primary product surface.
-- Treat Streamlit as inspection, evidence review, and demo support only.
+- Treat Streamlit as the leadership dashboard and supporting evidence/review interface.
 - Keep exact calculations deterministic in Python.
 - Use the model only for semantic interpretation of free-text fields.
 - Preserve source traceability for every important claim.
 - Do not allow unsupported claims, invented sources, or hidden model fallback.
 - Do not recommend discipline, termination, or personnel accusations.
-- Document significant changes in `SOLO_WORK_LOG.md`.
+- Document significant changes in `docs/CHANGELOG.md`; preserve the historical solo work log.
+- Document provider support honestly: only JotForm ingestion is implemented.
+- Dashboard counts use weekly claims once per category/source, after correction history.
+- Keep the public dataset synthetic. Live fetch output is not automatically wired to the dashboard.
 
 ## Important Artifacts
 
 - `demo/README.md`: setup, run steps, demo path, and limitations.
-- `demo/TECHNICAL_REPORT.md`: final technical report content.
-- `demo/PRODUCT_WORKFLOW.md`: email-first product behavior.
-- `demo/MODEL_SELECTION_AND_BENCHMARK.md`: model rationale and evidence.
+- `docs/README.md`: current documentation index.
+- `docs/submissions/final_report/ShiftNotes_Technical_Report.md`: class report artifact.
+- `docs/PRODUCT_WORKFLOW.md`: email-first product behavior.
+- `docs/MODEL_SELECTION_AND_BENCHMARK.md`: model rationale and evidence.
+- `docs/DASHBOARD_METRICS.md`: aggregation and interpretation contracts.
+- `docs/INTEGRATIONS.md`: supported inputs and live-data boundaries.
 - `demo/data/final_mock/`: reproducible final dataset and artifacts.
 - `demo/data/final_mock/email_previews/`: demo-ready email outputs.
 - `tests/`: automated validation suite.
-- `SOLO_WORK_LOG.md`: independent development history after the team checkpoint.
-- `INDEPENDENT_BACKLOG.md`: backlog and deliverable traceability.
+- `docs/archive/class_docs/SOLO_WORK_LOG.md`: earlier independent development history.
+- `docs/archive/class_docs/INDEPENDENT_BACKLOG.md`: historical backlog.
+- `docs/CHANGELOG.md`: ongoing significant changes.
+
+## Setup and Verification
+
+Run `uv sync --locked`, `uv run pytest -q`, and
+`uv run streamlit run streamlit_app.py` from the repository root.
+The no-key demo uses bundled reports. Keep old team code and retired packaging
+helpers in the archive. See `docs/PUBLICATION.md` before preparing a release.
 
 ## Human-in-the-Loop Requirement
 

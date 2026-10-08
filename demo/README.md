@@ -17,13 +17,23 @@ in `docs/archive/`.
 
 ## Setup
 
-From the repository root, install the package:
+From the repository root, use the locked environment:
 
-```bash
-python -m pip install -e .
+```powershell
+uv sync --locked
+uv run streamlit run streamlit_app.py
 ```
 
-Copy the environment template:
+The bundled dashboard needs no credentials. For pip-based development instead:
+
+```bash
+python -m venv .venv
+.venv/Scripts/python -m pip install -e . pytest
+.venv/Scripts/python -m streamlit run streamlit_app.py
+```
+
+Only for live provider calls, copy the environment template. The remaining
+commands assume the installed environment is active (or prefix them with `uv run`).
 
 ```bash
 copy demo\.env.example demo\.env
@@ -46,7 +56,7 @@ Do not commit `.env`, Google credentials, or Gmail tokens.
 ## Run The Dashboard
 
 ```bash
-python -m streamlit run demo/app.py
+python -m streamlit run streamlit_app.py
 ```
 
 The hosted synthetic-data demo is available at:
@@ -61,7 +71,7 @@ https://shiftnotes.streamlit.app
 python scripts/generate_final_mock_dataset.py
 python demo/src/shiftnotes/cli.py baseline
 python demo/src/shiftnotes/cli.py briefings
-python demo/src/shiftnotes/cli.py product-assets
+python demo/src/shiftnotes/cli.py product-assets --base-url http://localhost:8501
 ```
 
 Outputs are written under:
@@ -78,6 +88,10 @@ demo/data/final_mock/email_previews/monthly/2026-03.html
 ```
 
 ## Fetch Live JotForm Data
+
+This live path is separate from the bundled dashboard dataset. See
+[integration boundaries](../docs/INTEGRATIONS.md). It does not automatically
+replace dashboard reports or schedule background ingestion.
 
 ```bash
 python demo/src/shiftnotes/cli.py fetch
@@ -141,11 +155,9 @@ python -m pytest -q
 
 ## Related Docs
 
-- `docs/DEMO_GUIDE.md`
-- `docs/PROTOTYPE_STATUS.md`
-- `docs/ARCHITECTURE_OVERVIEW.md`
-- `docs/PRODUCT_WORKFLOW.md`
-- `docs/MODEL_SELECTION_AND_BENCHMARK.md`
-- `docs/BRIEFING_DESIGN.md`
-- `docs/ALI_QUESTIONS.md`
-
+- [Documentation index](../docs/README.md)
+- [Demo guide](../docs/DEMO_GUIDE.md)
+- [Prototype status](../docs/PROTOTYPE_STATUS.md)
+- [Architecture](../docs/ARCHITECTURE_OVERVIEW.md)
+- [Product workflow](../docs/PRODUCT_WORKFLOW.md)
+- [Model evaluation](../docs/MODEL_SELECTION_AND_BENCHMARK.md)

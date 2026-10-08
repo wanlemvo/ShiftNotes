@@ -5,6 +5,10 @@ existing email workflow instead of forcing a new daily dashboard workflow.
 
 ## Core Flow
 
+This is the intended composition of the implemented components. The live fetch
+path and the bundled dashboard dataset are currently separate; this diagram does
+not imply an unattended production job. See [integrations](INTEGRATIONS.md).
+
 ```text
 JotForm API or JotForm-shaped reports
 -> normalization and validation
@@ -31,6 +35,35 @@ JotForm API or JotForm-shaped reports
   records.
 - `demo/src/shiftnotes/correction_graph.py` handles HITL correction confirmation.
 - `demo/app.py` provides the Streamlit inspection workspace.
+- `demo/src/shiftnotes/dashboard.py` calculates date/kiosk-filtered metrics and
+  aggregates weekly claim sources without double-counting monthly claims.
+- `demo/src/shiftnotes/dashboard_view.py` renders the dashboard and comparison
+  views, retaining the existing briefing, source, and correction screens.
+
+```mermaid
+flowchart TD
+    J[JotForm API] --> N[Normalize and validate]
+    N --> L[Local live records and basic analysis]
+    D[Bundled synthetic reports and schedule] --> M[Deterministic metrics]
+    D --> S[Groq extraction or explicit fallback]
+    S --> C[Claims with source IDs]
+    M --> B[Weekly and monthly briefing files]
+    C --> B
+    B --> G[Explicitly confirmed Gmail send]
+    C --> U[Dashboard and source inspection]
+    M --> U
+    U --> R[Challenge and correction proposal]
+    R --> H{Human confirms?}
+    H -->|Yes| A[Persist correction and audit history]
+    H -->|No| X[Cancel or revise]
+    A --> U
+```
+
+The live-to-rich-dataset handoff remains future integration work. The archived
+team RAG experiment is not the retrieval path of this app: current source
+inspection is a lookup by submission ID. The separate teaching graph retains
+its pre-finalization approval demonstration; product corrections happen after
+briefing review.
 
 ## Why Email First
 

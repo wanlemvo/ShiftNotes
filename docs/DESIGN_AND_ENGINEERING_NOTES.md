@@ -94,8 +94,8 @@ authentication, tenant isolation, hosted database storage, background jobs,
 queues, API rate-limit handling, monitoring, secret management, audit logging,
 and stronger privacy controls for employee-related content.
 
-The current prototype proves the workflow and value. Production scale would be a
-separate engineering phase.
+The current prototype demonstrates the workflow. Measured business value and
+production scale remain separate validation and engineering phases.
 
 ## What I Would Redesign Next
 

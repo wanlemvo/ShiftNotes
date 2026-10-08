@@ -3,6 +3,34 @@
 This demo should feel email-first. The dashboard is supporting evidence, not the
 main workplace interface.
 
+## Local Dashboard Update
+
+The October 2026 dashboard integration is included in the current source.
+Run `uv sync --locked` and `uv run streamlit run streamlit_app.py` from the repo
+root, then open the printed localhost URL. No API credentials are needed.
+
+1. Open **Dashboard**. The latest dataset week is shown with its actual dates.
+2. Choose **Last 3 months** and compare the charts with a single-week view.
+3. Filter to one kiosk. Counts, priority sources, trends, and missing dates update.
+4. Expand a priority finding to inspect its reports. Use its weekly review link
+   to open the existing challenge checkpoint.
+5. Open **Kiosk Compare** to compare averages and unclaimed lunches per valid
+   report. Export the displayed comparison as CSV if useful for a meeting.
+6. Open **Briefings** to show the email preview. Email remains the delivery surface.
+
+The full fixture has 270 unique received submissions: 267 valid and three invalid.
+There are 18 missing slots out of 288 expected, plus three duplicate submissions.
+Missing and invalid are distinct. See [metric definitions](DASHBOARD_METRICS.md).
+
+For local email links, regenerate previews with:
+
+```powershell
+uv run python demo/src/shiftnotes/cli.py product-assets --base-url http://localhost:8501
+```
+
+This rewrites generated demo assets. Use the public URL as `--base-url` only when
+preparing previews for the deployed app. No emails are sent by this command.
+
 ## Primary Story
 
 Ted already receives shift-note reports. ShiftNotes reads JotForm-style report
@@ -41,10 +69,13 @@ challenge a claim.
 6. Challenge a claim in ordinary English, for example:
 
    ```text
-   This is wrong. Remove FM-0001 because that report was praise, not a complaint.
+   This is wrong. Remove <a supporting source ID shown for this claim>.
    ```
 
 7. Show that ShiftNotes proposes a correction first.
+
+   Use an ID actually in the selected claim. The interpreter is deterministic;
+   the demo shows controlled source removal, not unrestricted model reasoning.
 
 8. Confirm or cancel the correction to demonstrate the human-in-the-loop
    checkpoint.
@@ -78,4 +109,3 @@ For a workplace pilot, setup would require:
 - a scheduled weekly/monthly job;
 - synthetic demo data replaced with Ted's real form submissions;
 - authentication before using real source reports in the dashboard.
-

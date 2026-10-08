@@ -2,6 +2,7 @@
 
 import sys
 import uuid
+from html import escape
 from pathlib import Path
 
 import pandas as pd
@@ -26,6 +27,7 @@ from shiftnotes.product import (
 )
 from shiftnotes.baseline import load_schedule
 from shiftnotes.storage import read_json
+from shiftnotes.dashboard_view import render_dashboard
 
 
 DATASET_DIR = ROOT / "demo" / "data" / "final_mock"
@@ -61,8 +63,10 @@ def inject_styles() -> None:
         [data-testid="stSidebar"] span,
         [data-testid="stSidebar"] div { color: var(--sn-ink); }
         [data-testid="stSidebar"] hr { border-color: var(--sn-line); }
-        .block-container { max-width: 1320px; padding-top: 1.4rem; }
+        .block-container { max-width: 1680px; padding-top: 3.5rem; }
         h1, h2, h3 { letter-spacing: 0; color: var(--sn-ink); }
+        .stApp h2 { font-size:1.5rem; }
+        .stApp h3 { font-size:1.15rem; }
         .sn-brand { font-size: 1.35rem; font-weight: 800; color: var(--sn-ink); }
         .sn-sub { font-size: .82rem; color: var(--sn-muted); margin-top: -4px; }
         .sn-bar {
@@ -108,6 +112,23 @@ def inject_styles() -> None:
         }
         .stTabs [aria-selected="true"] { border-color: var(--sn-teal); color: var(--sn-teal); }
         button[kind="primary"] { background: var(--sn-teal); border-color: var(--sn-teal); }
+        .sn-header { display:flex; justify-content:space-between; align-items:center; padding:8px 0 16px; gap:16px; }
+        .sn-header small { color:var(--sn-muted); }
+        .sn-kpis { display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); gap:10px; margin:12px 0 24px; }
+        .sn-kpi { background:white; border:1px solid var(--sn-line); border-top:3px solid #547ba4; border-radius:6px; padding:14px 10px; min-height:102px; }
+        .sn-kpi span { display:block; font-size:12px; min-height:34px; color:var(--sn-muted); }
+        .sn-kpi strong { display:block; font-size:25px; line-height:1.3; overflow-wrap:anywhere; }
+        .sn-kpi-missing,.sn-kpi-urgent { border-top-color:#bc454a; }
+        .sn-kpi-quality,.sn-kpi-recognition { border-top-color:#238474; }
+        .sn-kpi-unclaimed,.sn-kpi-recurring { border-top-color:#bf873c; }
+        .sn-finding { padding:12px 0 6px; border-top:1px solid var(--sn-line); }
+        .sn-finding div { color:var(--sn-muted); font-size:13px; margin-top:8px; }
+        .sn-priority { font-size:11px; padding:3px 6px; border-radius:3px; margin-right:6px; }
+        .sn-priority.urgent { color:#982d32; background:#fce9ea; }
+        .sn-priority.important { color:#845813; background:#fff2d7; }
+        .sn-priority.monitor { color:#356188; background:#eaf1f9; }
+        @media(max-width:1100px) { .sn-kpis { grid-template-columns:repeat(4,minmax(0,1fr)); } }
+        @media(max-width:600px) { .sn-kpis { grid-template-columns:repeat(2,minmax(0,1fr)); } .sn-header { flex-wrap:wrap; } }
         </style>
         """,
         unsafe_allow_html=True,
@@ -151,32 +172,11 @@ reports, schedule, claims, manifest = load_product_data()
 history = load_correction_history(DEFAULT_HISTORY_PATH)
 claims = apply_correction_history(claims, history)
 
-with st.sidebar:
-    st.markdown('<div class="sn-brand">ShiftNotes</div>', unsafe_allow_html=True)
-    st.markdown(
-        '<div class="sn-sub">Operational intelligence workspace</div>',
-        unsafe_allow_html=True,
-    )
-    st.divider()
-    st.caption("Primary delivery")
-    st.write("Weekly and monthly briefing emails")
-    st.caption("Workspace role")
-    st.write("Inspect sources, challenge claims, and review corrections")
-    st.divider()
-    st.caption("Schedule")
-    st.write("Weekly: Thursday, 3:30 PM Pacific")
-    st.write("Monthly: day before final expected reporting day")
-    st.divider()
-    st.caption("Dataset")
-    st.write("Synthetic demonstration data")
-    st.write(f"{len(reports)} submitted records")
-    st.write(f"{len(claims)} source-backed claims")
-
 st.markdown(
     """
-    <div class="sn-bar">
-      <strong>Email-first operations intelligence</strong><br>
-      Briefings can be delivered through Gmail. This workspace is used when a manager wants to inspect evidence or challenge a claim.
+    <div class="sn-header">
+      <div class="sn-brand">ShiftNotes</div>
+      <small>Operations review | Synthetic demonstration data</small>
     </div>
     """,
     unsafe_allow_html=True,
@@ -184,17 +184,25 @@ st.markdown(
 
 requested_action = st.query_params.get("action")
 requested_view = st.query_params.get("view")
-default_tab = "Briefings"
+default_tab = "Dashboard"
 if requested_action == "challenge" or st.session_state.get("go_to_challenge"):
     default_tab = "Challenge Review"
 elif requested_view == "sources" or st.query_params.get("claim"):
     default_tab = "Claims & Sources"
+elif requested_view == "briefings":
+    default_tab = "Briefings"
 
-tab_briefings, tab_claims, tab_challenge, tab_history = st.tabs(
-    ["Briefings", "Claims & Sources", "Challenge Review", "Correction History"],
+tab_dashboard, tab_compare, tab_briefings, tab_claims, tab_challenge, tab_history = st.tabs(
+    ["Dashboard", "Kiosk Compare", "Briefings", "Claims & Sources", "Challenge Review", "Correction History"],
     default=default_tab,
     key=f"main_tabs_{default_tab}",
 )
+
+with tab_dashboard:
+    render_dashboard(reports, schedule, claims)
+
+with tab_compare:
+    render_dashboard(reports, schedule, claims, compare_only=True)
 
 with tab_briefings:
     st.header("Briefing Preview")
@@ -292,7 +300,7 @@ with tab_claims:
     c3.metric("Period", selected_claim["period"])
     callout_class = "sn-danger" if selected_claim["sensitive"] else "sn-callout"
     st.markdown(
-        f'<div class="{callout_class}"><strong>{selected_claim["claim_text"]}</strong></div>',
+        f'<div class="{callout_class}"><strong>{escape(selected_claim["claim_text"])}</strong></div>',
         unsafe_allow_html=True,
     )
     if selected_claim.get("status") == "corrected":
@@ -339,7 +347,7 @@ with tab_challenge:
     )
     active_claim = claim_by_id[claim_id]
     st.markdown(
-        f'<div class="sn-callout"><strong>Original claim</strong><br>{active_claim["claim_text"]}</div>',
+        f'<div class="sn-callout"><strong>Original claim</strong><br>{escape(active_claim["claim_text"])}</div>',
         unsafe_allow_html=True,
     )
     challenge_text = st.text_area(
@@ -350,7 +358,10 @@ with tab_challenge:
         ),
         height=120,
     )
-    if st.button("Review challenge", type="primary", disabled=not challenge_text.strip()):
+    review_requested = st.button("Review challenge", type="primary")
+    if review_requested and not challenge_text.strip():
+        st.warning("Enter the claim concern before requesting a review.")
+    if review_requested and challenge_text.strip():
         thread_id = f"correction-{uuid.uuid4().hex[:10]}"
         initial = {
             "thread_id": thread_id,
@@ -367,16 +378,16 @@ with tab_challenge:
         st.rerun()
 
     result = st.session_state.get("correction_result")
-    if result:
+    if result and result.get("claim", {}).get("claim_id") == claim_id:
         proposal = result.get("proposal", {})
         if proposal.get("safety_refusal"):
             st.markdown(
-                f'<div class="sn-danger"><strong>Request refused</strong><br>{proposal["rationale"]}</div>',
+                f'<div class="sn-danger"><strong>Request refused</strong><br>{escape(proposal["rationale"])}</div>',
                 unsafe_allow_html=True,
             )
         elif proposal.get("status") == "needs_clarification":
             st.markdown(
-                f'<div class="sn-warning"><strong>Clarification needed</strong><br>{proposal["rationale"]}</div>',
+                f'<div class="sn-warning"><strong>Clarification needed</strong><br>{escape(proposal["rationale"])}</div>',
                 unsafe_allow_html=True,
             )
         elif result.get("status") == "confirmed":

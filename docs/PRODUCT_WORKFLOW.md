@@ -4,7 +4,7 @@
 
 Email is the primary ShiftNotes interface.
 
-Ted receives:
+The intended recurring schedule is:
 
 - a Thursday afternoon weekly briefing;
 - a monthly briefing before the final expected reporting shift used for
@@ -16,6 +16,10 @@ review correction history.
 
 The synthetic-data demonstration is hosted at
 https://shiftnotes.streamlit.app.
+
+Today, sending is an explicit CLI operation; no scheduler sends these briefings
+automatically. Live JotForm fetch output is also separate from the bundled
+dashboard dataset. See [integration boundaries](INTEGRATIONS.md).
 
 ## Email Preview
 
@@ -152,6 +156,16 @@ scheduler is not connected yet.
 ## Streamlit Workspace
 
 The workspace includes:
+
+- **Dashboard:** reporting metrics, priority queue, daily/weekly trend charts,
+  missing kiosk/date reports, recognition, and source drawers.
+- **Kiosk Compare:** filtered quality/quantity, unclaimed lunches per valid report,
+  completeness, urgent findings, and CSV export.
+- The inspection views below remain available through the same navigation.
+
+Date presets use the synthetic dataset's latest date. Three-month analytics
+aggregate weekly claims without counting monthly versions twice. See
+[metric definitions](DASHBOARD_METRICS.md) for denominators and correction scope.
 
 1. Briefings
    - polished weekly/monthly email previews;
