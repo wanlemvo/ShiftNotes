@@ -48,5 +48,8 @@ at-a-glance presentation as NetOps.
 - Installed the locked environment in a fresh source snapshot and ran all 58
   tests successfully. Generated 399 claims and 15 email previews there without
   provider calls or sending email.
-- Prepared publication to GitHub `main`, preserving existing commit history and
+- Published release `89157b1` to GitHub `main`, preserving existing commit history and
   older branches. See verification notes for the remote and hosting results.
+- Found that the recorded Streamlit source branch, `codex/final-submission`, had
+  been renamed to `main`. Restored it at the same commit as a hosting compatibility
+  branch; the canonical project remains on `main`.

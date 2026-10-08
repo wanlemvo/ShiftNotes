@@ -10,9 +10,17 @@ of this app, not a second standalone HTML UI.
 At the start of the October 8, 2026 cleanup, GitHub `main` pointed to `f3c1bf1`.
 The local branch was `codex/final-submission`; its old remote-tracking reference
 did not establish a current remote branch. The user subsequently authorized
-publishing the integrated dashboard and demonstration media to `main`.
+publishing the integrated dashboard and demonstration media to `main`. Release
+commit `89157b1` contains that update and the public media.
 Historical remote branches are preserved; no force push or history rewrite is
 part of this release. Hosted deployment status is recorded in verification notes.
+
+The prior Streamlit deployment record targets `codex/final-submission` and
+`demo/app.py`. That remote branch had been renamed to `main`. A compatibility
+branch named `codex/final-submission` was restored at the same release commit
+so the existing host can resolve its source. Until the owner retargets Streamlit
+to `main`, publish app updates to both refs without letting them diverge.
+`main` remains the canonical repository entry point.
 
 ## Contents Worth Publishing
 

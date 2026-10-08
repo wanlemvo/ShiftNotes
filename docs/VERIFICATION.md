@@ -71,3 +71,28 @@ The GIF is a sequence of screenshots, and the WebM is the continuous browser
 recording. See [media and reproduction](demo/README.md) and the capture manifest
 for the specific synthetic claim used. The capture is a scripted demonstration,
 not a new non-team-user validation session.
+
+The final readable-source refinement was also tested in the isolated environment:
+58 tests passed in 8.06 seconds. The capture manifest reports no browser errors.
+
+## GitHub Publication
+
+Release `89157b1` was pushed successfully to `main`. Remote commit verification
+and the GitHub contents API confirmed the media files are present. Credentials,
+live runtime records, temporary captures, and the isolated environment were not
+included. Existing branch history was preserved without a force push.
+
+## Hosted App Status
+
+The public URL initially displayed Streamlit's inactivity sleep page. After a
+wake-up request, it returned "Error running app" before the dashboard loaded.
+The historical deployment log names `codex/final-submission` as its source branch;
+that branch had been renamed to `main` and was missing from the remote. It was
+restored at the release commit. This is a plausible deployment configuration
+cause, not a confirmed diagnosis without access to the hosting logs.
+
+The authenticated hosting controls were not available in this session. Hosted
+dashboard/deep-link verification therefore remains incomplete. GitHub media and
+the clean local run are verified independently. If the error persists, the owner
+needs to inspect the app's source settings and build logs in Streamlit Community
+Cloud; use `main` and `streamlit_app.py` when retargeting the deployment.

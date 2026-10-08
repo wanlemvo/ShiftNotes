@@ -56,7 +56,7 @@ archived tests covered the older team prototype classifier/state package rather
 than the active email-first ShiftNotes demo.
 
 See [verification](VERIFICATION.md) for current checks and limitations. The
-dashboard update and demo media are prepared for the authorized GitHub release;
+dashboard update and demo media are published on GitHub `main` in `89157b1`;
 hosted deployment verification is tracked separately in that document.
 
 The dataset includes planted ground-truth patterns so the system can be checked
